@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Series on Tony Bolg</title>
-    <link>https://cs90077.github.io/series/</link>
-    <description>Recent content in Series on Tony Bolg</description>
+    <title>專欄 on Tony Blogs</title>
+    <link>/series/</link>
+    <description>Recent content in 專欄 on Tony Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://cs90077.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 17 Aug 2021 10:10:00 +0000</lastBuildDate><atom:link href="/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Themes Guide</title>
-      <link>https://cs90077.github.io/series/themes-guide/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>iOS</title>
+      <link>/series/ios/</link>
+      <pubDate>Tue, 17 Aug 2021 10:10:00 +0000</pubDate>
       
-      <guid>https://cs90077.github.io/series/themes-guide/</guid>
+      <guid>/series/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Swift</title>
+      <link>/series/swift/</link>
+      <pubDate>Tue, 17 Aug 2021 10:10:00 +0000</pubDate>
+      
+      <guid>/series/swift/</guid>
       <description></description>
     </item>
     

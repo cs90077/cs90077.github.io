@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Array on Tony Blogs</title>
+    <link>/tags/array/</link>
+    <description>Recent content in Array on Tony Blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 17 Aug 2021 10:10:00 +0000</lastBuildDate><atom:link href="/tags/array/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Swift]Array取得不重複資料</title>
+      <link>/posts/swift_array_not_repeat/</link>
+      <pubDate>Tue, 17 Aug 2021 10:10:00 +0000</pubDate>
+      
+      <guid>/posts/swift_array_not_repeat/</guid>
+      <description>&lt;p&gt;資料紀錄重複，想要抓出不重複的資料&lt;/p&gt;
+&lt;p&gt;以下提供兩種方式給大家參考！&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
