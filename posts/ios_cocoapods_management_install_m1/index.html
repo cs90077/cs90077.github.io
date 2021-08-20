@@ -1,28 +1,35 @@
 <!doctype html>
 <html lang="zh-tw">
   <head>
-	<meta name="generator" content="Hugo 0.87.0" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tony Blogs</title><link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png" sizes="180x180">
+    <title>[iOS]安裝CocoaPods套件 支持M1系統 - Tony Blogs</title><link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="manifest" href="/images/favicons/manifest.json">
 <link rel="icon" href="/images/favicons/favicon.ico">
-<meta name="keywords" content="Hugo, Tony, Blog, iOS, Developer, Engineer" />
-<meta name="description" content="最速工程師 從入門到放棄" /><meta itemprop="name" content="Tony Blogs">
-<meta itemprop="description" content="最速工程師 從入門到放棄"><meta property="og:title" content="Tony Blogs" />
-<meta property="og:description" content="最速工程師 從入門到放棄" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/" />
+<meta name="keywords" content="" />
+<meta name="description" content="" /><meta itemprop="name" content="[iOS]安裝CocoaPods套件 支持M1系統">
+<meta itemprop="description" content="M1的系統架構不同，需要指定x86方式安裝"><meta itemprop="datePublished" content="2021-02-14T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-02-14T00:00:00+00:00" />
+<meta itemprop="wordCount" content="35"><meta itemprop="image" content="/images/icon/icon-cocoapods.webp">
+<meta itemprop="keywords" content="CocoaPods,GitHub," /><meta property="og:title" content="[iOS]安裝CocoaPods套件 支持M1系統" />
+<meta property="og:description" content="M1的系統架構不同，需要指定x86方式安裝" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/ios_cocoapods_management_install_m1/" /><meta property="og:image" content="/images/icon/icon-cocoapods.webp" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-02-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-02-14T00:00:00+00:00" />
+<meta property="og:see_also" content="/posts/swift_array_%E9%99%A4%E5%8E%BB%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/" /><meta property="og:see_also" content="/posts/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/" /><meta property="og:see_also" content="/posts/ios_cocoapods_management/" /><meta property="og:see_also" content="/posts/ios_make_app_icon/" />
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Tony Blogs"/>
-<meta name="twitter:description" content="最速工程師 從入門到放棄"/>
-<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Tony Blogs" /><meta data-name="palette" content="blue"><link rel=stylesheet href="/css/bundle.min.4a5890fb45361897072de8c93e075b7d2384a3635e3bfc9396427ee019bcc13c.css" integrity="sha256-SliQ&#43;0U2GJcHLejJPgdbfSOEo2NeO/yTlkJ&#43;4Bm8wTw=" crossorigin="anonymous"><script src="/js/bundle.min.ae7f5e13d9d90b4d224a86293a84f6a56b9182a89f6a318674ea4db1ffb3aecb.js" integrity="sha256-rn9eE9nZC00iSoYpOoT2pWuRgqifajGGdOpNsf&#43;zrss=" crossorigin="anonymous"></script>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/images/icon/icon-cocoapods.webp"/>
+
+<meta name="twitter:title" content="[iOS]安裝CocoaPods套件 支持M1系統"/>
+<meta name="twitter:description" content="M1的系統架構不同，需要指定x86方式安裝"/>
+<meta data-name="palette" content="blue"><link rel=stylesheet href="/css/bundle.min.4a5890fb45361897072de8c93e075b7d2384a3635e3bfc9396427ee019bcc13c.css" integrity="sha256-SliQ&#43;0U2GJcHLejJPgdbfSOEo2NeO/yTlkJ&#43;4Bm8wTw=" crossorigin="anonymous"><script src="/js/bundle.min.ae7f5e13d9d90b4d224a86293a84f6a56b9182a89f6a318674ea4db1ffb3aecb.js" integrity="sha256-rn9eE9nZC00iSoYpOoT2pWuRgqifajGGdOpNsf&#43;zrss=" crossorigin="anonymous"></script>
 </head><body><header><nav class="navbar navbar-expand-xl fixed-top">
   <div class="container">
-    <a class="navbar-brand active" href="/">
+    <a class="navbar-brand" href="/">
       <img class="logo" alt="Logo" src="/images/logo.webp" loading="lazy">Tony Blog</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -143,75 +150,108 @@
 <main role="main" class="container">
       <div class="row content">
 <div class="col-lg-8">
-  <div class="container"><div class="posts mb-4"><article class="post row surface"><div class="post-thumbnail col-md-3 d-flex align-items-center justify-content-center">
-        <img class="img-fluid" src="/images/icon/icon-swift.webp" loading="lazy"/>
-      </div><div class="post-body col-md-9">
-        <h2 class="post-title mb-4"><a href="/posts/swift_array_%E9%99%A4%E5%8E%BB%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/">[Swift]Array除去重複資料
-</a></h2><div class="post-meta mb-3"><span class="post-date me-2">
-    <i class="fas fa-fw fa-calendar-alt"></i>Aug 17, 2021
-  </span><span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>1 分鐘閱讀
-  </span><a href="/series/ios/" class="post-taxonomy">#iOS</a><a href="/series/swift/" class="post-taxonomy">#Swift</a><a href="/tags/array/" class="post-taxonomy">#Array</a></div>
-<div class="post-summary mb-3">
-          <p>當資料有重複，想整理出不重複的資料，以下提供兩種方式給大家參考！</p>
-        </div>
-      </div>
-    </article><article class="post row surface"><div class="post-thumbnail col-md-3 d-flex align-items-center justify-content-center">
-        <img class="img-fluid" src="/images/icon/icon-cocoapods.webp" loading="lazy"/>
-      </div><div class="post-body col-md-9">
-        <h2 class="post-title mb-4"><a href="/posts/ios_cocoapods_management_install_m1/">[IOS]安裝CocoaPods套件 支持M1系統
-</a></h2><div class="post-meta mb-3"><span class="post-date me-2">
+  <div class="container"><nav class="row" aria-label="breadcrumb">
+  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="/">主頁</a></li><li class="breadcrumb-item"><a href="/posts/">文章</a></li><li class="breadcrumb-item active">[IOS]安裝CocoaPods套件 支持M1系統</li></ol>
+</nav><article class="post row surface"><div class="post-panel-wrapper">
+  <div class="post-panel d-flex flex-column">
+    <a id="sidebarToggler" class="action d-none d-lg-block" role="button">
+  <i class="fas fa-fw fa-expand-alt fa-rotate-45"></i>
+</a>
+  
+    
+
+    <a class="action btn-reward" role="button" data-bs-toggle="modal" data-bs-target="#rewardModal" title="可以請我喝一杯拿鐵">
+  <i class="fas fa-fw fa-medal"></i>
+</a>
+    <a class="action" data-bs-container="body" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom"
+  data-bs-trigger="focus" tabindex="0"
+  data-bs-content="&lt;a target=&#34;_blank&#34; rel=&#34;license&#34; href=&#34;https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh_TW&#34;&gt;CC BY-NC-ND 4.0 &lt;i class=&#34;fab fa-fw fa-creative-commons&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-fw fa-creative-commons-by&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-fw fa-creative-commons-nc&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-fw fa-creative-commons-nd&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+">
+  <i class="fas fa-fw fa-copyright"></i>
+</a>
+    <a id="btnTOC" class="fas fa-fw fa-list-alt" data-bs-toggle="offcanvas" href="#offcanvasTOC" aria-controls="offcanvasTOC" role="button">
+</a>
+  </div>
+</div>
+<h1 class="post-title my-3">[IOS]安裝CocoaPods套件 支持M1系統
+</h1><div class="post-meta mb-3"><span class="post-date me-2">
     <i class="fas fa-fw fa-calendar-alt"></i>Feb 14, 2021
   </span><span class="post-reading-time me-2">
     <i class="fas fa-fw fa-coffee"></i>1 分鐘閱讀
   </span><a href="/series/ios/" class="post-taxonomy">#iOS</a><a href="/tags/cocoapods/" class="post-taxonomy">#CocoaPods</a><a href="/tags/github/" class="post-taxonomy">#GitHub</a></div>
-<div class="post-summary mb-3">
-          <p>M1的系統架構不同，需要指定x86方式安裝</p>
-        </div>
+<div class="offcanvas offcanvas-end surface" tabindex="-1" id="offcanvasTOC" aria-labelledby="offcanvasTOCLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasTOCLabel">目錄</h5>
+    <a role="button" data-bs-dismiss="offcanvas" aria-label="Close">
+      <span class="fas fa-2x fa-fw fa-times"></span>
+    </a>
+  </div>
+  <div class="offcanvas-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#安裝套件">安裝套件</a>
+      <ul>
+        <li><a href="#step1">step1</a></li>
+        <li><a href="#step2">step2</a></li>
+        <li><a href="#step3">step3</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div><div class="post-content mb-3"><p>M1的系統架構不同，需要指定x86方式安裝</p>
+<p>基本安裝請參考：<a href="/posts/ios_cocoapods_management">Cocopods套件管理</a>
+</p>
+<h2 id="安裝套件">安裝套件</h2>
+<h3 id="step1">step1</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>$ sudo gem install ffi
+</code></pre></div><h3 id="step2">step2</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>$ sudo gem install cocoapods
+</code></pre></div><h3 id="step3">step3</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>$ arch -x86_64 pod install
+</code></pre></div><p><a href="https://stackoverflow.com/questions/66037493/pod-install-error-on-m1-mac-flutter-project-with-native-code-like-shared-prefe" target="_blank">Pod install error on M1 Mac - Flutter project with native code like shared_preferences</a>
+</p></div><div class="modal fade" id="rewardModal" tabindex="-1" aria-labelledby="rewardModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content surface">
+      <div class="modal-header">
+        <h5 class="modal-title" id="rewardModalLabel"><i class="fas fa-fw fa-medal"></i>可以請我喝一杯拿鐵</h5>
+        <a href="#" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-fw fa-times"></i></a>
       </div>
-    </article><article class="post row surface"><div class="post-thumbnail col-md-3 d-flex align-items-center justify-content-center">
-        <img class="img-fluid" src="/images/icon/icon-swift.webp" loading="lazy"/>
-      </div><div class="post-body col-md-9">
-        <h2 class="post-title mb-4"><a href="/posts/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/">[Swift]使用ImagePicker開啟Camera相機功能
-</a></h2><div class="post-meta mb-3"><span class="post-date me-2">
-    <i class="fas fa-fw fa-calendar-alt"></i>Sep 6, 2020
-  </span><span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>1 分鐘閱讀
-  </span><a href="/series/ios/" class="post-taxonomy">#iOS</a><a href="/series/swift/" class="post-taxonomy">#Swift</a><a href="/tags/imagepicker/" class="post-taxonomy">#ImagePicker</a><a href="/tags/camera/" class="post-taxonomy">#Camera</a></div>
-<div class="post-summary mb-3">
-          <p>開啟相機 =&gt; 拍照 =&gt; 儲存照片 =&gt; 簡單搞定</p>
-        </div>
+      <div class="modal-body">
+        <ul class="nav nav-tabs mb-3" role="tablist"><li class="nav-item" role="presentation">
+            <a class="nav-link active" id="reward-jkopay-tab" data-bs-toggle="tab" href="#reward-jkopay" role="tab" aria-controls="reward-jkopay" aria-selected="true">
+              <i class="fab fa-fw fa-jkopay"></i>街口支付
+            </a>
+          </li></ul>
+        <div class="tab-content" id="rewardTabContent"><div class="tab-pane fade post-reward-content show active" id="reward-jkopay" role="tabpanel" aria-labelledby="reward-jkopay-tab">
+            <img class="img-fluid post-reward-img" src="/images/reward/jkopay.png" loading="lazy" />
+          </div></div>
       </div>
-    </article><article class="post row surface"><div class="post-thumbnail col-md-3 d-flex align-items-center justify-content-center">
-        <img class="img-fluid" src="/images/icon/icon-cocoapods.webp" loading="lazy"/>
-      </div><div class="post-body col-md-9">
-        <h2 class="post-title mb-4"><a href="/posts/ios_cocoapods_management/">[IOS]使用CocoaPods套件管理
-</a></h2><div class="post-meta mb-3"><span class="post-date me-2">
-    <i class="fas fa-fw fa-calendar-alt"></i>Sep 14, 2018
-  </span><span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>1 分鐘閱讀
-  </span><a href="/series/ios/" class="post-taxonomy">#iOS</a><a href="/tags/cocoapods/" class="post-taxonomy">#CocoaPods</a><a href="/tags/github/" class="post-taxonomy">#GitHub</a></div>
-<div class="post-summary mb-3">
-          <p>在做開發的時候，不可能所有功能都自己寫，多少會去參考別人使用的程式function，或者引用Library套件。</p>
-        </div>
-      </div>
-    </article><article class="post row surface"><div class="post-thumbnail col-md-3 d-flex align-items-center justify-content-center">
-        <img class="img-fluid" src="/images/icon/icon-swift.webp" loading="lazy"/>
-      </div><div class="post-body col-md-9">
-        <h2 class="post-title mb-4"><a href="/posts/ios_make_app_icon/">[IOS]製作APP圖示
-</a></h2><div class="post-meta mb-3"><span class="post-date me-2">
-    <i class="fas fa-fw fa-calendar-alt"></i>Sep 14, 2018
-  </span><span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>1 分鐘閱讀
-  </span><a href="/series/ios/" class="post-taxonomy">#iOS</a><a href="/tags/icon/" class="post-taxonomy">#icon</a><a href="/tags/assets/" class="post-taxonomy">#assets</a></div>
-<div class="post-summary mb-3">
-          <p>APP icon在iOS的規格要求相當高，如果沒有依照它的格式去弄，是無法完美呈現在APP上的。</p>
-        </div>
-      </div>
-    </article></div><div class="row table-responsive mb-3"></div>
-</div>
-
-
+    </div>
+  </div>
+</div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
+  <div class="post-nav w-50"><div class="prev-post btn btn-sm">
+      <a href="/posts/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/">[Swift]使用ImagePicker開啟Camera相機功能
+</a>
+    </div></div>
+  <div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
+      <a href="/about/">關於我
+</a>
+    </div></div>
+</div><section class="related-posts">
+    <h3>相關文章</h3>
+    <ul class="related-posts"><li><a href="/posts/ios_cocoapods_management/">[IOS]使用CocoaPods套件管理
+</a></li><li><a href="/posts/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/">[Swift]使用ImagePicker開啟Camera相機功能
+</a></li><li><a href="/posts/ios_make_app_icon/">[IOS]製作APP圖示
+</a></li></ul>
+  </section></article><div class="post-comments surface row"><script src="https://utteranc.es/client.js"
+  repo="razonyang/hugo-theme-bootstrap-comments"
+  issue-term="pathname"
+  label="comment"
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script></div></div>
 </div><aside class="col-lg-4 sidebar d-flex">
   <div class="container"><section class="profile surface row text-center">
   <div class="col-12 d-flex align-items-center justify-content-center"><img class="profile-avatar rounded-circle" src="/images/profile.webp" alt="Tony Lin" loading="lazy"></div>
@@ -276,11 +316,7 @@
       <a class="nav-link social-link" target="_blank" href="https://www.youtube.com/channel/UCznBj7M_LmFjtU2O8PeTHTw" title="Youtube">
         <i class="fa-fw fa-2x fab fa-youtube"></i>
       </a>
-    </li><li class="nav-item">
-    <a class="nav-link social-link" target="_blank" href="/index.xml" title="RSS">
-      <i class="fas fa-fw fa-2x fa-rss"></i>
-    </a>
-  </li></nav>
+    </li></nav>
 <div class="copyright mb-2">
   Copyright © 2016-2021 Razon Yang. All Rights Reserved.
 </div>
