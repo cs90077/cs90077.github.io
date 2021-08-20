@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>assets on Tony Blogs</title>
+    <link>/tags/assets/</link>
+    <description>Recent content in assets on Tony Blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
+    <lastBuildDate>Fri, 14 Sep 2018 00:00:00 +0000</lastBuildDate><atom:link href="/tags/assets/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[iOS]製作APP圖示</title>
+      <link>/posts/ios_make_app_icon/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios_make_app_icon/</guid>
+      <description>&lt;p&gt;APP icon在iOS的規格要求相當高，如果沒有依照它的格式去弄，是無法完美呈現在APP上的。如果將icon規格一一告訴UI，再請他出圖，我相信你很快會被討厭的&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

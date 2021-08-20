@@ -3,26 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>關於我 - Tony Blogs</title><link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png" sizes="180x180">
+    <title>[Swift]使用ImagePicker開啟Camera相機功能 - Tony Blogs</title><link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="manifest" href="/images/favicons/manifest.json">
 <link rel="icon" href="/images/favicons/favicon.ico">
 <meta name="keywords" content="" />
-<meta name="description" content="About" /><meta itemprop="name" content="關於我">
-<meta itemprop="description" content="About"><meta itemprop="datePublished" content="2021-07-31T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2021-07-31T00:00:00+00:00" />
-<meta itemprop="wordCount" content="37">
-<meta itemprop="keywords" content="" /><meta property="og:title" content="關於我" />
-<meta property="og:description" content="About" />
+<meta name="description" content="" /><meta itemprop="name" content="[Swift]使用ImagePicker開啟Camera相機功能">
+<meta itemprop="description" content="開啟相機 =&gt; 拍照 =&gt; 儲存照片 =&gt; 簡單搞定"><meta itemprop="datePublished" content="2020-09-06T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-09-06T00:00:00+00:00" />
+<meta itemprop="wordCount" content="180"><meta itemprop="image" content="/images/icon-swift.webp">
+<meta itemprop="keywords" content="ImagePicker,Camera," /><meta property="og:title" content="[Swift]使用ImagePicker開啟Camera相機功能" />
+<meta property="og:description" content="開啟相機 =&gt; 拍照 =&gt; 儲存照片 =&gt; 簡單搞定" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/about/" /><meta property="article:section" content="" />
-<meta property="article:published_time" content="2021-07-31T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-07-31T00:00:00+00:00" />
+<meta property="og:url" content="/posts/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/" /><meta property="og:image" content="/images/icon-swift.webp" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-09-06T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-09-06T00:00:00+00:00" />
+<meta property="og:see_also" content="/posts/swift_array_%E9%99%A4%E5%8E%BB%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/" /><meta property="og:see_also" content="/posts/ios_make_app_icon/" />
+<meta property="og:see_also" content="/posts/swift_array_%E9%99%A4%E5%8E%BB%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/" />
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="關於我"/>
-<meta name="twitter:description" content="About"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/images/icon-swift.webp"/>
+
+<meta name="twitter:title" content="[Swift]使用ImagePicker開啟Camera相機功能"/>
+<meta name="twitter:description" content="開啟相機 =&gt; 拍照 =&gt; 儲存照片 =&gt; 簡單搞定"/>
 <meta data-name="palette" content="blue"><link rel=stylesheet href="/css/bundle.min.4a5890fb45361897072de8c93e075b7d2384a3635e3bfc9396427ee019bcc13c.css" integrity="sha256-SliQ&#43;0U2GJcHLejJPgdbfSOEo2NeO/yTlkJ&#43;4Bm8wTw=" crossorigin="anonymous"><script src="/js/bundle.min.ae7f5e13d9d90b4d224a86293a84f6a56b9182a89f6a318674ea4db1ffb3aecb.js" integrity="sha256-rn9eE9nZC00iSoYpOoT2pWuRgqifajGGdOpNsf&#43;zrss=" crossorigin="anonymous"></script>
 </head><body><header><nav class="navbar navbar-expand-xl fixed-top">
   <div class="container">
@@ -148,7 +152,7 @@
       <div class="row content">
 <div class="col-lg-8">
   <div class="container"><nav class="row" aria-label="breadcrumb">
-  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="/">主頁</a></li><li class="breadcrumb-item active">關於我</li></ol>
+  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="/">主頁</a></li><li class="breadcrumb-item"><a href="/posts/">文章</a></li><li class="breadcrumb-item active">[Swift]使用ImagePicker開啟Camera相機功能</li></ol>
 </nav><article class="post row surface"><div class="post-panel-wrapper">
   <div class="post-panel d-flex flex-column">
     <a id="sidebarToggler" class="action d-none d-lg-block" role="button">
@@ -169,37 +173,121 @@
     
   </div>
 </div>
-<h1 class="post-title my-3">關於我
+<h1 class="post-title my-3">[Swift]使用ImagePicker開啟Camera相機功能
 </h1><div class="post-meta mb-3"><span class="post-date me-2">
-    <i class="fas fa-fw fa-calendar-alt"></i>Jul 31, 2021
+    <i class="fas fa-fw fa-calendar-alt"></i>Sep 6, 2020
   </span><span class="post-reading-time me-2">
     <i class="fas fa-fw fa-coffee"></i>1 分鐘閱讀
-  </span></div>
-<div class="post-content mb-3"><p>高中以前，不懂讀書學習的意義，每天開開心心的追趕跑跳碰，成績常駐倒數第三名。</p>
-<p>高中開始，剛好坐在學霸身邊，於是成績突飛猛進，開起外掛模式，練就文武雙全。</p>
-<p><strong>統一入學測驗 水產類 全校第二名</strong>、<strong>高職技藝競賽 漁業職種 全國第五名</strong></p>
-<p>大學時期為了進一步提升自己的能力，有幸與學長合作共同創辦社團，且擔任本社社長，並在創社三年拿到社團評鑑「優等」。</p>
-<p><img class="img-fluid" src="/images/profile/IMG_20210818_539323.jpg" alt="profile"  loading="lazy" />
+  </span><a href="/series/ios/" class="post-taxonomy">#iOS</a><a href="/series/swift/" class="post-taxonomy">#Swift</a><a href="/tags/imagepicker/" class="post-taxonomy">#ImagePicker</a><a href="/tags/camera/" class="post-taxonomy">#Camera</a></div>
+<div class="post-content mb-3"><p>開啟相機 =&gt; 拍照 =&gt; 儲存照片 =&gt; 簡單搞定</p>
+<h2 id="1-開啟相機拍照">1 開啟相機拍照</h2>
+<h3 id="infoplist-設定權限">info.plist 設定權限</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln">1</span><span class="n">Privacy</span> <span class="o">-</span> <span class="n">Camera</span> <span class="n">Usage</span> <span class="n">Description</span>
+</code></pre></div><p><img class="img-fluid" src="/images/posts/camera_1629421939.png" alt="camera"  loading="lazy" />
 </p>
-<p>求學讀書七年的水產類組，原計畫是考取動力小船營業執照後，準備要去當個遊艇小船長。</p>
-<p>在因緣際會下認識朋友資工系的哥哥，看他如同駭客般敲鍵盤跑出一堆程式碼，覺得當工程師也太酷了，哥哥也與我分享工程師人材年薪百萬並不難，足以克服現今社會低薪的問題。</p>
-<p><img class="img-fluid" src="/images/profile/IMG_20180608_579376.jpg" alt="profile"  loading="lazy" />
+<h3 id="開啟相機頁面">開啟相機頁面</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln">1</span><span class="kd">func</span> <span class="nf">openCamera</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln">2</span>    <span class="kd">let</span> <span class="nv">pickerController</span> <span class="p">=</span> <span class="n">UIImagePickerController</span><span class="p">()</span>
+<span class="ln">3</span>    <span class="n">pickerController</span><span class="p">.</span><span class="n">delegate</span> <span class="p">=</span> <span class="kc">self</span>
+<span class="ln">4</span>    <span class="n">pickerController</span><span class="p">.</span><span class="n">mediaTypes</span> <span class="p">=</span> <span class="p">[</span><span class="s">&#34;public.image&#34;</span><span class="p">]</span>
+<span class="ln">5</span>    <span class="n">pickerController</span><span class="p">.</span><span class="n">sourceType</span> <span class="p">=</span> <span class="p">.</span><span class="n">camera</span>
+<span class="ln">6</span>    <span class="kc">self</span><span class="p">.</span><span class="n">present</span><span class="p">(</span><span class="n">pickerController</span><span class="p">,</span> <span class="n">animated</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="n">completion</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+<span class="ln">7</span><span class="p">}</span>
+</code></pre></div><blockquote>
+<p>如果要多錄影功能，請添加 public.movie 屬性</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln">1</span><span class="n">pickerController</span><span class="p">.</span><span class="n">mediaTypes</span> <span class="p">=</span> <span class="p">[</span><span class="s">&#34;public.image&#34;</span><span class="p">,</span> <span class="s">&#34;public.movie&#34;</span><span class="p">]</span>
+</code></pre></div><h4 id="效果">效果</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">允許相機權限</th>
+<th style="text-align:center">相機頁面</th>
+<th style="text-align:center">拍照預覽頁面</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img class="img-fluid" src="/images/posts/camera_1629421949.png" alt="camera"  loading="lazy" />
+</td>
+<td style="text-align:center"><img class="img-fluid" src="/images/posts/camera_1629421950.png" alt="camera"  loading="lazy" />
+</td>
+<td style="text-align:center"><img class="img-fluid" src="/images/posts/camera_1629421951.png" alt="camera"  loading="lazy" />
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="拍完照片之後取得image">拍完照片之後，取得Image</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln"> 1</span><span class="kd">extension</span> <span class="nc">OpenCameraViewController</span><span class="p">:</span> <span class="n">UIImagePickerControllerDelegate</span><span class="p">,</span> <span class="n">UINavigationControllerDelegate</span> <span class="p">{</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span>    <span class="kd">func</span> <span class="nf">imagePickerController</span><span class="p">(</span><span class="kc">_</span> <span class="n">picker</span><span class="p">:</span> <span class="n">UIImagePickerController</span><span class="p">,</span> <span class="n">didFinishPickingMediaWithInfo</span> <span class="n">info</span><span class="p">:</span> <span class="p">[</span><span class="n">UIImagePickerController</span><span class="p">.</span><span class="n">InfoKey</span> <span class="p">:</span> <span class="nb">Any</span><span class="p">])</span> <span class="p">{</span>
+<span class="ln"> 4</span>
+<span class="ln"> 5</span>        <span class="k">guard</span> <span class="kd">let</span> <span class="nv">originalImage</span> <span class="p">=</span> <span class="n">info</span><span class="p">[.</span><span class="n">originalImage</span><span class="p">]</span> <span class="k">as</span><span class="p">?</span> <span class="n">UIImage</span> <span class="k">else</span> <span class="p">{</span> <span class="k">return</span> <span class="p">}</span>
+<span class="ln"> 6</span>
+<span class="ln"> 7</span>        <span class="n">picker</span><span class="p">.</span><span class="n">dismiss</span><span class="p">(</span><span class="n">animated</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+<span class="ln"> 8</span>            <span class="n">DispatchQueue</span><span class="p">.</span><span class="n">main</span><span class="p">.</span><span class="n">async</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln"> 9</span>                <span class="kc">self</span><span class="p">.</span><span class="n">previewImageView</span><span class="p">.</span><span class="n">image</span> <span class="p">=</span> <span class="n">originalImage</span>
+<span class="ln">10</span>            <span class="p">}</span>
+<span class="ln">11</span>        <span class="p">}</span>
+<span class="ln">12</span>    <span class="p">}</span>
+<span class="ln">13</span>
+<span class="ln">14</span><span class="p">}</span>
+</code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:center">拍照前</th>
+<th style="text-align:center">拍照後</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img class="img-fluid" src="/images/posts/camera_1629421952.png" alt="camera"  loading="lazy" />
+</td>
+<td style="text-align:center"><img class="img-fluid" src="/images/posts/camera_1629421953.png" alt="camera"  loading="lazy" />
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-拍照後儲存照片">2 拍照後儲存照片</h2>
+<h3 id="infoplist-設定權限-1">info.plist 設定權限</h3>
+<p>1.info.plist 允許使用相簿權限。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln">1</span><span class="n">Privacy</span> <span class="o">-</span> <span class="n">Photo</span> <span class="n">Library</span> <span class="n">Additions</span> <span class="n">Usage</span> <span class="n">Description</span>
+</code></pre></div><p><img class="img-fluid" src="/images/posts/camera_1629422451.png" alt="camera"  loading="lazy" />
 </p>
-<p>於是畢業後，從資策會開始學習寫程式入門。在往後的半年裡，全心投入學習寫程式，課程結束時也發表三人合作開發的ERP+APP小作品，並且Android App是由自己獨立開發。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="ln">1</span>- 2012年 六個月學習，從入門到新手，結訓發表小專題
-<span class="ln">2</span>- 2013年 「高雄市政府 交通局APP」，四個月完成開發，獲得肝指數過高
-<span class="ln">3</span>- 2014年 轉行健身教練，重獲健康的身軀
-<span class="ln">4</span>- 2016年 重新回歸寫程式，接政府ERP
-<span class="ln">5</span>- 2017年 負責保全系統架構設計與開發
-<span class="ln">6</span>- 2019年 台南&gt;&gt;年薪75萬
-<span class="ln">7</span>- 2021年 台北&gt;&gt;年薪百萬
-</code></pre></div><ul>
-<li>2014年 程式寫到爆肝，轉行健身教練，重獲健康的身軀</li>
-</ul>
-<p><img class="img-fluid" src="/images/profile/IMG_20170824_883762.jpg" alt="profile"  loading="lazy" />
-</p>
-<h2 id="感謝身邊所有朋友的教學相長">感謝身邊所有朋友的教學相長</h2>
-<p><img class="img-fluid" src="/images/profile/IMG_20210405_183056.jpg" alt="profile"  loading="lazy" />
+<h3 id="儲存圖片">儲存圖片</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln">1</span><span class="kd">func</span> <span class="nf">saveImageToPhotos</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln">2</span>    <span class="c1">// save</span>
+<span class="ln">3</span>    <span class="n">UIImageWriteToSavedPhotosAlbum</span><span class="p">(</span><span class="n">mainImage</span><span class="p">,</span> <span class="kc">nil</span><span class="p">,</span> <span class="kc">nil</span><span class="p">,</span> <span class="kc">nil</span><span class="p">)</span>
+<span class="ln">4</span><span class="p">}</span>
+</code></pre></div><p>ps.也可以在儲存成功後，顯示提醒視窗</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln"> 1</span><span class="kd">func</span> <span class="nf">saveImageToPhotos</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln"> 2</span>    <span class="c1">// save</span>
+<span class="ln"> 3</span>    <span class="n">UIImageWriteToSavedPhotosAlbum</span><span class="p">(</span><span class="n">mainImage</span><span class="p">,</span> <span class="n">imageSaveSuccess</span><span class="p">(),</span> <span class="kc">nil</span><span class="p">,</span> <span class="kc">nil</span><span class="p">)</span>
+<span class="ln"> 4</span><span class="p">}</span>
+<span class="ln"> 5</span>
+<span class="ln"> 6</span><span class="kr">@objc</span> <span class="kd">func</span> <span class="nf">imageSaveSuccess</span><span class="p">(</span>
+<span class="ln"> 7</span>    <span class="kd">let</span> <span class="nv">alert</span> <span class="p">=</span> <span class="n">UIAlertController</span><span class="p">(</span><span class="n">title</span><span class="p">:</span> <span class="s">&#34;相片儲存&#34;</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="s">&#34;成功&#34;</span><span class="p">,</span> <span class="n">preferredStyle</span><span class="p">:</span> <span class="p">.</span><span class="n">alert</span><span class="p">)</span>
+<span class="ln"> 8</span>    <span class="n">alert</span><span class="p">.</span><span class="n">addAction</span><span class="p">(</span>    <span class="n">UIAlertAction</span><span class="p">(</span><span class="n">title</span><span class="p">:</span> <span class="s">&#34;確認&#34;</span><span class="p">,</span> <span class="n">style</span><span class="p">:</span> <span class="p">.</span><span class="k">default</span><span class="p">,</span> <span class="n">handler</span><span class="p">:</span> <span class="n">ni</span><span class="p">)</span>
+<span class="ln"> 9</span>    <span class="kc">self</span><span class="p">.</span><span class="n">present</span><span class="p">(</span><span class="n">alert</span><span class="p">,</span> <span class="n">animated</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="n">completion</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+<span class="ln">10</span><span class="p">}</span>
+</code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:center">設定權限</th>
+<th style="text-align:center">儲存照片</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img class="img-fluid" src="/images/posts/camera_1629422452.png" alt="camera"  loading="lazy" />
+</td>
+<td style="text-align:center"><img class="img-fluid" src="/images/posts/camera_1629422453.png" alt="camera"  loading="lazy" />
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="範例">範例</h2>
+<p><a href="https://github.com/cs90077/Swift-Demo/tree/Tony_dev/ImagePicker-Demo" target="_blank">Github</a>
 </p></div><div class="modal fade" id="rewardModal" tabindex="-1" aria-labelledby="rewardModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content surface">
@@ -221,17 +309,16 @@
   </div>
 </div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
   <div class="post-nav w-50"><div class="prev-post btn btn-sm">
-      <a href="/posts/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/">[Swift]使用ImagePicker開啟Camera相機功能
+      <a href="/posts/ios_make_app_icon/">[IOS]製作APP圖示
 </a>
     </div></div>
   <div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
-      <a href="/posts/swift_array_%E9%99%A4%E5%8E%BB%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/">[Swift]Array除去重複資料
+      <a href="/about/">關於我
 </a>
     </div></div>
 </div><section class="related-posts">
     <h3>相關文章</h3>
-    <ul class="related-posts"><li><a href="/posts/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/">[Swift]使用ImagePicker開啟Camera相機功能
-</a></li><li><a href="/posts/ios_make_app_icon/">[IOS]製作APP圖示
+    <ul class="related-posts"><li><a href="/posts/ios_make_app_icon/">[IOS]製作APP圖示
 </a></li></ul>
   </section></article><div class="post-comments surface row"><script src="https://utteranc.es/client.js"
   repo="razonyang/hugo-theme-bootstrap-comments"

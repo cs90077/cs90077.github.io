@@ -3,22 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>iOS - 專欄 - Tony Blogs</title><link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png" sizes="180x180">
+    <title>[iOS]製作APP圖示 - Tony Blogs</title><link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="manifest" href="/images/favicons/manifest.json">
 <link rel="icon" href="/images/favicons/favicon.ico">
-<meta name="keywords" content="Hugo, Tony, Blog, iOS, Developer, Engineer" />
-<meta name="description" content="最速工程師 從入門到放棄" /><meta itemprop="name" content="iOS">
-<meta itemprop="description" content="最速工程師 從入門到放棄"><meta property="og:title" content="iOS" />
-<meta property="og:description" content="最速工程師 從入門到放棄" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/series/ios/" />
+<meta name="keywords" content="" />
+<meta name="description" content="" /><meta itemprop="name" content="[iOS]製作APP圖示">
+<meta itemprop="description" content="APP icon在iOS的規格要求相當高，如果沒有依照它的格式去弄，是無法完美呈現在APP上的。如果將icon規格一一告訴UI，再請他出圖，我相信你很快會被討厭的&hellip;"><meta itemprop="datePublished" content="2018-09-14T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2018-09-14T00:00:00+00:00" />
+<meta itemprop="wordCount" content="28"><meta itemprop="image" content="/images/icon-swift.webp">
+<meta itemprop="keywords" content="icon,assets," /><meta property="og:title" content="[iOS]製作APP圖示" />
+<meta property="og:description" content="APP icon在iOS的規格要求相當高，如果沒有依照它的格式去弄，是無法完美呈現在APP上的。如果將icon規格一一告訴UI，再請他出圖，我相信你很快會被討厭的&hellip;" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/ios_make_app_icon/" /><meta property="og:image" content="/images/icon-swift.webp" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2018-09-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-09-14T00:00:00+00:00" />
+<meta property="og:see_also" content="/posts/swift_array_%E9%99%A4%E5%8E%BB%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/" /><meta property="og:see_also" content="/posts/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/" />
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="iOS"/>
-<meta name="twitter:description" content="最速工程師 從入門到放棄"/>
-<link rel="alternate" type="application/rss+xml" href="/series/ios/index.xml" title="Tony Blogs" /><meta data-name="palette" content="blue"><link rel=stylesheet href="/css/bundle.min.4a5890fb45361897072de8c93e075b7d2384a3635e3bfc9396427ee019bcc13c.css" integrity="sha256-SliQ&#43;0U2GJcHLejJPgdbfSOEo2NeO/yTlkJ&#43;4Bm8wTw=" crossorigin="anonymous"><script src="/js/bundle.min.ae7f5e13d9d90b4d224a86293a84f6a56b9182a89f6a318674ea4db1ffb3aecb.js" integrity="sha256-rn9eE9nZC00iSoYpOoT2pWuRgqifajGGdOpNsf&#43;zrss=" crossorigin="anonymous"></script>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/images/icon-swift.webp"/>
+
+<meta name="twitter:title" content="[iOS]製作APP圖示"/>
+<meta name="twitter:description" content="APP icon在iOS的規格要求相當高，如果沒有依照它的格式去弄，是無法完美呈現在APP上的。如果將icon規格一一告訴UI，再請他出圖，我相信你很快會被討厭的&hellip;"/>
+<meta data-name="palette" content="blue"><link rel=stylesheet href="/css/bundle.min.4a5890fb45361897072de8c93e075b7d2384a3635e3bfc9396427ee019bcc13c.css" integrity="sha256-SliQ&#43;0U2GJcHLejJPgdbfSOEo2NeO/yTlkJ&#43;4Bm8wTw=" crossorigin="anonymous"><script src="/js/bundle.min.ae7f5e13d9d90b4d224a86293a84f6a56b9182a89f6a318674ea4db1ffb3aecb.js" integrity="sha256-rn9eE9nZC00iSoYpOoT2pWuRgqifajGGdOpNsf&#43;zrss=" crossorigin="anonymous"></script>
 </head><body><header><nav class="navbar navbar-expand-xl fixed-top">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -143,50 +151,120 @@
       <div class="row content">
 <div class="col-lg-8">
   <div class="container"><nav class="row" aria-label="breadcrumb">
-  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="/">主頁</a></li><li class="breadcrumb-item"><a href="/series/">專欄</a></li><li class="breadcrumb-item active">IOS</li></ol>
-</nav><div class="posts mb-4"><article class="post row surface"><div class="post-thumbnail col-md-3 d-flex align-items-center justify-content-center">
-        <img class="img-fluid" src="/images/icon-swift.webp" loading="lazy"/>
-      </div><div class="post-body col-md-9">
-        <h2 class="post-title mb-4"><a href="/posts/swift_array_%E9%99%A4%E5%8E%BB%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/">[Swift]Array除去重複資料
-</a></h2><div class="post-meta mb-3"><span class="post-date me-2">
-    <i class="fas fa-fw fa-calendar-alt"></i>Aug 17, 2021
-  </span><span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>1 分鐘閱讀
-  </span><a href="/series/ios/" class="post-taxonomy">#iOS</a><a href="/series/swift/" class="post-taxonomy">#Swift</a><a href="/tags/array/" class="post-taxonomy">#Array</a></div>
-<div class="post-summary mb-3">
-          <p>當資料有重複，想整理出不重複的資料，以下提供兩種方式給大家參考！</p>
-        </div>
-      </div>
-    </article><article class="post row surface"><div class="post-thumbnail col-md-3 d-flex align-items-center justify-content-center">
-        <img class="img-fluid" src="/images/icon-swift.webp" loading="lazy"/>
-      </div><div class="post-body col-md-9">
-        <h2 class="post-title mb-4"><a href="/posts/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/">[Swift]使用ImagePicker開啟Camera相機功能
-</a></h2><div class="post-meta mb-3"><span class="post-date me-2">
-    <i class="fas fa-fw fa-calendar-alt"></i>Sep 6, 2020
-  </span><span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>1 分鐘閱讀
-  </span><a href="/series/ios/" class="post-taxonomy">#iOS</a><a href="/series/swift/" class="post-taxonomy">#Swift</a><a href="/tags/imagepicker/" class="post-taxonomy">#ImagePicker</a><a href="/tags/camera/" class="post-taxonomy">#Camera</a></div>
-<div class="post-summary mb-3">
-          <p>開啟相機 =&gt; 拍照 =&gt; 儲存照片 =&gt; 簡單搞定</p>
-        </div>
-      </div>
-    </article><article class="post row surface"><div class="post-thumbnail col-md-3 d-flex align-items-center justify-content-center">
-        <img class="img-fluid" src="/images/icon-swift.webp" loading="lazy"/>
-      </div><div class="post-body col-md-9">
-        <h2 class="post-title mb-4"><a href="/posts/ios_make_app_icon/">[IOS]製作APP圖示
-</a></h2><div class="post-meta mb-3"><span class="post-date me-2">
+  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="/">主頁</a></li><li class="breadcrumb-item"><a href="/posts/">文章</a></li><li class="breadcrumb-item active">[IOS]製作APP圖示</li></ol>
+</nav><article class="post row surface"><div class="post-panel-wrapper">
+  <div class="post-panel d-flex flex-column">
+    <a id="sidebarToggler" class="action d-none d-lg-block" role="button">
+  <i class="fas fa-fw fa-expand-alt fa-rotate-45"></i>
+</a>
+  
+    
+
+    <a class="action btn-reward" role="button" data-bs-toggle="modal" data-bs-target="#rewardModal" title="可以請我喝一杯拿鐵">
+  <i class="fas fa-fw fa-medal"></i>
+</a>
+    <a class="action" data-bs-container="body" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom"
+  data-bs-trigger="focus" tabindex="0"
+  data-bs-content="&lt;a target=&#34;_blank&#34; rel=&#34;license&#34; href=&#34;https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh_TW&#34;&gt;CC BY-NC-ND 4.0 &lt;i class=&#34;fab fa-fw fa-creative-commons&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-fw fa-creative-commons-by&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-fw fa-creative-commons-nc&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-fw fa-creative-commons-nd&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+">
+  <i class="fas fa-fw fa-copyright"></i>
+</a>
+    
+  </div>
+</div>
+<h1 class="post-title my-3">[IOS]製作APP圖示
+</h1><div class="post-meta mb-3"><span class="post-date me-2">
     <i class="fas fa-fw fa-calendar-alt"></i>Sep 14, 2018
   </span><span class="post-reading-time me-2">
     <i class="fas fa-fw fa-coffee"></i>1 分鐘閱讀
   </span><a href="/series/ios/" class="post-taxonomy">#iOS</a><a href="/tags/icon/" class="post-taxonomy">#icon</a><a href="/tags/assets/" class="post-taxonomy">#assets</a></div>
-<div class="post-summary mb-3">
-          <p>APP icon在iOS的規格要求相當高，如果沒有依照它的格式去弄，是無法完美呈現在APP上的。如果將icon規格一一告訴UI，再請他出圖，我相信你很快會被討厭的&hellip;</p>
-        </div>
+<div class="post-content mb-3"><p>APP icon在iOS的規格要求相當高，如果沒有依照它的格式去弄，是無法完美呈現在APP上的。如果將icon規格一一告訴UI，再請他出圖，我相信你很快會被討厭的&hellip;</p>
+<p>有了 <a href="https://makeappicon.com/" target="_blank">MakeAppicon</a>
+ 這個工具之後，往後不用再麻煩UI小姐，你自己也可以把圖片切好。</p>
+<h3 id="準備一張原圖">準備一張原圖</h3>
+<ul>
+<li>上面推薦使用 1536x1536 解析度的圖，以壓縮出小Icon</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">選擇圖片</th>
+<th style="text-align:center">開始運轉</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img class="img-fluid" src="/images/posts/app_1629422431.png" alt="camera"  loading="lazy" />
+</td>
+<td style="text-align:center"><img class="img-fluid" src="/images/posts/app_1629422432.png" alt="camera"  loading="lazy" />
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="選擇規格-iosandroid">選擇規格 iOS/Android</h3>
+<p>很貼心的是，他除了有IOS的規格之外，還可以選擇Android的，依照不同的系統，需要的圖片大小也不同</p>
+<ul>
+<li>iOS規格：1x、2x、3x</li>
+</ul>
+<p><img class="img-fluid" src="/images/posts/app_1629422433.png" alt="camera"  loading="lazy" />
+</p>
+<ul>
+<li>Android規格：mdpi(1x)、hdpi(1.5x)、xhdpi(2x)、xxhdpi(3x)、xxhdpi(4x)</li>
+</ul>
+<p><img class="img-fluid" src="/images/posts/app_1629422434.png" alt="camera"  loading="lazy" />
+</p>
+<h3 id="完成">完成</h3>
+<ul>
+<li>成功之後，你可以直接將圖片轉寄至你的mail上面</li>
+</ul>
+<p><img class="img-fluid" src="/images/posts/app_1629422435.png" alt="camera"  loading="lazy" />
+</p>
+<h3 id="使用效果">使用效果</h3>
+<ul>
+<li>以iOS APP 做為使用</li>
+<li>Project &gt; Assets.xcassets</li>
+</ul>
+<p><img class="img-fluid" src="/images/posts/app_1629422436.png" alt="camera"  loading="lazy" />
+</p>
+<h2 id="參考">參考</h2>
+<ul>
+<li><a href="http://makeappicon.com/" target="_blank"><strong>MakeAppicon</strong></a>
+</li>
+<li><a href="https://cg2010studio.com/2014/04/20/app-icon-size%e5%92%8claunch-image-size/" target="_blank">裝置大小</a>
+</li>
+</ul></div><div class="modal fade" id="rewardModal" tabindex="-1" aria-labelledby="rewardModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content surface">
+      <div class="modal-header">
+        <h5 class="modal-title" id="rewardModalLabel"><i class="fas fa-fw fa-medal"></i>可以請我喝一杯拿鐵</h5>
+        <a href="#" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-fw fa-times"></i></a>
       </div>
-    </article></div><div class="row table-responsive mb-3"></div>
-</div>
-
-
+      <div class="modal-body">
+        <ul class="nav nav-tabs mb-3" role="tablist"><li class="nav-item" role="presentation">
+            <a class="nav-link active" id="reward-jkopay-tab" data-bs-toggle="tab" href="#reward-jkopay" role="tab" aria-controls="reward-jkopay" aria-selected="true">
+              <i class="fab fa-fw fa-jkopay"></i>街口支付
+            </a>
+          </li></ul>
+        <div class="tab-content" id="rewardTabContent"><div class="tab-pane fade post-reward-content show active" id="reward-jkopay" role="tabpanel" aria-labelledby="reward-jkopay-tab">
+            <img class="img-fluid post-reward-img" src="/images/reward/jkopay.png" loading="lazy" />
+          </div></div>
+      </div>
+    </div>
+  </div>
+</div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
+  <div class="post-nav w-50"></div>
+  <div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
+      <a href="/posts/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/">[Swift]使用ImagePicker開啟Camera相機功能
+</a>
+    </div></div>
+</div></article><div class="post-comments surface row"><script src="https://utteranc.es/client.js"
+  repo="razonyang/hugo-theme-bootstrap-comments"
+  issue-term="pathname"
+  label="comment"
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script></div></div>
 </div><aside class="col-lg-4 sidebar d-flex">
   <div class="container"><section class="profile surface row text-center">
   <div class="col-12 d-flex align-items-center justify-content-center"><img class="profile-avatar rounded-circle" src="/images/profile.webp" alt="Tony Lin" loading="lazy"></div>
@@ -245,11 +323,7 @@
       <a class="nav-link social-link" target="_blank" href="https://www.youtube.com/channel/UCznBj7M_LmFjtU2O8PeTHTw" title="Youtube">
         <i class="fa-fw fa-2x fab fa-youtube"></i>
       </a>
-    </li><li class="nav-item">
-    <a class="nav-link social-link" target="_blank" href="/series/ios/index.xml" title="RSS">
-      <i class="fas fa-fw fa-2x fa-rss"></i>
-    </a>
-  </li></nav>
+    </li></nav>
 <div class="copyright mb-2">
   Copyright © 2016-2021 Razon Yang. All Rights Reserved.
 </div>
