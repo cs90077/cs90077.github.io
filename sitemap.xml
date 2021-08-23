@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/swift/swift_array_%E9%99%A4%E5%8E%BB%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/</loc>
+    <loc>/posts/ios_swift/swift_array_%E9%99%A4%E5%8E%BB%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/</loc>
     <lastmod>2021-08-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/array/</loc>
@@ -29,7 +29,7 @@
     <loc>/about/</loc>
     <lastmod>2021-07-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/swift/ios_cocoapods_management_install_m1/</loc>
+    <loc>/posts/ios_swift/ios_cocoapods_management_install_m1/</loc>
     <lastmod>2021-02-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/cocoapods/</loc>
@@ -47,7 +47,7 @@
     <loc>/projects/</loc>
     <lastmod>2020-12-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/swift/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/</loc>
+    <loc>/posts/ios_swift/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/</loc>
     <lastmod>2020-09-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/camera/</loc>
@@ -65,10 +65,10 @@
     <loc>/projects/2020/%E7%89%B9%E6%95%99app/</loc>
     <lastmod>2019-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/swift/ios_cocoapods_management/</loc>
+    <loc>/posts/ios_swift/ios_cocoapods_management/</loc>
     <lastmod>2018-09-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/swift/ios_make_app_icon/</loc>
+    <loc>/posts/ios_swift/ios_make_app_icon/</loc>
     <lastmod>2018-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/assets/</loc>
