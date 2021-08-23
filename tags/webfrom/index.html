@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebFrom - 標籤 - Tony Blogs</title><link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/images/favicons/manifest.json">
+<link rel="icon" href="/images/favicons/favicon.ico">
+<meta name="keywords" content="Hugo, Tony, Blog, iOS, Developer, Engineer" />
+<meta name="description" content="最速工程師 從入門到放棄" /><meta itemprop="name" content="WebFrom">
+<meta itemprop="description" content="最速工程師 從入門到放棄"><meta property="og:title" content="WebFrom" />
+<meta property="og:description" content="最速工程師 從入門到放棄" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/tags/webfrom/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="WebFrom"/>
+<meta name="twitter:description" content="最速工程師 從入門到放棄"/>
+<link rel="alternate" type="application/rss+xml" href="/tags/webfrom/index.xml" title="Tony Blogs" /><meta data-name="palette" content="blue"><link rel=stylesheet href="/css/bundle.min.4a5890fb45361897072de8c93e075b7d2384a3635e3bfc9396427ee019bcc13c.css" integrity="sha256-SliQ&#43;0U2GJcHLejJPgdbfSOEo2NeO/yTlkJ&#43;4Bm8wTw=" crossorigin="anonymous"><script src="/js/bundle.min.ae7f5e13d9d90b4d224a86293a84f6a56b9182a89f6a318674ea4db1ffb3aecb.js" integrity="sha256-rn9eE9nZC00iSoYpOoT2pWuRgqifajGGdOpNsf&#43;zrss=" crossorigin="anonymous"></script>
+</head><body><header><nav class="navbar navbar-expand-xl fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img class="logo" alt="Logo" src="/images/logo.webp" loading="lazy">Tony Blog</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-1 mb-2 mb-lg-0"><form class="search-bar d-flex ms-1" action="/search">
+  <div class="input-group input-group-sm">
+    <button class="btn btn-search disabled position-absolute left-0" type="submit"><i class="fas fa-fw fa-search"></i></button>
+    <input class="form-control rounded-pill" id="searchQuery" name="q" type="search" aria-label="Search">
+  </div>
+</form></ul><ul class="navbar-nav me-1 mb-2 mb-lg-0 me-1 ms-auto"><li class="nav-item">
+          <a class="nav-link" href="/projects/">
+            <i class="fas fa-fw fa-folder"></i>專案
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/posts/">
+            <i class="fas fa-fw fa-folder"></i>文章
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/series/">
+            <i class="fas fa-fw fa-columns"></i>專欄
+          </a>
+        </li><li class="nav-item dropdown">
+          <a class="nav-link" id="navbarDropdown-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-fw fa-chevron-circle-down"></i>其他
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown-dropdown"><li>
+              <a class="dropdown-item"
+                href="/tags">
+                <i class="fab fa-fw fa-tags"></i>標籤
+              </a>
+            </li><li>
+              <a class="dropdown-item"
+                href="/archives">
+                <i class="fab fa-fw fa-archives"></i>歸檔
+              </a>
+            </li></ul>
+        </li><li class="nav-item">
+  <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasSettings" role="button"
+    aria-controls="offcanvasSettings">
+    <i class="fas fa-fw fa-sliders-h"></i> 設置
+  </a>
+</li>
+
+<div class="offcanvas offcanvas-end surface h-100" tabindex="-1" id="offcanvasSettings"
+  aria-labelledby="offcanvasSettingsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" w id="offcanvasSettingsLabel"><i class="fas fa-fw fa-sliders-h"></i> 設置</h5>
+    <a role="button" data-bs-dismiss="offcanvas" aria-label="Close">
+      <span class="fas fa-2x fa-fw fa-times"></span>
+    </a>
+  </div>
+  <div class="offcanvas-body"><section class="setting">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-adjust"></i> 模式</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="modeSwitcher">
+      </div>
+    </div>
+  </form>
+</section>
+<section class="setting">
+  <form class="font-size-switcher-form row">
+    <div class="col-auto">
+      <label for="fontSize" class="form-label"><i class="fas fa-fw fa-font"></i> 字體大小</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <input type="range" class="form-range" min="-2" max="2" id="fontSize">
+    </div>
+  </form>
+</section>
+
+<section class="setting palettes">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-palette"></i> 配色</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <span id="btnPalette" class="btn btn-sm"><i class="fas fa-eye-dropper"></i></span>
+    </div>
+  </form>
+  <div class="container mt-2 visually-hidden" id="palettePicker">
+    <div class="btn-group"><button type="button" id="palette-blue" title="藍色" 
+          class="btn btn-sm palette bg-blue d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-blue-gray" title="藍灰色" 
+          class="btn btn-sm palette bg-blue-gray d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-brown" title="棕色" 
+          class="btn btn-sm palette bg-brown d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-cyan" title="青色" 
+          class="btn btn-sm palette bg-cyan d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-green" title="綠色" 
+          class="btn btn-sm palette bg-green d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-indigo" title="靛青色" 
+          class="btn btn-sm palette bg-indigo d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-orange" title="橙色" 
+          class="btn btn-sm palette bg-orange d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-pink" title="粉色" 
+          class="btn btn-sm palette bg-pink d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-purple" title="紫色" 
+          class="btn btn-sm palette bg-purple d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-red" title="紅色" 
+          class="btn btn-sm palette bg-red d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-teal" title="藍綠色" 
+          class="btn btn-sm palette bg-teal d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-yellow" title="黃色" 
+          class="btn btn-sm palette bg-yellow d-flex align-items-center justify-content-center">
+        </button></button>
+    </div>
+  </div>
+</section></div>
+</div></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main role="main" class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row" aria-label="breadcrumb">
+  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="/">主頁</a></li><li class="breadcrumb-item"><a href="/tags/">標籤</a></li><li class="breadcrumb-item active">WebFrom</li></ol>
+</nav><div class="posts mb-4"><article class="post row surface"><div class="post-thumbnail col-md-3 d-flex align-items-center justify-content-center">
+        <img class="img-fluid" src="/images/icon/app_icon_ncku_fundray_2016.png" loading="lazy"/>
+      </div><div class="post-body col-md-9">
+        <h2 class="post-title mb-4"><a href="/projects/2016/nkcu_fundray/">NCKU Fund-Ray
+</a></h2><div class="post-meta mb-3"><span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>Jun 30, 2016
+  </span><span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>0 分鐘閱讀
+  </span><a href="/tags/webfrom/" class="post-taxonomy">#WebFrom</a><a href="/tags/c#/" class="post-taxonomy">#C#</a></div>
+<div class="post-summary mb-3">
+          
+        </div>
+      </div>
+    </article></div><div class="row table-responsive mb-3"></div>
+</div>
+
+
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container"><section class="profile surface row text-center">
+  <div class="col-12 d-flex align-items-center justify-content-center"><img class="profile-avatar rounded-circle" src="/images/profile.webp" alt="Tony Lin" loading="lazy"></div>
+  <div class="col-12 profile-meta"><div class="profile-name">Tony Lin</div><div class="profile-bio">你必須要很努力，才能看起來毫不費力</div><div class="profile-location"><i class="fas fa-fw fa-map-marker-alt"></i>Taipei City, Taiwan</div><div class="profile-about"><i class="fas fa-fw fa-info-circle"></i><a href="/about/">關於我</a></div></div>
+</section>
+  <section class="recent-posts row surface">
+  <h4>最近文章</h4>
+  <ul><li><a href="/projects/2020/irent_app/">IRent APP
+</a></li><li><a href="/projects/2020/beangocube_app/">BeanGo Cube APP
+</a></li><li><a href="/projects/2019/nuck_esociety/">NCKU E-Society APP
+</a></li><li><a href="/projects/2020/%E7%89%B9%E6%95%99app/">美國特殊教育 APP
+</a></li><li><a href="/projects/2016/nkcu_fundray/">NCKU Fund-Ray
+</a></li></ul>
+</section><section class="taxonomy-series row surface">
+      <h4>
+        <a href="/series">專欄</a>
+      </h4>
+      <div><a href="/series/ios/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="iOS">
+          iOS <span class="badge rounded-pill">10</span>
+        </a><a href="/series/swift/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Swift">
+          Swift <span class="badge rounded-pill">2</span>
+        </a><a href="/series/android/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Android">
+          Android <span class="badge rounded-pill">1</span>
+        </a></div>
+    </section><section class="taxonomy-tags row surface">
+      <h4>
+        <a href="/tags">標籤</a>
+      </h4>
+      <div><a href="/tags/app/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="APP">
+          APP <span class="badge rounded-pill">6</span>
+        </a><a href="/tags/cocoapods/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="CocoaPods">
+          CocoaPods <span class="badge rounded-pill">2</span>
+        </a><a href="/tags/github/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="GitHub">
+          GitHub <span class="badge rounded-pill">2</span>
+        </a><a href="/tags/array/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Array">
+          Array <span class="badge rounded-pill">1</span>
+        </a><a href="/tags/assets/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Assets">
+          Assets <span class="badge rounded-pill">1</span>
+        </a><a href="/tags/c#/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="C#">
+          C# <span class="badge rounded-pill">1</span>
+        </a><a href="/tags/camera/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Camera">
+          Camera <span class="badge rounded-pill">1</span>
+        </a><a href="/tags/imagepicker/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="ImagePicker">
+          ImagePicker <span class="badge rounded-pill">1</span>
+        </a><a href="/tags/java/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Java">
+          Java <span class="badge rounded-pill">1</span>
+        </a><a href="/tags/swift/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Swift">
+          Swift <span class="badge rounded-pill">1</span>
+        </a></div>
+    </section></div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><nav class="social-links nav my-2 justify-content-center"><li class="nav-item">
+    <a class="nav-link social-link" href="mailto:cs90077@gmail.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a>
+  </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://github.com/cs90077" title="GitHub">
+        <i class="fa-fw fa-2x fab fa-github"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://www.instagram.com/cs90077" title="Instagram">
+        <i class="fa-fw fa-2x fab fa-instagram"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://linkedin.com/in/cs90077" title="LinkedIn">
+        <i class="fa-fw fa-2x fab fa-linkedin-in"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://www.youtube.com/channel/UCznBj7M_LmFjtU2O8PeTHTw" title="Youtube">
+        <i class="fa-fw fa-2x fab fa-youtube"></i>
+      </a>
+    </li><li class="nav-item">
+    <a class="nav-link social-link" target="_blank" href="/tags/webfrom/index.xml" title="RSS">
+      <i class="fas fa-fw fa-2x fa-rss"></i>
+    </a>
+  </li></nav>
+<div class="copyright mb-2">
+  Copyright © 2016-2021 Razon Yang. All Rights Reserved.
+</div>
+</footer>
+<a id="btnScrollToTop" class="btn-scroll-to-top">
+  <i class="fas fa-fw fa-chevron-circle-up fa-2x"></i>
+</a>
+</body>
+</html>

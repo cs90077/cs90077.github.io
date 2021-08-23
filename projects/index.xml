@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>專案 on Tony Blogs</title>
+    <link>/projects/</link>
+    <description>Recent content in 專案 on Tony Blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
+    <lastBuildDate>Thu, 17 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iRent APP</title>
+      <link>/projects/2020/irent_app/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/2020/irent_app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BeanGo Cube APP</title>
+      <link>/projects/2020/beangocube_app/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/2020/beangocube_app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NCKU E-Society APP</title>
+      <link>/projects/2019/nuck_esociety/</link>
+      <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/2019/nuck_esociety/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>美國特殊教育 APP</title>
+      <link>/projects/2020/%E7%89%B9%E6%95%99app/</link>
+      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/2020/%E7%89%B9%E6%95%99app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NCKU Fund-ray</title>
+      <link>/projects/2016/nkcu_fundray/</link>
+      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/2016/nkcu_fundray/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>長榮警備保全 APP</title>
+      <link>/projects/2016/evergreen_app/</link>
+      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/2016/evergreen_app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>高雄任我行 APP</title>
+      <link>/projects/2013/tbkc_app/</link>
+      <pubDate>Sun, 15 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/2013/tbkc_app/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

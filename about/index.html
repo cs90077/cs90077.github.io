@@ -38,16 +38,12 @@
     <input class="form-control rounded-pill" id="searchQuery" name="q" type="search" aria-label="Search">
   </div>
 </form></ul><ul class="navbar-nav me-1 mb-2 mb-lg-0 me-1 ms-auto"><li class="nav-item">
-          <a class="nav-link" href="/archives/">
-            <i class="fas fa-fw fa-file-archive"></i>歸檔
+          <a class="nav-link" href="/projects/">
+            <i class="fas fa-fw fa-folder"></i>專案
           </a>
         </li><li class="nav-item">
-          <a class="nav-link" href="/categories/">
-            <i class="fas fa-fw fa-folder"></i>分類
-          </a>
-        </li><li class="nav-item">
-          <a class="nav-link" href="/tags/">
-            <i class="fas fa-fw fa-tags"></i>標籤
+          <a class="nav-link" href="/posts/">
+            <i class="fas fa-fw fa-folder"></i>文章
           </a>
         </li><li class="nav-item">
           <a class="nav-link" href="/series/">
@@ -55,12 +51,17 @@
           </a>
         </li><li class="nav-item dropdown">
           <a class="nav-link" id="navbarDropdown-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fas fa-fw fa-chevron-circle-down"></i>下拉選單
+            <i class="fas fa-fw fa-chevron-circle-down"></i>其他
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown-dropdown"><li>
               <a class="dropdown-item"
-                href="https://github.com/cs90077" target="_blank">
-                <i class="fab fa-fw fa-github"></i>Github
+                href="/tags">
+                <i class="fab fa-fw fa-tags"></i>標籤
+              </a>
+            </li><li>
+              <a class="dropdown-item"
+                href="/archives">
+                <i class="fab fa-fw fa-archives"></i>歸檔
               </a>
             </li></ul>
         </li><li class="nav-item">
@@ -157,7 +158,7 @@
   
     
 
-    <a class="action btn-reward" role="button" data-bs-toggle="modal" data-bs-target="#rewardModal" title="可以請我喝一杯拿鐵">
+    <a class="action btn-reward" role="button" data-bs-toggle="modal" data-bs-target="#rewardModal" title="可以請我喝拿鐵">
   <i class="fas fa-fw fa-medal"></i>
 </a>
     <a class="action" data-bs-container="body" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom"
@@ -166,8 +167,7 @@
 ">
   <i class="fas fa-fw fa-copyright"></i>
 </a>
-    <a id="btnTOC" class="fas fa-fw fa-list-alt" data-bs-toggle="offcanvas" href="#offcanvasTOC" aria-controls="offcanvasTOC" role="button">
-</a>
+    
   </div>
 </div>
 <h1 class="post-title my-3">關於我
@@ -176,22 +176,8 @@
   </span><span class="post-reading-time me-2">
     <i class="fas fa-fw fa-coffee"></i>1 分鐘閱讀
   </span></div>
-<div class="offcanvas offcanvas-end surface" tabindex="-1" id="offcanvasTOC" aria-labelledby="offcanvasTOCLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasTOCLabel">目錄</h5>
-    <a role="button" data-bs-dismiss="offcanvas" aria-label="Close">
-      <span class="fas fa-2x fa-fw fa-times"></span>
-    </a>
-  </div>
-  <div class="offcanvas-body">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#感謝身邊所有朋友-一路上互相扶持-教學相長">感謝身邊所有朋友 一路上互相扶持 教學相長</a></li>
-  </ul>
-</nav>
-  </div>
-</div><div class="post-content mb-3"><p>高中以前，不懂讀書學習的意義，每天開開心心的追趕跑跳碰，成績常駐倒數第三名。</p>
-<p>高中開始，剛好坐在學霸身邊，於是成績突飛猛進，開起外掛模式，練就文武雙全。</p>
+<div class="post-content mb-3"><p>小時後不懂讀書學習的意義，每天開開心心的追趕跑跳碰，成績常駐倒數第三名。</p>
+<p>高中開始，剛好坐在學霸身邊，於是開起外掛模式，成績突飛猛進，練就文武雙全。</p>
 <p>統一入學測驗 水產類 <strong>全校第二名</strong>、高職技藝競賽 漁業職種 <strong>全國第五名</strong></p>
 <p>大學時期為了進一步提升自己的能力，有幸與學長合作共同創辦社團，且擔任本社<strong>社長</strong>，並在創社三年拿到「<strong>社團評鑑 優等</strong>」殊榮。</p>
 <p><img class="img-fluid" src="/images/profile/IMG_20210818_539323.jpg" alt="profile"  loading="lazy" />
@@ -213,22 +199,35 @@
 </ul>
 <p><img class="img-fluid" src="/images/profile/IMG_20170824_883762.jpg" alt="profile"  loading="lazy" />
 </p>
-<h2 id="感謝身邊所有朋友-一路上互相扶持-教學相長">感謝身邊所有朋友 一路上互相扶持 教學相長</h2>
+<p><strong>感謝身邊所有朋友</strong></p>
+<p><strong>一路上互相扶持 教學相長</strong></p>
 <p><img class="img-fluid" src="/images/profile/IMG_20210405_183056.jpg" alt="profile"  loading="lazy" />
 </p></div><div class="modal fade" id="rewardModal" tabindex="-1" aria-labelledby="rewardModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content surface">
       <div class="modal-header">
-        <h5 class="modal-title" id="rewardModalLabel"><i class="fas fa-fw fa-medal"></i>可以請我喝一杯拿鐵</h5>
+        <h5 class="modal-title" id="rewardModalLabel"><i class="fas fa-fw fa-medal"></i>可以請我喝拿鐵</h5>
         <a href="#" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-fw fa-times"></i></a>
       </div>
       <div class="modal-body">
         <ul class="nav nav-tabs mb-3" role="tablist"><li class="nav-item" role="presentation">
-            <a class="nav-link active" id="reward-jkopay-tab" data-bs-toggle="tab" href="#reward-jkopay" role="tab" aria-controls="reward-jkopay" aria-selected="true">
+            <a class="nav-link active" id="reward-crypto_usdt_bep20-tab" data-bs-toggle="tab" href="#reward-crypto_usdt_bep20" role="tab" aria-controls="reward-crypto_usdt_bep20" aria-selected="true">
+              <i class="fab fa-fw fa-crypto_usdt_bep20"></i>USDT(BEP20)
+            </a>
+          </li><li class="nav-item" role="presentation">
+            <a class="nav-link" id="reward-crypto_usdt_trc20-tab" data-bs-toggle="tab" href="#reward-crypto_usdt_trc20" role="tab" aria-controls="reward-crypto_usdt_trc20" aria-selected="true">
+              <i class="fab fa-fw fa-crypto_usdt_trc20"></i>USDT(TRC20)
+            </a>
+          </li><li class="nav-item" role="presentation">
+            <a class="nav-link" id="reward-jkopay-tab" data-bs-toggle="tab" href="#reward-jkopay" role="tab" aria-controls="reward-jkopay" aria-selected="true">
               <i class="fab fa-fw fa-jkopay"></i>街口支付
             </a>
           </li></ul>
-        <div class="tab-content" id="rewardTabContent"><div class="tab-pane fade post-reward-content show active" id="reward-jkopay" role="tabpanel" aria-labelledby="reward-jkopay-tab">
+        <div class="tab-content" id="rewardTabContent"><div class="tab-pane fade post-reward-content show active" id="reward-crypto_usdt_bep20" role="tabpanel" aria-labelledby="reward-crypto_usdt_bep20-tab">
+            <img class="img-fluid post-reward-img" src="/images/reward/crypto-usdt-bep20.png" loading="lazy" />
+          </div><div class="tab-pane fade post-reward-content show" id="reward-crypto_usdt_trc20" role="tabpanel" aria-labelledby="reward-crypto_usdt_trc20-tab">
+            <img class="img-fluid post-reward-img" src="/images/reward/crypto-usdt-trc20.png" loading="lazy" />
+          </div><div class="tab-pane fade post-reward-content show" id="reward-jkopay" role="tabpanel" aria-labelledby="reward-jkopay-tab">
             <img class="img-fluid post-reward-img" src="/images/reward/jkopay.png" loading="lazy" />
           </div></div>
       </div>
@@ -236,19 +235,20 @@
   </div>
 </div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
   <div class="post-nav w-50"><div class="prev-post btn btn-sm">
-      <a href="/posts/ios_cocoapods_management_install_m1/">[IOS]安裝CocoaPods套件 支持M1系統
+      <a href="/posts/swift/ios_cocoapods_management_install_m1/">[IOS]安裝CocoaPods套件 支持M1系統
 </a>
     </div></div>
   <div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
-      <a href="/posts/swift_array_%E9%99%A4%E5%8E%BB%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/">[Swift]Array除去重複資料
+      <a href="/posts/swift/swift_array_%E9%99%A4%E5%8E%BB%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/">[Swift]Array除去重複資料
 </a>
     </div></div>
 </div><section class="related-posts">
     <h3>相關文章</h3>
-    <ul class="related-posts"><li><a href="/posts/ios_cocoapods_management_install_m1/">[IOS]安裝CocoaPods套件 支持M1系統
-</a></li><li><a href="/posts/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/">[Swift]使用ImagePicker開啟Camera相機功能
-</a></li><li><a href="/posts/ios_cocoapods_management/">[IOS]使用CocoaPods套件管理
-</a></li><li><a href="/posts/ios_make_app_icon/">[IOS]製作APP圖示
+    <ul class="related-posts"><li><a href="/posts/swift/ios_cocoapods_management_install_m1/">[IOS]安裝CocoaPods套件 支持M1系統
+</a></li><li><a href="/projects/2020/irent_app/">IRent APP
+</a></li><li><a href="/posts/swift/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/">[Swift]使用ImagePicker開啟Camera相機功能
+</a></li><li><a href="/projects/2020/beangocube_app/">BeanGo Cube APP
+</a></li><li><a href="/projects/2019/nuck_esociety/">NCKU E-Society APP
 </a></li></ul>
   </section></article><div class="post-comments surface row"><script src="https://utteranc.es/client.js"
   repo="razonyang/hugo-theme-bootstrap-comments"
@@ -265,39 +265,47 @@
 </section>
   <section class="recent-posts row surface">
   <h4>最近文章</h4>
-  <ul><li><a href="/posts/swift_array_%E9%99%A4%E5%8E%BB%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/">[Swift]Array除去重複資料
-</a></li><li><a href="/posts/ios_cocoapods_management_install_m1/">[IOS]安裝CocoaPods套件 支持M1系統
-</a></li><li><a href="/posts/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/">[Swift]使用ImagePicker開啟Camera相機功能
-</a></li><li><a href="/posts/ios_cocoapods_management/">[IOS]使用CocoaPods套件管理
-</a></li><li><a href="/posts/ios_make_app_icon/">[IOS]製作APP圖示
+  <ul><li><a href="/projects/2020/irent_app/">IRent APP
+</a></li><li><a href="/projects/2020/beangocube_app/">BeanGo Cube APP
+</a></li><li><a href="/projects/2019/nuck_esociety/">NCKU E-Society APP
+</a></li><li><a href="/projects/2020/%E7%89%B9%E6%95%99app/">美國特殊教育 APP
+</a></li><li><a href="/projects/2016/nkcu_fundray/">NCKU Fund-Ray
 </a></li></ul>
 </section><section class="taxonomy-series row surface">
       <h4>
         <a href="/series">專欄</a>
       </h4>
       <div><a href="/series/ios/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="iOS">
-          iOS <span class="badge rounded-pill">5</span>
+          iOS <span class="badge rounded-pill">10</span>
         </a><a href="/series/swift/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Swift">
           Swift <span class="badge rounded-pill">2</span>
+        </a><a href="/series/android/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Android">
+          Android <span class="badge rounded-pill">1</span>
         </a></div>
     </section><section class="taxonomy-tags row surface">
       <h4>
         <a href="/tags">標籤</a>
       </h4>
-      <div><a href="/tags/cocoapods/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="CocoaPods">
+      <div><a href="/tags/app/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="APP">
+          APP <span class="badge rounded-pill">6</span>
+        </a><a href="/tags/cocoapods/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="CocoaPods">
           CocoaPods <span class="badge rounded-pill">2</span>
         </a><a href="/tags/github/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="GitHub">
           GitHub <span class="badge rounded-pill">2</span>
         </a><a href="/tags/array/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Array">
           Array <span class="badge rounded-pill">1</span>
-        </a><a href="/tags/assets/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="assets">
-          assets <span class="badge rounded-pill">1</span>
+        </a><a href="/tags/assets/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Assets">
+          Assets <span class="badge rounded-pill">1</span>
+        </a><a href="/tags/c#/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="C#">
+          C# <span class="badge rounded-pill">1</span>
         </a><a href="/tags/camera/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Camera">
           Camera <span class="badge rounded-pill">1</span>
-        </a><a href="/tags/icon/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="icon">
-          icon <span class="badge rounded-pill">1</span>
         </a><a href="/tags/imagepicker/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="ImagePicker">
           ImagePicker <span class="badge rounded-pill">1</span>
+        </a><a href="/tags/java/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Java">
+          Java <span class="badge rounded-pill">1</span>
+        </a><a href="/tags/swift/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Swift">
+          Swift <span class="badge rounded-pill">1</span>
         </a></div>
     </section></div>
 </aside>

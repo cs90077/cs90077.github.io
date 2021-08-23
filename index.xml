@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 17 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Swift]Array除去重複資料</title>
-      <link>/posts/swift_array_%E9%99%A4%E5%8E%BB%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/</link>
+      <link>/posts/swift/swift_array_%E9%99%A4%E5%8E%BB%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/swift_array_%E9%99%A4%E5%8E%BB%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/</guid>
+      <guid>/posts/swift/swift_array_%E9%99%A4%E5%8E%BB%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/</guid>
       <description>&lt;p&gt;當資料有重複，想整理出不重複的資料，以下提供兩種方式給大家參考！&lt;/p&gt;</description>
     </item>
     
@@ -22,43 +22,106 @@
       <pubDate>Sat, 31 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>&lt;p&gt;高中以前，不懂讀書學習的意義，每天開開心心的追趕跑跳碰，成績常駐倒數第三名。&lt;/p&gt;</description>
+      <description>&lt;p&gt;小時後不懂讀書學習的意義，每天開開心心的追趕跑跳碰，成績常駐倒數第三名。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>[iOS]安裝CocoaPods套件 支持M1系統</title>
-      <link>/posts/ios_cocoapods_management_install_m1/</link>
+      <link>/posts/swift/ios_cocoapods_management_install_m1/</link>
       <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios_cocoapods_management_install_m1/</guid>
+      <guid>/posts/swift/ios_cocoapods_management_install_m1/</guid>
       <description>&lt;p&gt;M1的系統架構不同，需要指定x86方式安裝&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>iRent APP</title>
+      <link>/projects/2020/irent_app/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/2020/irent_app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>[Swift]使用ImagePicker開啟Camera相機功能</title>
-      <link>/posts/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/</link>
+      <link>/posts/swift/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/</link>
       <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/</guid>
+      <guid>/posts/swift/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/</guid>
       <description>&lt;p&gt;開啟相機 =&amp;gt; 拍照 =&amp;gt; 儲存照片 =&amp;gt; 簡單搞定&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>BeanGo Cube APP</title>
+      <link>/projects/2020/beangocube_app/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/2020/beangocube_app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NCKU E-Society APP</title>
+      <link>/projects/2019/nuck_esociety/</link>
+      <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/2019/nuck_esociety/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>美國特殊教育 APP</title>
+      <link>/projects/2020/%E7%89%B9%E6%95%99app/</link>
+      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/2020/%E7%89%B9%E6%95%99app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>[iOS]使用CocoaPods套件管理</title>
-      <link>/posts/ios_cocoapods_management/</link>
+      <link>/posts/swift/ios_cocoapods_management/</link>
       <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios_cocoapods_management/</guid>
+      <guid>/posts/swift/ios_cocoapods_management/</guid>
       <description>&lt;p&gt;在做開發的時候，不可能所有功能都自己寫，多少會去參考別人使用的程式function，或者引用Library套件。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>[iOS]製作APP圖示</title>
-      <link>/posts/ios_make_app_icon/</link>
+      <link>/posts/swift/ios_make_app_icon/</link>
       <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios_make_app_icon/</guid>
+      <guid>/posts/swift/ios_make_app_icon/</guid>
       <description>&lt;p&gt;APP icon在iOS的規格要求相當高，如果沒有依照它的格式去弄，是無法完美呈現在APP上的。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NCKU Fund-ray</title>
+      <link>/projects/2016/nkcu_fundray/</link>
+      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/2016/nkcu_fundray/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>長榮警備保全 APP</title>
+      <link>/projects/2016/evergreen_app/</link>
+      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/2016/evergreen_app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>高雄任我行 APP</title>
+      <link>/projects/2013/tbkc_app/</link>
+      <pubDate>Sun, 15 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/2013/tbkc_app/</guid>
+      <description></description>
     </item>
     
   </channel>

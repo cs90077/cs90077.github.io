@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WebFrom on Tony Blogs</title>
+    <link>/tags/webfrom/</link>
+    <description>Recent content in WebFrom on Tony Blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
+    <lastBuildDate>Thu, 30 Jun 2016 00:00:00 +0000</lastBuildDate><atom:link href="/tags/webfrom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NCKU Fund-ray</title>
+      <link>/projects/2016/nkcu_fundray/</link>
+      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/2016/nkcu_fundray/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
