@@ -6,61 +6,7 @@
     <description>Recent content in APP on Tony Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
-    <lastBuildDate>Thu, 17 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/app/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>iRent自助租車 APP</title>
-      <link>/projects/%E5%92%8C%E9%9B%B2%E8%A1%8C%E5%8B%95%E6%9C%8D%E5%8B%99/irent_app/</link>
-      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/%E5%92%8C%E9%9B%B2%E8%A1%8C%E5%8B%95%E6%9C%8D%E5%8B%99/irent_app/</guid>
-      <description>&lt;p&gt;iRent共享汽機車首創全台「24小時自助租車服務」，透過app輕鬆完成預約、取車、付款、還車，隨租隨還&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>BeanGo Cube APP</title>
-      <link>/projects/%E5%BF%97%E5%8B%87%E7%84%A1%E9%99%90%E5%89%B5%E6%84%8F/beangocube_app/</link>
-      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/%E5%BF%97%E5%8B%87%E7%84%A1%E9%99%90%E5%89%B5%E6%84%8F/beangocube_app/</guid>
-      <description> 優化舊版設計結構。 MVVM設計模式。 使用WI-FI連線，設計心跳模式，監聽智能烘豆機資料。 使用Charts套件，製作靜態、動態的多數據折線圖。 Documents資料處理，檔案備份、檔案分享、檔案匯入等。 Realm資料庫。 解決iOS13 WI-FI連線時的錯誤問題。  [AppStore] </description>
-    </item>
-    
-    <item>
-      <title>NCKU E-Society APP</title>
-      <link>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_ncuk_esociety/</link>
-      <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_ncuk_esociety/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>美國特殊教育 APP</title>
-      <link>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_special_edu/</link>
-      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_special_edu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>iShowDrive APP</title>
-      <link>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_ishowdrive/</link>
-      <pubDate>Fri, 30 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_ishowdrive/</guid>
-      <description>[AppStore] </description>
-    </item>
-    
-    <item>
-      <title>Raise 遊戲主題餐廳 APP</title>
-      <link>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_raise_game/</link>
-      <pubDate>Fri, 30 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_raise_game/</guid>
-      <description>[AppStore] </description>
-    </item>
-    
+    <lastBuildDate>Thu, 30 Jun 2016 00:00:00 +0000</lastBuildDate><atom:link href="/tags/app/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>長榮警備保全系統</title>
       <link>/projects/%E9%87%91%E6%99%BA%E6%B4%8B%E7%A7%91%E6%8A%80/app_evergreen/</link>

@@ -6,72 +6,7 @@
     <description>Recent content in 專案 on Tony Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
-    <lastBuildDate>Thu, 17 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>iRent自助租車 APP</title>
-      <link>/projects/%E5%92%8C%E9%9B%B2%E8%A1%8C%E5%8B%95%E6%9C%8D%E5%8B%99/irent_app/</link>
-      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/%E5%92%8C%E9%9B%B2%E8%A1%8C%E5%8B%95%E6%9C%8D%E5%8B%99/irent_app/</guid>
-      <description>&lt;p&gt;iRent共享汽機車首創全台「24小時自助租車服務」，透過app輕鬆完成預約、取車、付款、還車，隨租隨還&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>BeanGo Cube APP</title>
-      <link>/projects/%E5%BF%97%E5%8B%87%E7%84%A1%E9%99%90%E5%89%B5%E6%84%8F/beangocube_app/</link>
-      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/%E5%BF%97%E5%8B%87%E7%84%A1%E9%99%90%E5%89%B5%E6%84%8F/beangocube_app/</guid>
-      <description> 優化舊版設計結構。 MVVM設計模式。 使用WI-FI連線，設計心跳模式，監聽智能烘豆機資料。 使用Charts套件，製作靜態、動態的多數據折線圖。 Documents資料處理，檔案備份、檔案分享、檔案匯入等。 Realm資料庫。 解決iOS13 WI-FI連線時的錯誤問題。  [AppStore] </description>
-    </item>
-    
-    <item>
-      <title>NCKU E-Society APP</title>
-      <link>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_ncuk_esociety/</link>
-      <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_ncuk_esociety/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>美國特殊教育 APP</title>
-      <link>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_special_edu/</link>
-      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_special_edu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>iShowDrive APP</title>
-      <link>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_ishowdrive/</link>
-      <pubDate>Fri, 30 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_ishowdrive/</guid>
-      <description>[AppStore] </description>
-    </item>
-    
-    <item>
-      <title>Raise 遊戲主題餐廳 APP</title>
-      <link>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_raise_game/</link>
-      <pubDate>Fri, 30 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_raise_game/</guid>
-      <description>[AppStore] </description>
-    </item>
-    
-    <item>
-      <title>NCKU 基金投資理財平台 FundRay</title>
-      <link>/projects/%E7%9D%BF%E5%85%83%E7%A7%91%E6%8A%80/nkcu_fundray/</link>
-      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/%E7%9D%BF%E5%85%83%E7%A7%91%E6%8A%80/nkcu_fundray/</guid>
-      <description>公司屬於軟體開發承包商，開發雲端ERP系統，主打系統化開發，3個月快速上線。 負責專案: • 成功大學 NCKU 財務金融研究所 - 基金投資理財平台 FundRay [介紹] • 嘉南農田水利會 雲端公文管理系統 • 嘉南農田水利會 ERP管理系統 • 奇美油艙 ERP系統 • Touch美髮 ERP管理系統 / 網頁式的APP • 會計人資管理系統 • ERP 進銷存管理系統 特殊貢獻: • 跟客戶溝通需求，撰寫SA/SD系統開發文件。 • ERP系統:進銷存、關聯資料庫、參數代碼檔應用。 • 依照編號製作系統公版，以便未來做快速的開發。 • Trigger API資料:擷取中央氣象局API取得雨量數據資料，寫入水利會資料庫。 • 利用低耦合的系統設計模式，可快速移交專案上線。 • 基金投組演算:將基金運算公式寫成模組，並做資料的即時運算。 • 將.csv的大量歷史資料，轉換寫入至SQL資料庫。 • Telerik套件:網頁圖形化套件，包括曲線圖、折線圖、圓餅圖、雷達圖等使用。
-科技部南部科學工業園區管理局創業工坊，配合科技部「創新創業激勵計畫」(From IP To IPO，FITI)銜 接「創新」和「創業」間斷層及落實推動創新經濟與科技轉型之目標，南科管理局設立「創業工坊」(Start-up Workshop)，導入一站式創業資源媒合平台，提供創業團隊創業發展場域、配合廠商與業師、基本原型試作設備與資源、專屬保母與申請專案計畫補助等， 讓創業團隊可以在南科管理局協助之下，成功創業。 收回
-[南部科學園區 創業工坊] </description>
-    </item>
-    
+    <lastBuildDate>Thu, 30 Jun 2016 00:00:00 +0000</lastBuildDate><atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>長榮警備保全系統</title>
       <link>/projects/%E9%87%91%E6%99%BA%E6%B4%8B%E7%A7%91%E6%8A%80/app_evergreen/</link>

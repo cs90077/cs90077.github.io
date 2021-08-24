@@ -17,30 +17,12 @@
     </item>
     
     <item>
-      <title>iRent自助租車 APP</title>
-      <link>/projects/%E5%92%8C%E9%9B%B2%E8%A1%8C%E5%8B%95%E6%9C%8D%E5%8B%99/irent_app/</link>
-      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/%E5%92%8C%E9%9B%B2%E8%A1%8C%E5%8B%95%E6%9C%8D%E5%8B%99/irent_app/</guid>
-      <description>&lt;p&gt;iRent共享汽機車首創全台「24小時自助租車服務」，透過app輕鬆完成預約、取車、付款、還車，隨租隨還&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>[Swift]使用ImagePicker開啟Camera相機功能</title>
       <link>/posts/ios_swift/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/</link>
       <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>/posts/ios_swift/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/</guid>
       <description>&lt;p&gt;開啟相機 =&amp;gt; 拍照 =&amp;gt; 儲存照片 =&amp;gt; 簡單搞定&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>BeanGo Cube APP</title>
-      <link>/projects/%E5%BF%97%E5%8B%87%E7%84%A1%E9%99%90%E5%89%B5%E6%84%8F/beangocube_app/</link>
-      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/%E5%BF%97%E5%8B%87%E7%84%A1%E9%99%90%E5%89%B5%E6%84%8F/beangocube_app/</guid>
-      <description> 優化舊版設計結構。 MVVM設計模式。 使用WI-FI連線，設計心跳模式，監聽智能烘豆機資料。 使用Charts套件，製作靜態、動態的多數據折線圖。 Documents資料處理，檔案備份、檔案分享、檔案匯入等。 Realm資料庫。 解決iOS13 WI-FI連線時的錯誤問題。  [AppStore] </description>
     </item>
     
     <item>

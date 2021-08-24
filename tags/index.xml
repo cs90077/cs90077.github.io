@@ -44,15 +44,6 @@
     </item>
     
     <item>
-      <title>APP</title>
-      <link>/tags/app/</link>
-      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/app/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Camera</title>
       <link>/tags/camera/</link>
       <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
@@ -71,15 +62,6 @@
     </item>
     
     <item>
-      <title>Objective-C</title>
-      <link>/tags/objective-c/</link>
-      <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/objective-c/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Assets</title>
       <link>/tags/assets/</link>
       <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
@@ -89,11 +71,11 @@
     </item>
     
     <item>
-      <title>C#</title>
-      <link>/tags/c#/</link>
+      <title>APP</title>
+      <link>/tags/app/</link>
       <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/c#/</guid>
+      <guid>/tags/app/</guid>
       <description></description>
     </item>
     
@@ -112,15 +94,6 @@
       <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
       
       <guid>/tags/webapi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>WebFrom</title>
-      <link>/tags/webfrom/</link>
-      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/webfrom/</guid>
       <description></description>
     </item>
     
