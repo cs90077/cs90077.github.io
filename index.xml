@@ -17,12 +17,33 @@
     </item>
     
     <item>
+      <title>demo</title>
+      <link>/demo/</link>
+      <pubDate>Sat, 31 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/demo/</guid>
+      <description>自傳 第一次接觸程式，是在國中時期玩網路遊戲接觸到了外掛腳本(Script)， 上論壇看教學後，自己修改參數、實機測試，將腳本運行修改更完整，在同學 們的讚許下，獲得很棒的成就感，對寫程式的項目埋下了種子。 大學時雖有不錯的成績，但為追求自己的夢想，毅然決然的參加了「資策 會-行動應用開發養成班」，跨領域投入陌生的環境，下定決心從零開始學習。 一路上學習遇到很多挫折，而這些都成為我努力的養分，因為我知道，努力不 一定會有成功，但不努力一定不會有結果，抱持著「不是得到，就是學到」的 精神，努力不懈學習，因為能堅持到最後的人，才能成為贏家。 進入職場從Android開始發展，一路上學習了ASP.NET、SQL Server、ERP管 理系統、Web API等。後續為了更提升自己，下班時間自學SwiI語法，挑戰APP 雙系統開發。 從事軟體工程師已經有五年的經驗，目前累積專案經驗有iOS APP 8個， Android APP 5個，ERP系統3個、ASP網頁2個。於2016年參與「保全系統專 案」，設計SQL資料庫、API Server架構、Android、iOS UX流程等規劃，並且負 責此專案的SQL Server、API Server、Android APP / iOS APP 軟體主架構開發。 3
+讀書計畫 從國中以來就嚮往讀資訊相關科系，但求學過程中卻總是插肩而過。大學畢業 後決定當一位軟體工程師，追求自己的夢想。目前擔任APP工程師已有五年時間，透 過邊做邊學、發現自己喜歡的項目，並全心投入學習，而成長至今。 負責專案在做IOT Server資料處理時，了解到「Big Data大數據」的重要性，數據 資料等同於我們人類的經驗，透過數據的解析，可以預期未來的可能性，是一種很可 觀的應用需求。目前5G即將開通，在無線傳輸效能大大提升的情況下，互聯網相關 產品上線，人工智慧應用將會全面升級，人工智慧與資訊安全，是資訊人才未來的主 要發展。 AI的領域之中，蒐集資料並做儲存，是重要的第一步，去年時有涉略一點 Python 網路爬蟲相關資訊，對於資料探勘課程相當感興趣，原計畫是在今年底申請 「人工智慧與資訊系統碩士在職專班」，而提早收到資訊，先行報名此次的「碩士學 分班」，作為在職進修計畫的先修課程。 預計在先修課程的半年時間，了解與統整自己對於論文的想法，尋找合適的題 材，銜接在職專班時，配合教授的指導、規劃，預計在三年的進修時間裡，除了完成 論文的撰寫外，透過在職進修的學習機會，提升對人工智慧產業的軟體開發能力，並 取得資訊背景的學歷。 4
+程式語言 • ObjecTve-C、SwiI • C#、VB • Java • SQL Server、MySQL、SQLite、Realm 應用程式 • iOS • Android • Web API、Web Form、Windows Form 開發工具 • Xcode • Android Studio • Visual Studio 專業技能 Xcode App Store Swift Objective-C 5 Visual Studio SQL Server</description>
+    </item>
+    
+    <item>
       <title>關於我</title>
       <link>/about/</link>
       <pubDate>Sat, 31 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>&lt;p&gt;小時後不懂讀書學習的意義，每天開開心心的體驗生活，成績常駐倒數第三名。&lt;/p&gt;</description>
+      <description>小時後不懂讀書學習竅門，每天開心體驗生活，成績常駐倒數第三名。
+上高中剛好坐在學霸身邊，於是開起外掛模式，成績突飛猛進，達成文武雙全。
+學科 - 統一入學測驗 水產類組 全校第二名 術科 - 高職技藝競賽 漁業職種 全國第五名  大學時，為了進一步提升自己的人際關係以及團隊合作能力，有幸與學長合作共同創辦社團，擔任社長職位，且在創社三年拿到「社團評鑑 優等」殊榮。
+求學讀書七年的水產類組，原計畫是考取動力小船營業執照後，準備要去愛河當個遊艇船長。
+在因緣際會下認識朋友資工系的哥哥，看他如同駭客般敲鍵盤跑出一堆程式碼，覺得當工程師也太酷了，哥哥也與我分享工程師人材年薪百萬並不難，足以克服現今社會低薪的問題。
+於是畢業後，從資策會開始學習寫程式入門。在往後的半年裡，全心投入學習寫程式，課程結束時也發表三人合作開發的ERP+APP小作品，並且Android App是由自己獨立開發。
+- 2012年 六個月學習寫程式，從新手到入門，結訓發表小專題 - 2013年 四個月獨立開發政府Android APP，獲得肝指數過高 - 2014年 轉行當健身教練，重拾健康的身軀 - 2016年 重頭學習寫程式，系統性ERP開發 - 2017年 負責保全系Android APP開發，利用空閒時間學習Swift，完成同規格iOS APP開發。 - 2019年 台南&amp;gt;&amp;gt;年薪80萬   2014年 肝指數過高，轉行當健身教練，重拾健康的身軀  感謝 身邊所有朋友
+因為有你們的互相扶持成長
+才會有現在的我
+越努力，越幸運
+相信未來會越來越棒的！</description>
     </item>
     
     <item>
@@ -35,12 +56,12 @@
     </item>
     
     <item>
-      <title>iRent APP</title>
-      <link>/projects/2020/irent_app/</link>
+      <title>iRent自助租車 APP</title>
+      <link>/projects/%E5%92%8C%E9%9B%B2%E8%A1%8C%E5%8B%95%E6%9C%8D%E5%8B%99/irent_app/</link>
       <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>/projects/2020/irent_app/</guid>
-      <description></description>
+      <guid>/projects/%E5%92%8C%E9%9B%B2%E8%A1%8C%E5%8B%95%E6%9C%8D%E5%8B%99/irent_app/</guid>
+      <description>&lt;p&gt;iRent共享汽機車首創全台「24小時自助租車服務」，透過app輕鬆完成預約、取車、付款、還車，隨租隨還&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -54,28 +75,28 @@
     
     <item>
       <title>BeanGo Cube APP</title>
-      <link>/projects/2020/beangocube_app/</link>
+      <link>/projects/%E5%BF%97%E5%8B%87%E7%84%A1%E9%99%90%E5%89%B5%E6%84%8F/beangocube_app/</link>
       <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/projects/2020/beangocube_app/</guid>
-      <description></description>
+      <guid>/projects/%E5%BF%97%E5%8B%87%E7%84%A1%E9%99%90%E5%89%B5%E6%84%8F/beangocube_app/</guid>
+      <description> 優化舊版設計結構。 MVVM設計模式。 使用WI-FI連線，設計心跳模式，監聽智能烘豆機資料。 使用Charts套件，製作靜態、動態的多數據折線圖。 Documents資料處理，檔案備份、檔案分享、檔案匯入等。 Realm資料庫。 解決iOS13 WI-FI連線時的錯誤問題。  [AppStore] </description>
     </item>
     
     <item>
       <title>NCKU E-Society APP</title>
-      <link>/projects/2019/nuck_esociety/</link>
+      <link>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_ncuk_esociety/</link>
       <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/projects/2019/nuck_esociety/</guid>
+      <guid>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_ncuk_esociety/</guid>
       <description></description>
     </item>
     
     <item>
       <title>美國特殊教育 APP</title>
-      <link>/projects/2020/%E7%89%B9%E6%95%99app/</link>
+      <link>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_special_edu/</link>
       <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/projects/2020/%E7%89%B9%E6%95%99app/</guid>
+      <guid>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_special_edu/</guid>
       <description></description>
     </item>
     
@@ -98,30 +119,69 @@
     </item>
     
     <item>
-      <title>NCKU Fund-ray</title>
-      <link>/projects/2016/nkcu_fundray/</link>
-      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
+      <title>iShowDrive APP</title>
+      <link>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_ishowdrive/</link>
+      <pubDate>Fri, 30 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/projects/2016/nkcu_fundray/</guid>
-      <description></description>
+      <guid>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_ishowdrive/</guid>
+      <description>[AppStore] </description>
     </item>
     
     <item>
-      <title>長榮警備保全 APP</title>
-      <link>/projects/2016/evergreen_app/</link>
-      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
+      <title>Raise 遊戲主題餐廳 APP</title>
+      <link>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_raise_game/</link>
+      <pubDate>Fri, 30 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/projects/2016/evergreen_app/</guid>
-      <description></description>
+      <guid>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_raise_game/</guid>
+      <description>[AppStore] </description>
     </item>
     
     <item>
-      <title>高雄任我行 APP</title>
-      <link>/projects/2013/tbkc_app/</link>
+      <title>NCKU 基金投資理財平台 FundRay</title>
+      <link>/projects/%E7%9D%BF%E5%85%83%E7%A7%91%E6%8A%80/nkcu_fundray/</link>
+      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/%E7%9D%BF%E5%85%83%E7%A7%91%E6%8A%80/nkcu_fundray/</guid>
+      <description>公司屬於軟體開發承包商，開發雲端ERP系統，主打系統化開發，3個月快速上線。 負責專案: • 成功大學 NCKU 財務金融研究所 - 基金投資理財平台 FundRay [介紹] • 嘉南農田水利會 雲端公文管理系統 • 嘉南農田水利會 ERP管理系統 • 奇美油艙 ERP系統 • Touch美髮 ERP管理系統 / 網頁式的APP • 會計人資管理系統 • ERP 進銷存管理系統 特殊貢獻: • 跟客戶溝通需求，撰寫SA/SD系統開發文件。 • ERP系統:進銷存、關聯資料庫、參數代碼檔應用。 • 依照編號製作系統公版，以便未來做快速的開發。 • Trigger API資料:擷取中央氣象局API取得雨量數據資料，寫入水利會資料庫。 • 利用低耦合的系統設計模式，可快速移交專案上線。 • 基金投組演算:將基金運算公式寫成模組，並做資料的即時運算。 • 將.csv的大量歷史資料，轉換寫入至SQL資料庫。 • Telerik套件:網頁圖形化套件，包括曲線圖、折線圖、圓餅圖、雷達圖等使用。
+科技部南部科學工業園區管理局創業工坊，配合科技部「創新創業激勵計畫」(From IP To IPO，FITI)銜 接「創新」和「創業」間斷層及落實推動創新經濟與科技轉型之目標，南科管理局設立「創業工坊」(Start-up Workshop)，導入一站式創業資源媒合平台，提供創業團隊創業發展場域、配合廠商與業師、基本原型試作設備與資源、專屬保母與申請專案計畫補助等， 讓創業團隊可以在南科管理局協助之下，成功創業。 收回
+[南部科學園區 創業工坊] </description>
+    </item>
+    
+    <item>
+      <title>長榮警備保全系統</title>
+      <link>/projects/%E9%87%91%E6%99%BA%E6%B4%8B%E7%A7%91%E6%8A%80/app_evergreen/</link>
+      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/%E9%87%91%E6%99%BA%E6%B4%8B%E7%A7%91%E6%8A%80/app_evergreen/</guid>
+      <description>&lt;p&gt;大型電腦後端系統整合每位客戶所回傳之狀況（如設定、解除、異常發報、專斷、局故……等），24小時全天候專員監控並指揮駐區保全服務人員前往處理，同時可即時處理客戶臨時申告服務問題。雙向管制中心操作簡易的客戶端自動化訊息回傳系統，結合快速反應的保全監控與狀況處理，提供客戶端24小時全年無休的安全與服務。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>高雄任我行</title>
+      <link>/projects/%E9%95%B7%E5%AF%AC%E9%AB%98%E7%A7%91%E6%8A%80/tbkc_app/</link>
       <pubDate>Sun, 15 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>/projects/2013/tbkc_app/</guid>
-      <description></description>
+      <guid>/projects/%E9%95%B7%E5%AF%AC%E9%AB%98%E7%A7%91%E6%8A%80/tbkc_app/</guid>
+      <description>&lt;p&gt;高雄市交通局發行之智慧型手機軟體「高雄任我行」，以地圖及幹道顯示模式提供高雄市內即時交通資訊〈包含：路口影像、事件資訊、路段績效〉之查詢。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>蒲公英 TV 影音系統</title>
+      <link>/projects/%E5%88%A9%E9%91%AB%E9%9B%B2%E7%AB%AF%E7%A7%91%E6%8A%80/app_dandelion_tv/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/%E5%88%A9%E9%91%AB%E9%9B%B2%E7%AB%AF%E7%A7%91%E6%8A%80/app_dandelion_tv/</guid>
+      <description>&lt;p&gt;「蒲公英TV 影音系統」連上網路即可觀看各類電視、電影等影視。出差在外、居家旅行必備聖品。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>金礦咖啡 點餐APP</title>
+      <link>/projects/%E8%B3%87%E7%AD%96%E6%9C%83/crown_fancy_app/</link>
+      <pubDate>Mon, 01 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/%E8%B3%87%E7%AD%96%E6%9C%83/crown_fancy_app/</guid>
+      <description>&lt;p&gt;資策會 程式設計訓練班 66期 結訓專題&lt;/p&gt;
+&lt;p&gt;以金礦咖啡做為模擬範例，設計互動式點餐APP，結合後台POS系統，由APP定位搜尋附近之店家，發送訂購餐點後，後台接收到資訊開始製作，顧客至預定店家出示QRcode取餐。&lt;/p&gt;</description>
     </item>
     
   </channel>

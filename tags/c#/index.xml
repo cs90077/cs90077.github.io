@@ -8,12 +8,14 @@
     <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
     <lastBuildDate>Thu, 30 Jun 2016 00:00:00 +0000</lastBuildDate><atom:link href="/tags/c#/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>NCKU Fund-ray</title>
-      <link>/projects/2016/nkcu_fundray/</link>
+      <title>NCKU 基金投資理財平台 FundRay</title>
+      <link>/projects/%E7%9D%BF%E5%85%83%E7%A7%91%E6%8A%80/nkcu_fundray/</link>
       <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>/projects/2016/nkcu_fundray/</guid>
-      <description></description>
+      <guid>/projects/%E7%9D%BF%E5%85%83%E7%A7%91%E6%8A%80/nkcu_fundray/</guid>
+      <description>公司屬於軟體開發承包商，開發雲端ERP系統，主打系統化開發，3個月快速上線。 負責專案: • 成功大學 NCKU 財務金融研究所 - 基金投資理財平台 FundRay [介紹] • 嘉南農田水利會 雲端公文管理系統 • 嘉南農田水利會 ERP管理系統 • 奇美油艙 ERP系統 • Touch美髮 ERP管理系統 / 網頁式的APP • 會計人資管理系統 • ERP 進銷存管理系統 特殊貢獻: • 跟客戶溝通需求，撰寫SA/SD系統開發文件。 • ERP系統:進銷存、關聯資料庫、參數代碼檔應用。 • 依照編號製作系統公版，以便未來做快速的開發。 • Trigger API資料:擷取中央氣象局API取得雨量數據資料，寫入水利會資料庫。 • 利用低耦合的系統設計模式，可快速移交專案上線。 • 基金投組演算:將基金運算公式寫成模組，並做資料的即時運算。 • 將.csv的大量歷史資料，轉換寫入至SQL資料庫。 • Telerik套件:網頁圖形化套件，包括曲線圖、折線圖、圓餅圖、雷達圖等使用。
+科技部南部科學工業園區管理局創業工坊，配合科技部「創新創業激勵計畫」(From IP To IPO，FITI)銜 接「創新」和「創業」間斷層及落實推動創新經濟與科技轉型之目標，南科管理局設立「創業工坊」(Start-up Workshop)，導入一站式創業資源媒合平台，提供創業團隊創業發展場域、配合廠商與業師、基本原型試作設備與資源、專屬保母與申請專案計畫補助等， 讓創業團隊可以在南科管理局協助之下，成功創業。 收回
+[南部科學園區 創業工坊] </description>
     </item>
     
   </channel>

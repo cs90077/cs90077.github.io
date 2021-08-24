@@ -8,12 +8,12 @@
     <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
     <lastBuildDate>Thu, 30 Jun 2016 00:00:00 +0000</lastBuildDate><atom:link href="/tags/webapi/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>長榮警備保全 APP</title>
-      <link>/projects/2016/evergreen_app/</link>
+      <title>長榮警備保全系統</title>
+      <link>/projects/%E9%87%91%E6%99%BA%E6%B4%8B%E7%A7%91%E6%8A%80/app_evergreen/</link>
       <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>/projects/2016/evergreen_app/</guid>
-      <description></description>
+      <guid>/projects/%E9%87%91%E6%99%BA%E6%B4%8B%E7%A7%91%E6%8A%80/app_evergreen/</guid>
+      <description>&lt;p&gt;大型電腦後端系統整合每位客戶所回傳之狀況（如設定、解除、異常發報、專斷、局故……等），24小時全天候專員監控並指揮駐區保全服務人員前往處理，同時可即時處理客戶臨時申告服務問題。雙向管制中心操作簡易的客戶端自動化訊息回傳系統，結合快速反應的保全監控與狀況處理，提供客戶端24小時全年無休的安全與服務。&lt;/p&gt;</description>
     </item>
     
   </channel>
