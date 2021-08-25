@@ -35,15 +35,6 @@
     </item>
     
     <item>
-      <title>BeanGo Cube 智能烘豆機</title>
-      <link>/projects/2020/app_beangocube/</link>
-      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/2020/app_beangocube/</guid>
-      <description>&lt;p&gt;使用手機APP智慧控制烘豆機，所有烘焙曲線都儲存在手機內部並且可分享至雲端，輕鬆分享或是複製烘焙曲線，並且可依照烘焙曲線，自動執行烘培作業。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>[iOS]使用CocoaPods套件管理</title>
       <link>/posts/ios_swift/ios_cocoapods_management/</link>
       <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
@@ -67,7 +58,7 @@
       <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
       
       <guid>/projects/2016/app_evergreen/</guid>
-      <description>&lt;p&gt;大型電腦後端系統整合每位客戶所回傳之狀況（如設定、解除、異常發報、專斷、局故……等），24小時全天候專員監控並指揮駐區保全服務人員前往處理，同時可即時處理客戶臨時申告服務問題。雙向管制中心操作簡易的客戶端自動化訊息回傳系統，結合快速反應的保全監控與狀況處理，提供客戶端24小時全年無休的安全與服務。&lt;/p&gt;</description>
+      <description>&lt;p&gt;長榮警備保全擁有專業的機動保全人員外，更具備了高度安全的防護系統，連結各個末端感知器材，細密的完全規劃，從現場勘查、設計繪圖、報價說明、施工說明到驗收開通，架構起一座座安全橋樑。&lt;/p&gt;</description>
     </item>
     
   </channel>

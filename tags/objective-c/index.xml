@@ -6,41 +6,14 @@
     <description>Recent content in Objective-C on Tony Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
-    <lastBuildDate>Tue, 31 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="/tags/objective-c/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Dec 2017 00:00:00 +0000</lastBuildDate><atom:link href="/tags/objective-c/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>NCKU E-Society APP</title>
-      <link>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_ncuk_esociety/</link>
-      <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
+      <title>iShowDrive 愛秀無線隨身雲</title>
+      <link>/projects/2017/app_ishowdrive/</link>
+      <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_ncuk_esociety/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>美國特殊教育 APP</title>
-      <link>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_special_edu/</link>
-      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_special_edu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>iShowDrive APP</title>
-      <link>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_ishowdrive/</link>
-      <pubDate>Fri, 30 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_ishowdrive/</guid>
-      <description>[AppStore] </description>
-    </item>
-    
-    <item>
-      <title>Raise 遊戲主題餐廳 APP</title>
-      <link>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_raise_game/</link>
-      <pubDate>Fri, 30 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/%E5%8F%B0%E6%99%AF%E9%81%94%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80/app_raise_game/</guid>
-      <description>[AppStore] </description>
+      <guid>/projects/2017/app_ishowdrive/</guid>
+      <description>&lt;p&gt;此App僅供本公司之產品「愛秀無線隨身雲」使用&lt;/p&gt;</description>
     </item>
     
   </channel>

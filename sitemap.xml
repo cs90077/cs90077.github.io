@@ -26,9 +26,6 @@
     <loc>/tags/</loc>
     <lastmod>2021-08-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/demo/</loc>
-    <lastmod>2021-07-31T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/about/</loc>
     <lastmod>2021-07-31T00:00:00+00:00</lastmod>
   </url><url>
@@ -50,15 +47,6 @@
     <loc>/tags/imagepicker/</loc>
     <lastmod>2020-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/app/</loc>
-    <lastmod>2020-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/projects/2020/app_beangocube/</loc>
-    <lastmod>2020-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/projects/</loc>
-    <lastmod>2020-02-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/posts/ios_swift/ios_cocoapods_management/</loc>
     <lastmod>2018-09-14T00:00:00+00:00</lastmod>
   </url><url>
@@ -71,10 +59,16 @@
     <loc>/series/android/</loc>
     <lastmod>2016-06-30T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/tags/app/</loc>
+    <lastmod>2016-06-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/tags/java/</loc>
     <lastmod>2016-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/webapi/</loc>
+    <lastmod>2016-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/projects/</loc>
     <lastmod>2016-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/projects/2016/app_evergreen/</loc>
@@ -83,10 +77,10 @@
     <loc>/tags/c#/</loc>
     <lastmod>2016-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/projects/2016/web_nkcu_fundray/</loc>
+    <loc>/tags/webfrom/</loc>
     <lastmod>2016-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/webfrom/</loc>
+    <loc>/projects/2016/web_nkcu_fundray/</loc>
     <lastmod>2016-04-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/projects/2013/app_tbkc/</loc>
