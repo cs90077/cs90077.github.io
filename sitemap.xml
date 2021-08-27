@@ -2,34 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/ios_swift/swift_array_%E9%99%A4%E5%8E%BB%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/</loc>
-    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+    <loc>/series/macos/</loc>
+    <lastmod>2021-08-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/array/</loc>
-    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+    <loc>/posts/macos/macos_recommended_software/</loc>
+    <lastmod>2021-08-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/series/ios/</loc>
-    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/swift/</loc>
-    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+    <loc>/posts/macos/macos_system_setting_contents/</loc>
+    <lastmod>2021-08-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/series/</loc>
-    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
-    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+    <loc>/posts/macos/homebrew_install/</loc>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/macos/change_screenshot_path/</loc>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/macos/show_hidden_files/</loc>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/about/</loc>
     <lastmod>2021-07-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/ios_swift/ios_cocoapods_management_install_m1/</loc>
+    <loc>/posts/ios/swift/ios_cocoapods_management_for_m1/</loc>
     <lastmod>2021-02-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/cocoapods/</loc>
@@ -38,19 +41,16 @@
     <loc>/tags/github/</loc>
     <lastmod>2021-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/ios_swift/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/</loc>
-    <lastmod>2020-09-06T00:00:00+00:00</lastmod>
+    <loc>/series/ios/</loc>
+    <lastmod>2021-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/camera/</loc>
-    <lastmod>2020-09-06T00:00:00+00:00</lastmod>
+    <loc>/tags/</loc>
+    <lastmod>2021-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/imagepicker/</loc>
-    <lastmod>2020-09-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/ios_swift/ios_cocoapods_management/</loc>
+    <loc>/posts/ios/swift/ios_cocoapods_management/</loc>
     <lastmod>2018-09-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/ios_swift/ios_make_app_icon/</loc>
+    <loc>/posts/ios/ios_make_app_icon/</loc>
     <lastmod>2018-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/assets/</loc>
@@ -65,22 +65,25 @@
     <loc>/tags/java/</loc>
     <lastmod>2016-06-30T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/tags/swift/</loc>
+    <lastmod>2016-06-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/tags/webapi/</loc>
     <lastmod>2016-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/projects/</loc>
     <lastmod>2016-06-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/projects/2016/app_evergreen/</loc>
+    <loc>/projects/2017/app_evergreen/</loc>
     <lastmod>2016-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/c#/</loc>
     <lastmod>2016-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/webfrom/</loc>
+    <loc>/projects/2016/web_nkcu_fundray/</loc>
     <lastmod>2016-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/projects/2016/web_nkcu_fundray/</loc>
+    <loc>/tags/webfrom/</loc>
     <lastmod>2016-04-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/projects/2013/app_tbkc/</loc>

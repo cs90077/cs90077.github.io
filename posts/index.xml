@@ -6,49 +6,76 @@
     <description>Recent content in 文章 on Tony Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
-    <lastBuildDate>Tue, 17 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>[Swift]Array除去重複資料</title>
-      <link>/posts/ios_swift/swift_array_%E9%99%A4%E5%8E%BB%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/</link>
-      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+      <title>macOS 推薦軟體</title>
+      <link>/posts/macos/macos_recommended_software/</link>
+      <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios_swift/swift_array_%E9%99%A4%E5%8E%BB%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/</guid>
-      <description>&lt;p&gt;當資料有重複，想整理出不重複的資料，以下提供兩種方式給大家參考！&lt;/p&gt;</description>
+      <guid>/posts/macos/macos_recommended_software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>macOS 系統設定彙整</title>
+      <link>/posts/macos/macos_system_setting_contents/</link>
+      <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/macos/macos_system_setting_contents/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>[macOS]Homebrew macOS 套件管理工具</title>
+      <link>/posts/macos/homebrew_install/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/macos/homebrew_install/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>[macOS]變更截圖路徑</title>
+      <link>/posts/macos/change_screenshot_path/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/macos/change_screenshot_path/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>[macOS]顯示隱藏檔案</title>
+      <link>/posts/macos/show_hidden_files/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/macos/show_hidden_files/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>[iOS]安裝CocoaPods套件 支持M1系統</title>
-      <link>/posts/ios_swift/ios_cocoapods_management_install_m1/</link>
+      <link>/posts/ios/swift/ios_cocoapods_management_for_m1/</link>
       <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios_swift/ios_cocoapods_management_install_m1/</guid>
-      <description>&lt;p&gt;M1的系統架構不同，需要指定x86方式安裝&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>[Swift]使用ImagePicker開啟Camera相機功能</title>
-      <link>/posts/ios_swift/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/</link>
-      <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/ios_swift/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/</guid>
-      <description>&lt;p&gt;開啟相機 =&amp;gt; 拍照 =&amp;gt; 儲存照片 =&amp;gt; 簡單搞定&lt;/p&gt;</description>
+      <guid>/posts/ios/swift/ios_cocoapods_management_for_m1/</guid>
+      <description>&lt;p&gt;在 Apple Silicon M1 安裝CocoaPods套件&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>[iOS]使用CocoaPods套件管理</title>
-      <link>/posts/ios_swift/ios_cocoapods_management/</link>
+      <link>/posts/ios/swift/ios_cocoapods_management/</link>
       <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios_swift/ios_cocoapods_management/</guid>
+      <guid>/posts/ios/swift/ios_cocoapods_management/</guid>
       <description>&lt;p&gt;在做開發的時候，不可能所有功能都自己寫，多少會去參考別人使用的程式function，或者引用Library套件。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>[iOS]製作APP圖示</title>
-      <link>/posts/ios_swift/ios_make_app_icon/</link>
+      <link>/posts/ios/ios_make_app_icon/</link>
       <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios_swift/ios_make_app_icon/</guid>
+      <guid>/posts/ios/ios_make_app_icon/</guid>
       <description>&lt;p&gt;APP icon在iOS的規格要求相當高，如果沒有依照它的格式去弄，是無法完美呈現在APP上的。&lt;/p&gt;</description>
     </item>
     

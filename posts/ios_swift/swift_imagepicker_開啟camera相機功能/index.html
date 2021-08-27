@@ -26,18 +26,21 @@
 
 <meta name="twitter:title" content="[Swift]使用ImagePicker開啟Camera相機功能"/>
 <meta name="twitter:description" content="開啟相機 =&gt; 拍照 =&gt; 儲存照片 =&gt; 簡單搞定"/>
-<meta data-name="palette" content="blue"><link rel=stylesheet href="/css/bundle.min.4a5890fb45361897072de8c93e075b7d2384a3635e3bfc9396427ee019bcc13c.css" integrity="sha256-SliQ&#43;0U2GJcHLejJPgdbfSOEo2NeO/yTlkJ&#43;4Bm8wTw=" crossorigin="anonymous"><script src="/js/bundle.min.ae7f5e13d9d90b4d224a86293a84f6a56b9182a89f6a318674ea4db1ffb3aecb.js" integrity="sha256-rn9eE9nZC00iSoYpOoT2pWuRgqifajGGdOpNsf&#43;zrss=" crossorigin="anonymous"></script>
+<meta data-name="palette" content="blue"><link rel="preload" href="/css/bundle.min.6432e1eb8529dcd2047cf814f92cb64eca4d65058b306e0630c8777240297fa4.css" integrity="sha256-ZDLh64Up3NIEfPgU&#43;Sy2TspNZQWLMG4GMMh3ckApf6Q=" crossorigin="anonymous" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/bundle.min.6432e1eb8529dcd2047cf814f92cb64eca4d65058b306e0630c8777240297fa4.css" integrity="sha256-ZDLh64Up3NIEfPgU&#43;Sy2TspNZQWLMG4GMMh3ckApf6Q=" crossorigin="anonymous"></noscript><script src="/js/bundle.min.b588c73a0d841f5378aff37cff7071fb8c5ab5608b011b22246bfcefc66f1880.js" integrity="sha256-tYjHOg2EH1N4r/N8/3Bx&#43;4xatWCLARsiJGv878ZvGIA=" crossorigin="anonymous"></script>
 </head><body><header><nav class="navbar navbar-expand-xl fixed-top">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <img class="logo" alt="Logo" src="/images/logo.webp" loading="lazy">Tony Blog</a>
+      <img class="logo" alt="Logo" src="/images/logo.webp"
+   width="240" height="240" loading="lazy" />
+Tony Blog</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-1 mb-2 mb-lg-0"><form class="search-bar d-flex ms-1" action="/search">
   <div class="input-group input-group-sm">
-    <button class="btn btn-search disabled position-absolute left-0" type="submit"><i class="fas fa-fw fa-search"></i></button>
+    <button class="btn btn-search disabled position-absolute left-0" type="submit" aria-label="submit"><i class="fas fa-fw fa-search"></i></button>
     <input class="form-control rounded-pill" id="searchQuery" name="q" type="search" aria-label="Search">
   </div>
 </form></ul><ul class="navbar-nav me-1 mb-2 mb-lg-0 me-1 ms-auto"><li class="nav-item">
@@ -166,7 +169,7 @@
 </a>
     <a class="action" data-bs-container="body" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom"
   data-bs-trigger="focus" tabindex="0"
-  data-bs-content="&lt;a target=&#34;_blank&#34; rel=&#34;license&#34; href=&#34;https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh_TW&#34;&gt;CC BY-NC-ND 4.0 &lt;i class=&#34;fab fa-fw fa-creative-commons&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-fw fa-creative-commons-by&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-fw fa-creative-commons-nc&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-fw fa-creative-commons-nd&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+  data-bs-content="&lt;a target=&#34;_blank&#34; rel=&#34;license noopener noreferrer&#34; href=&#34;https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh_TW&#34;&gt;CC BY-NC-ND 4.0 &lt;i class=&#34;fab fa-fw fa-creative-commons&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-fw fa-creative-commons-by&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-fw fa-creative-commons-nc&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-fw fa-creative-commons-nd&#34;&gt;&lt;/i&gt;&lt;/a&gt;
 ">
   <i class="fas fa-fw fa-copyright"></i>
 </a>
@@ -179,7 +182,8 @@
     <i class="fas fa-fw fa-calendar-alt"></i>Sep 6, 2020
   </span><span class="post-reading-time me-2">
     <i class="fas fa-fw fa-coffee"></i>1 分鐘閱讀
-  </span><a href="/series/ios/" class="post-taxonomy">#iOS</a><a href="/tags/imagepicker/" class="post-taxonomy">#ImagePicker</a><a href="/tags/camera/" class="post-taxonomy">#Camera</a><a href="/tags/swift/" class="post-taxonomy">#Swift</a></div>
+  </span><span class="post-taxonomies"><a href="/series/ios/" class="post-taxonomy">iOS</a><a href="/tags/imagepicker/" class="post-taxonomy">ImagePicker</a><a href="/tags/camera/" class="post-taxonomy">Camera</a><a href="/tags/swift/" class="post-taxonomy">Swift</a></span>
+</div>
 <div class="offcanvas offcanvas-end surface" tabindex="-1" id="offcanvasTOC" aria-labelledby="offcanvasTOCLabel">
   <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasTOCLabel">目錄</h5>
@@ -212,7 +216,9 @@
 <h3 id="step-1---設定權限">step 1 - 設定權限</h3>
 <h6 id="infoplist">info.plist</h6>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln">1</span><span class="n">Privacy</span> <span class="o">-</span> <span class="n">Camera</span> <span class="n">Usage</span> <span class="n">Description</span>
-</code></pre></div><p><img class="img-fluid" src="/images/posts/camera_1629421939.png" alt="camera"  loading="lazy" />
+</code></pre></div><p><img class="img-fluid" alt="camera" src="/images/posts/camera_1629421939.png"
+   width="1428" height="744" loading="lazy" />
+
 </p>
 <h3 id="step-2---開啟相機">step 2 - 開啟相機</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln">1</span><span class="kd">func</span> <span class="nf">openCamera</span><span class="p">()</span> <span class="p">{</span>
@@ -237,11 +243,17 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><img class="img-fluid" src="/images/posts/camera_1629421949.png" alt="camera"  loading="lazy" />
+<td style="text-align:center"><img class="img-fluid" alt="camera" src="/images/posts/camera_1629421949.png"
+   width="1125" height="2436" loading="lazy" />
+
 </td>
-<td style="text-align:center"><img class="img-fluid" src="/images/posts/camera_1629421950.png" alt="camera"  loading="lazy" />
+<td style="text-align:center"><img class="img-fluid" alt="camera" src="/images/posts/camera_1629421950.png"
+   width="1125" height="2436" loading="lazy" />
+
 </td>
-<td style="text-align:center"><img class="img-fluid" src="/images/posts/camera_1629421951.png" alt="camera"  loading="lazy" />
+<td style="text-align:center"><img class="img-fluid" alt="camera" src="/images/posts/camera_1629421951.png"
+   width="1125" height="2436" loading="lazy" />
+
 </td>
 </tr>
 </tbody>
@@ -270,9 +282,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><img class="img-fluid" src="/images/posts/camera_1629421952.png" alt="camera"  loading="lazy" />
+<td style="text-align:center"><img class="img-fluid" alt="camera" src="/images/posts/camera_1629421952.png"
+   width="1125" height="2436" loading="lazy" />
+
 </td>
-<td style="text-align:center"><img class="img-fluid" src="/images/posts/camera_1629421953.png" alt="camera"  loading="lazy" />
+<td style="text-align:center"><img class="img-fluid" alt="camera" src="/images/posts/camera_1629421953.png"
+   width="1125" height="2436" loading="lazy" />
+
 </td>
 </tr>
 </tbody>
@@ -281,7 +297,9 @@
 <h3 id="step-1---設定權限-1">step 1 - 設定權限</h3>
 <h6 id="infoplist-1">info.plist</h6>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln">1</span><span class="n">Privacy</span> <span class="o">-</span> <span class="n">Photo</span> <span class="n">Library</span> <span class="n">Additions</span> <span class="n">Usage</span> <span class="n">Description</span>
-</code></pre></div><p><img class="img-fluid" src="/images/posts/camera_1629422451.png" alt="camera"  loading="lazy" />
+</code></pre></div><p><img class="img-fluid" alt="camera" src="/images/posts/camera_1629422451.png"
+   width="1214" height="712" loading="lazy" />
+
 </p>
 <h3 id="step-2---儲存圖片">step 2 - 儲存圖片</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln">1</span><span class="kd">func</span> <span class="nf">saveImageToPhotos</span><span class="p">()</span> <span class="p">{</span>
@@ -310,15 +328,19 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><img class="img-fluid" src="/images/posts/camera_1629422452.png" alt="camera"  loading="lazy" />
+<td style="text-align:center"><img class="img-fluid" alt="camera" src="/images/posts/camera_1629422452.png"
+   width="1125" height="2436" loading="lazy" />
+
 </td>
-<td style="text-align:center"><img class="img-fluid" src="/images/posts/camera_1629422453.png" alt="camera"  loading="lazy" />
+<td style="text-align:center"><img class="img-fluid" alt="camera" src="/images/posts/camera_1629422453.png"
+   width="1125" height="2436" loading="lazy" />
+
 </td>
 </tr>
 </tbody>
 </table>
 <h2 id="source">Source</h2>
-<p><a href="https://github.com/cs90077/Swift-Demo/tree/Tony_dev/ImagePicker-Demo" target="_blank">Github</a>
+<p><a href="https://github.com/cs90077/Swift-Demo/tree/Tony_dev/ImagePicker-Demo" target="_blank" rel="noopener noreferrer">Github</a>
 </p></div><div class="modal fade" id="rewardModal" tabindex="-1" aria-labelledby="rewardModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content surface">
@@ -377,7 +399,9 @@
 </script></div></div>
 </div><aside class="col-lg-4 sidebar d-flex">
   <div class="container"><section class="profile surface row text-center">
-  <div class="col-12 d-flex align-items-center justify-content-center"><img class="profile-avatar rounded-circle" src="/images/profile.webp" alt="Tony Lin" loading="lazy"></div>
+  <div class="col-12 d-flex align-items-center justify-content-center"><img class="profile-avatar rounded-circle" alt="Tony Lin" src="/images/profile.webp"
+   width="2160" height="2160" loading="lazy" />
+</div>
   <div class="col-12 profile-meta"><div class="profile-name">Tony Lin</div><div class="profile-bio">你必須要很努力，才能看起來毫不費力</div><div class="profile-location"><i class="fas fa-fw fa-map-marker-alt"></i>Taiwan</div><div class="profile-about"><i class="fas fa-fw fa-info-circle"></i><a href="/about/">關於我</a></div></div>
 </section>
   <section class="recent-posts row surface">
@@ -425,27 +449,17 @@
     </section></div>
 </aside>
 </div>
-    </main><footer class="footer mt-auto py-3 text-center container"><nav class="social-links nav my-2 justify-content-center"><li class="nav-item">
-    <a class="nav-link social-link" href="mailto:cs90077@gmail.com" title="Email">
+    </main><footer class="footer mt-auto py-3 text-center container"><nav class="social-links nav my-2 justify-content-center"><a class="nav-link social-link" href="mailto:cs90077@gmail.com" title="Email">
       <i class="fas fa-fw fa-2x fa-envelope"></i>
-    </a>
-  </li><li class="nav-item">
-      <a class="nav-link social-link" target="_blank" href="https://github.com/cs90077" title="GitHub">
+    </a><a class="nav-link social-link" target="_blank" href="https://github.com/cs90077" title="GitHub" rel="noopener noreferrer">
         <i class="fa-fw fa-2x fab fa-github"></i>
-      </a>
-    </li><li class="nav-item">
-      <a class="nav-link social-link" target="_blank" href="https://www.instagram.com/cs90077" title="Instagram">
+      </a><a class="nav-link social-link" target="_blank" href="https://www.instagram.com/cs90077" title="Instagram" rel="noopener noreferrer">
         <i class="fa-fw fa-2x fab fa-instagram"></i>
-      </a>
-    </li><li class="nav-item">
-      <a class="nav-link social-link" target="_blank" href="https://linkedin.com/in/cs90077" title="LinkedIn">
+      </a><a class="nav-link social-link" target="_blank" href="https://linkedin.com/in/cs90077" title="LinkedIn" rel="noopener noreferrer">
         <i class="fa-fw fa-2x fab fa-linkedin-in"></i>
-      </a>
-    </li><li class="nav-item">
-      <a class="nav-link social-link" target="_blank" href="https://www.youtube.com/channel/UCznBj7M_LmFjtU2O8PeTHTw" title="Youtube">
+      </a><a class="nav-link social-link" target="_blank" href="https://www.youtube.com/channel/UCznBj7M_LmFjtU2O8PeTHTw" title="Youtube" rel="noopener noreferrer">
         <i class="fa-fw fa-2x fab fa-youtube"></i>
-      </a>
-    </li></nav>
+      </a></nav>
 <div class="copyright mb-2">
   Copyright © 2016-2021 Razon Yang. All Rights Reserved.
 </div>
