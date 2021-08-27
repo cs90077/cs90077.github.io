@@ -8,7 +8,7 @@
     <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
     <lastBuildDate>Fri, 27 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>macOS 推薦軟體</title>
+      <title>macOS 推薦實用軟體</title>
       <link>/posts/macos/macos_recommended_software/</link>
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
       
@@ -26,29 +26,11 @@
     </item>
     
     <item>
-      <title>[macOS]Homebrew macOS 套件管理工具</title>
+      <title>Homebrew macOS 套件管理工具</title>
       <link>/posts/macos/homebrew_install/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>/posts/macos/homebrew_install/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>[macOS]變更截圖路徑</title>
-      <link>/posts/macos/change_screenshot_path/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/macos/change_screenshot_path/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>[macOS]顯示隱藏檔案</title>
-      <link>/posts/macos/show_hidden_files/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/macos/show_hidden_files/</guid>
       <description></description>
     </item>
     
