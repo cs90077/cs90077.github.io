@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UIColor on Tony Blogs</title>
+    <link>/tags/uicolor/</link>
+    <description>Recent content in UIColor on Tony Blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
+    <lastBuildDate>Sun, 06 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/uicolor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UIColor 顏色的使用</title>
+      <link>/posts/ios/swift/swift_color_rgb/</link>
+      <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/swift_color_rgb/</guid>
+      <description>色碼轉換器  將 RGB 轉換成 HEX 將 HEX 轉換成 RGB  使用RGB 1UIColor(red: 120.0 / 255.0, green: 125 / 255.0, blue: 112.0 / 255.0, alpha: 1) Extension 1extension UIColor { 2 3 static func RGBA(r: Float, g: Float , b: Float , a: Float) -&amp;gt; UIColor 4 { 5 return UIColor.init(red: CGFloat(CGFloat(r)/255.0), green: CGFloat(CGFloat(g)/255.0), blue: CGFloat(CGFloat(b)/255.0), alpha: CGFloat(a)) 6 } 7 8} 9 10// use 11let greyColor = UIColor.RGBA(r: 88, g: 91, b: 96, a: 1) 使用Asset Add Color Set  設定使用Hex   設定使用RGB  Extension 1 2extension UIColor { 3 4 @nonobjc class var black70: UIColor { 5 return UIColor(red: 19.</description>
+    </item>
+    
+  </channel>
+</rss>

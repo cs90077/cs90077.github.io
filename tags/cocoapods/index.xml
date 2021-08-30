@@ -9,19 +9,19 @@
     <lastBuildDate>Sun, 14 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/cocoapods/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[iOS]安裝CocoaPods套件 支持M1系統</title>
-      <link>/posts/ios/swift/ios_cocoapods_management_for_m1/</link>
+      <link>/posts/ios/ios_cocoapods_management_for_m1/</link>
       <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/ios_cocoapods_management_for_m1/</guid>
+      <guid>/posts/ios/ios_cocoapods_management_for_m1/</guid>
       <description>&lt;p&gt;在 Apple Silicon M1 安裝CocoaPods套件&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>[iOS]使用CocoaPods套件管理</title>
-      <link>/posts/ios/swift/ios_cocoapods_management/</link>
+      <link>/posts/ios/ios_cocoapods_management/</link>
       <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/ios_cocoapods_management/</guid>
+      <guid>/posts/ios/ios_cocoapods_management/</guid>
       <description>&lt;p&gt;在做開發的時候，不可能所有功能都自己寫，多少會去參考別人使用的程式function，或者引用Library套件。&lt;/p&gt;</description>
     </item>
     

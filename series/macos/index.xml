@@ -6,20 +6,29 @@
     <description>Recent content in macOS on Tony Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
-    <lastBuildDate>Fri, 27 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/series/macos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/series/macos/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>macOS 推薦實用軟體</title>
+      <title>[macOS]Xcode開發者 檔案瘦身密技</title>
+      <link>/posts/macos/macos_developer_cleaner/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/macos/macos_developer_cleaner/</guid>
+      <description>&lt;p&gt;超實用的，一轉眼，清了40幾G&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[macOS]推薦實用軟體</title>
       <link>/posts/macos/macos_recommended_software/</link>
-      <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/posts/macos/macos_recommended_software/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>macOS 系統設定彙整</title>
+      <title>[macOS]系統設定彙整</title>
       <link>/posts/macos/macos_system_setting_contents/</link>
-      <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/posts/macos/macos_system_setting_contents/</guid>
       <description></description>
@@ -28,7 +37,7 @@
     <item>
       <title>Homebrew macOS 套件管理工具</title>
       <link>/posts/macos/homebrew_install/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/posts/macos/homebrew_install/</guid>
       <description></description>
