@@ -6,31 +6,58 @@
     <description>Recent content in Swift on Tony Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
-    <lastBuildDate>Tue, 17 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Aug 2021 08:00:00 +0000</lastBuildDate><atom:link href="/tags/swift/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>[Swift]Array除去重複資料</title>
-      <link>/posts/ios/swift/swift_array_%E9%99%A4%E5%8E%BB%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/</link>
+      <title>Attribute 客製化文字屬性</title>
+      <link>/posts/ios/swift/attribute_%E5%AE%A2%E8%A3%BD%E5%8C%96%E6%96%87%E5%AD%97%E5%B1%AC%E6%80%A7/</link>
+      <pubDate>Tue, 17 Aug 2021 08:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/attribute_%E5%AE%A2%E8%A3%BD%E5%8C%96%E6%96%87%E5%AD%97%E5%B1%AC%E6%80%A7/</guid>
+      <description>&lt;p&gt;調整奇耙的文字屬性設定&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Attribute文字屬性的應用</title>
+      <link>/posts/ios/swift/attribute_text/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/swift_array_%E9%99%A4%E5%8E%BB%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/</guid>
+      <guid>/posts/ios/swift/attribute_text/</guid>
+      <description>&lt;p&gt;調整各種文字屬性&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>篩選Array，取得不重複資料</title>
+      <link>/posts/ios/swift/array_%E5%8F%96%E5%BE%97%E4%B8%8D%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/array_%E5%8F%96%E5%BE%97%E4%B8%8D%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/</guid>
       <description>&lt;p&gt;當資料有重複，想整理出不重複的資料，以下提供兩種方式給大家參考！&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>UIColor 顏色的使用</title>
-      <link>/posts/ios/swift/swift_color_rgb/</link>
+      <title>UIColor RGB顏色的使用</title>
+      <link>/posts/ios/swift/color_rgb/</link>
       <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/swift_color_rgb/</guid>
-      <description>色碼轉換器  將 RGB 轉換成 HEX 將 HEX 轉換成 RGB  使用RGB 1UIColor(red: 120.0 / 255.0, green: 125 / 255.0, blue: 112.0 / 255.0, alpha: 1) Extension 1extension UIColor { 2 3 static func RGBA(r: Float, g: Float , b: Float , a: Float) -&amp;gt; UIColor 4 { 5 return UIColor.init(red: CGFloat(CGFloat(r)/255.0), green: CGFloat(CGFloat(g)/255.0), blue: CGFloat(CGFloat(b)/255.0), alpha: CGFloat(a)) 6 } 7 8} 9 10// use 11let greyColor = UIColor.RGBA(r: 88, g: 91, b: 96, a: 1) 使用Asset Add Color Set  設定使用Hex   設定使用RGB  Extension 1 2extension UIColor { 3 4 @nonobjc class var black70: UIColor { 5 return UIColor(red: 19.</description>
+      <guid>/posts/ios/swift/color_rgb/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>[iOS]安裝CocoaPods套件 支持M1系統</title>
-      <link>/posts/ios/ios_cocoapods_management_for_m1/</link>
+      <title>安裝CocoaPods套件管理 支援M1</title>
+      <link>/posts/ios/cocoapods_management_for_m1/</link>
       <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/ios_cocoapods_management_for_m1/</guid>
+      <guid>/posts/ios/cocoapods_management_for_m1/</guid>
+      <description>&lt;p&gt;在 Apple Silicon M1 安裝CocoaPods套件&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>安裝CocoaPods套件管理 支援M1</title>
+      <link>/posts/xcode/cocoapods_management_for_m1/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/xcode/cocoapods_management_for_m1/</guid>
       <description>&lt;p&gt;在 Apple Silicon M1 安裝CocoaPods套件&lt;/p&gt;</description>
     </item>
     
@@ -45,28 +72,28 @@
     
     <item>
       <title>使用Bundle取得APP版本號</title>
-      <link>/posts/ios/swift/swift_bundle_app_version/</link>
+      <link>/posts/ios/swift/bundle_app_version/</link>
       <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/swift_bundle_app_version/</guid>
-      <description>設定檔 方法 1func getAppVersion()-&amp;gt;String { 2 var appVersion = &amp;#34;&amp;#34; 3 let version = Bundle.main.infoDictionary?[&amp;#34;CFBundleShortVersionString&amp;#34;] as! String 4 let build = Bundle.main.infoDictionary?[&amp;#34;CFBundleVersion&amp;#34;] as! String 5 appVersion = &amp;#34;\(version)(\(build))&amp;#34; 6 log.debug(&amp;#34;app version = \(appVersion)&amp;#34;) 7 return appVersion 8} 效果 </description>
+      <guid>/posts/ios/swift/bundle_app_version/</guid>
+      <description>&lt;p&gt;想要顯示目前的APP版本號&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>使用Bundle取得info資料</title>
-      <link>/posts/ios/swift/swift_bundle_info_dictionary/</link>
+      <link>/posts/ios/swift/bundle_info_dictionary/</link>
       <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/swift_bundle_info_dictionary/</guid>
+      <guid>/posts/ios/swift/bundle_info_dictionary/</guid>
       <description>&lt;p&gt;想把一些重要的參數寫在info.plist設定檔裡，透過Bundle取出想要的資料&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>[Swift]使用ImagePicker開啟Camera相機功能</title>
-      <link>/posts/ios/swift/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/</link>
+      <link>/posts/ios/swift/imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/</link>
       <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/swift_imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/</guid>
+      <guid>/posts/ios/swift/imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/</guid>
       <description>&lt;p&gt;開啟相機 =&amp;gt; 拍照 =&amp;gt; 儲存照片 =&amp;gt; 簡單搞定&lt;/p&gt;</description>
     </item>
     
@@ -81,11 +108,11 @@
     </item>
     
     <item>
-      <title>[iOS]使用CocoaPods套件管理</title>
-      <link>/posts/ios/ios_cocoapods_management/</link>
+      <title>安裝CocoaPods套件管理</title>
+      <link>/posts/xcode/cocoapods_management/</link>
       <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/ios_cocoapods_management/</guid>
+      <guid>/posts/xcode/cocoapods_management/</guid>
       <description>&lt;p&gt;在做開發的時候，不可能所有功能都自己寫，多少會去參考別人使用的程式function，或者引用Library套件。&lt;/p&gt;</description>
     </item>
     

@@ -6,41 +6,59 @@
     <description>Recent content in macOS on Tony Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
-    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/series/macos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/series/macos/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>[macOS]Xcode開發者 檔案瘦身密技</title>
-      <link>/posts/macos/macos_developer_cleaner/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <title>下載Xcode開發工具</title>
+      <link>/posts/macos/xcode_download/</link>
+      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/macos/macos_developer_cleaner/</guid>
-      <description>&lt;p&gt;超實用的，一轉眼，清了40幾G&lt;/p&gt;</description>
+      <guid>/posts/macos/xcode_download/</guid>
+      <description>&lt;p&gt;Apple官方下載連結&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>[macOS]推薦實用軟體</title>
-      <link>/posts/macos/macos_recommended_software/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <title>下載Xcode開發工具</title>
+      <link>/posts/xcode/xcode_download/</link>
+      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/macos/macos_recommended_software/</guid>
-      <description></description>
+      <guid>/posts/xcode/xcode_download/</guid>
+      <description>&lt;p&gt;Apple官方下載連結&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>[macOS]系統設定彙整</title>
-      <link>/posts/macos/macos_system_setting_contents/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <title>清除Xcode肥大檔案</title>
+      <link>/posts/xcode/developer_cleaner/</link>
+      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/macos/macos_system_setting_contents/</guid>
-      <description></description>
+      <guid>/posts/xcode/developer_cleaner/</guid>
+      <description>&lt;p&gt;超實用的，一轉眼清了40幾G&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Homebrew macOS 套件管理工具</title>
+      <title>Homebrew macOS套件管理工具</title>
       <link>/posts/macos/homebrew_install/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/posts/macos/homebrew_install/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>macOS 推薦實用軟體</title>
+      <link>/posts/macos/recommended_software/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/macos/recommended_software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>macOS 系統設定彙整</title>
+      <link>/posts/macos/system_setting_contents/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/macos/system_setting_contents/</guid>
+      <description>&lt;p&gt;整理一些常用到的資訊&lt;/p&gt;</description>
     </item>
     
   </channel>
