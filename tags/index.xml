@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>標籤 on Tony Blogs</title>
+    <link>/tags/</link>
+    <description>Recent content in 標籤 on Tony Blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 31 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Swift</title>
+      <link>/tags/swift/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/swift/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>URL</title>
+      <link>/tags/url/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/url/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Attribute</title>
+      <link>/tags/attribute/</link>
+      <pubDate>Tue, 17 Aug 2021 08:00:00 +0000</pubDate>
+      
+      <guid>/tags/attribute/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Array</title>
+      <link>/tags/array/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/array/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UIColor</title>
+      <link>/tags/uicolor/</link>
+      <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/uicolor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xcode</title>
+      <link>/tags/xcode/</link>
+      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/xcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CocoaPods</title>
+      <link>/tags/cocoapods/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cocoapods/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub</title>
+      <link>/tags/github/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>APP</title>
+      <link>/tags/app/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bundle</title>
+      <link>/tags/bundle/</link>
+      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bundle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Camera</title>
+      <link>/tags/camera/</link>
+      <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/camera/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ImagePicker</title>
+      <link>/tags/imagepicker/</link>
+      <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/imagepicker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Objective-C</title>
+      <link>/tags/objective-c/</link>
+      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/objective-c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AlertController</title>
+      <link>/tags/alertcontroller/</link>
+      <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/alertcontroller/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Assets</title>
+      <link>/tags/assets/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/assets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>/tags/java/</link>
+      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WebAPI</title>
+      <link>/tags/webapi/</link>
+      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/webapi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C#</title>
+      <link>/tags/c#/</link>
+      <pubDate>Sat, 30 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/c#/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WebFrom</title>
+      <link>/tags/webfrom/</link>
+      <pubDate>Sat, 30 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/webfrom/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Array on Tony Blogs</title>
+    <link>/tags/array/</link>
+    <description>Recent content in Array on Tony Blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
+    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/array/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Swift]Array取得不重複資料</title>
+      <link>/posts/ios/swift/array_%E5%8F%96%E5%BE%97%E4%B8%8D%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/array_%E5%8F%96%E5%BE%97%E4%B8%8D%E9%87%8D%E8%A4%87%E8%B3%87%E6%96%99/</guid>
+      <description>&lt;p&gt;當資料有重複，想整理出不重複的資料，以下提供兩種方式給大家參考！&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>URL on Tony Blogs</title>
+    <link>/tags/url/</link>
+    <description>Recent content in URL on Tony Blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 31 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/url/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Swift]兩種發送Email的方法</title>
+      <link>/posts/ios/swift/send_email/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/send_email/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;img-fluid&#34; alt=&#34;image&#34; src=&#34;/images/posts/send_email_1.png&#34;
+   width=&#34;1170&#34; height=&#34;2532&#34; loading=&#34;lazy&#34; /&gt;
+
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

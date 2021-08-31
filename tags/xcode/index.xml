@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xcode on Tony Blogs</title>
+    <link>/tags/xcode/</link>
+    <description>Recent content in Xcode on Tony Blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
+    <lastBuildDate>Sun, 14 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/xcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>下載Xcode開發工具</title>
+      <link>/posts/xcode/xcode_download/</link>
+      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/xcode/xcode_download/</guid>
+      <description>&lt;p&gt;Apple官方下載連結&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>清除Xcode肥大檔案</title>
+      <link>/posts/xcode/developer_cleaner/</link>
+      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/xcode/developer_cleaner/</guid>
+      <description>&lt;p&gt;超實用的，一轉眼清了40幾G&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>安裝CocoaPods套件管理 支援M1</title>
+      <link>/posts/xcode/cocoapods_management_for_m1/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/xcode/cocoapods_management_for_m1/</guid>
+      <description>&lt;p&gt;在 Apple Silicon M1 安裝CocoaPods套件&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>安裝CocoaPods套件管理</title>
+      <link>/posts/xcode/cocoapods_management/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/xcode/cocoapods_management/</guid>
+      <description>&lt;p&gt;在做開發的時候，不可能所有功能都自己寫，多少會去參考別人使用的程式function，或者引用Library套件。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
