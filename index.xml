@@ -6,17 +6,73 @@
     <description>Recent content on Tony Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
-    <lastBuildDate>Tue, 31 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>[Swift]兩種發送Email的方法</title>
-      <link>/posts/ios/swift/send_email/</link>
+      <title>[Swift]iOS14 位置權限新增「準確位置」項目</title>
+      <link>/posts/ios/swift/check_location_permissions_ios14/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/check_location_permissions_ios14/</guid>
+      <description>&lt;p&gt;會發現這個是因為APP有需要使用到Wi-Fi功能，但當使用者把「準確位置」關閉之後，APP將無法取得Wi-Fi相關資訊，這樣就變得很麻煩，所以必須引導使用者，強制開啟位置權限的「準確位置」項目，才能讓我正常取用Wi-Fi資訊。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ps.最快的解決方法就是：公司要好好地告訴使用者，正確的使用規則！
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]檢查「允許取用位置」權限</title>
+      <link>/posts/ios/swift/check_location_permissions/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/check_location_permissions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>[Swift]使用URL撥打電話</title>
+      <link>/posts/ios/swift/url/call_phone/</link>
       <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/send_email/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;img-fluid&#34; alt=&#34;image&#34; src=&#34;/images/posts/send_email_1.png&#34;
-   width=&#34;1170&#34; height=&#34;2532&#34; loading=&#34;lazy&#34; /&gt;
+      <guid>/posts/ios/swift/url/call_phone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>[Swift]發送Email信件</title>
+      <link>/posts/ios/swift/url/send_email/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/url/send_email/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>[Swift]發送SMS簡訊</title>
+      <link>/posts/ios/swift/url/send_sms/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/url/send_sms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>[Swift]開啟Safari網頁</title>
+      <link>/posts/ios/swift/url/open_safari/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/url/open_safari/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;img-fluid&#34; alt=&#34;image&#34; src=&#34;/images/posts/swift_open_safari_1.png&#34;
+   width=&#34;750&#34; height=&#34;1334&#34; loading=&#34;lazy&#34; /&gt;
 
 &lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]前往「系統設定」頁面</title>
+      <link>/posts/ios/swift/url/goto_system_setting/</link>
+      <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/url/goto_system_setting/</guid>
+      <description>&lt;p&gt;在做權限管理的時候，常常會需要請使用者去開啟權限，可以使用此方法，引導使用者去「設定頁面」操作。&lt;/p&gt;</description>
     </item>
     
     <item>

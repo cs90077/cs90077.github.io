@@ -6,13 +6,49 @@
     <description>Recent content in 標籤 on Tony Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
-    <lastBuildDate>Tue, 31 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iOS 14</title>
+      <link>/tags/ios-14/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ios-14/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Location</title>
+      <link>/tags/location/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/location/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Swift</title>
       <link>/tags/swift/</link>
-      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>/tags/swift/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MessageUI</title>
+      <link>/tags/messageui/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/messageui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SafariServices</title>
+      <link>/tags/safariservices/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/safariservices/</guid>
       <description></description>
     </item>
     
