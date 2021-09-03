@@ -1,0 +1,4 @@
+[[main]]
+  name = "其他"
+  identifier = "dropdown"
+  pre = '<i class="fas fa-fw fa-chevron-circle-down"></i>'

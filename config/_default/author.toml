@@ -1,0 +1,8 @@
+name = "Tony Lin"
+avatar = "images/profile.webp"
+bio = "你必須要很努力，才能看起來毫不費力"
+location = "Taiwan"
+about = ""
+
+[params]
+  #layout = "compact"
