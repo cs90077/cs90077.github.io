@@ -12,7 +12,7 @@
 <meta name="description" content="" /><meta itemprop="name" content="[Swift]Array資料處理">
 <meta itemprop="description" content="整理一些基本常用的處理方式"><meta itemprop="datePublished" content="2021-09-02T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-09-02T00:00:00+00:00" />
-<meta itemprop="wordCount" content="49">
+<meta itemprop="wordCount" content="52">
 <meta itemprop="keywords" content="Swift,Array," /><meta property="og:title" content="[Swift]Array資料處理" />
 <meta property="og:description" content="整理一些基本常用的處理方式" />
 <meta property="og:type" content="article" />
@@ -191,7 +191,6 @@ Tony Blog</a>
   <ul>
     <li><a href="#新增">新增</a></li>
     <li><a href="#刪除">刪除</a></li>
-    <li><a href="#修改">修改</a></li>
     <li><a href="#資料排序">資料排序</a>
       <ul>
         <li><a href="#升序-a-z">升序 A-Z</a></li>
@@ -216,13 +215,15 @@ Tony Blog</a>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln">1</span><span class="n">aryData</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="n">at</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span>
 <span class="ln">2</span><span class="bp">print</span><span class="p">(</span><span class="n">aryData</span><span class="p">)</span>
 <span class="ln">3</span><span class="c1">// Prints [2, 3]</span>
-</code></pre></div><h2 id="修改">修改</h2>
-<h2 id="資料排序">資料排序</h2>
+</code></pre></div><h2 id="資料排序">資料排序</h2>
+<pre><code>注意：sorted會改變原數值，sort則不會。
+</code></pre>
 <h3 id="升序-a-z">升序 A-Z</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln">1</span><span class="kd">var</span> <span class="nv">histoayArray</span><span class="p">:</span> <span class="p">[</span><span class="n">History</span><span class="p">]</span> <span class="p">=</span> <span class="p">[]</span>
-<span class="ln">2</span><span class="n">historyArray</span><span class="p">.</span><span class="bp">sorted</span><span class="p">(</span><span class="n">by</span><span class="p">:</span> <span class="p">{</span> <span class="nv">$0</span><span class="p">.</span><span class="n">date</span> <span class="o">&lt;</span> <span class="nv">$1</span><span class="p">.</span><span class="n">date</span> <span class="p">}</span>
+<span class="ln">2</span>
+<span class="ln">3</span><span class="n">historyArray</span><span class="p">.</span><span class="bp">sorted</span><span class="p">(</span><span class="n">by</span><span class="p">:</span> <span class="p">{</span> <span class="nv">$0</span><span class="p">.</span><span class="n">date</span> <span class="o">&lt;</span> <span class="nv">$1</span><span class="p">.</span><span class="n">date</span> <span class="p">}</span>
 </code></pre></div><h3 id="降序-z-a">降序 Z-A</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln">1</span><span class="n">histoayArray</span><span class="p">.</span><span class="bp">sort</span> <span class="p">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln">1</span><span class="n">histoayArray</span> <span class="p">=</span> <span class="n">histoayArray</span><span class="p">.</span><span class="bp">sort</span> <span class="p">{</span>
 <span class="ln">2</span>    <span class="nv">$0</span><span class="p">.</span><span class="n">title</span> <span class="o">&gt;</span> <span class="nv">$1</span><span class="p">.</span><span class="n">title</span>
 <span class="ln">3</span><span class="p">}</span>
 </code></pre></div></div><div class="modal fade" id="rewardModal" tabindex="-1" aria-labelledby="rewardModalLabel" aria-hidden="true">
@@ -283,7 +284,7 @@ Tony Blog</a>
   <div class="col-12 d-flex align-items-center justify-content-center"><img class="profile-avatar rounded-circle" alt="Tony Lin" src="/images/profile.webp"
    width="2160" height="2160" loading="lazy" />
 </div>
-  <div class="col-12 profile-meta"><div class="profile-name">Tony Lin</div><div class="profile-bio">你必須要很努力，才能看起來毫不費力</div><div class="profile-location"><i class="fas fa-fw fa-map-marker-alt"></i>Taiwan</div><div class="profile-about"><i class="fas fa-fw fa-info-circle"></i><a href="/about/">關於我</a></div></div>
+  <div class="col-12 profile-meta"><div class="profile-name">Tony Lin</div><div class="profile-bio">Hi！ 我是Tony，是一位「沒有資訊背景的 iOS APP 工程師」，一路從WebAPI寫到APP。常常朋友問：為何你這樣還可以成為軟體工程師，我：你必須要很努力，才能看起來毫不費力。</div><div class="profile-location"><i class="fas fa-fw fa-map-marker-alt"></i>Taiwan</div><div class="profile-about"><i class="fas fa-fw fa-info-circle"></i><a href="/about/">關於我</a></div></div>
 </section>
   <section class="featured-posts row surface">
     <h4>精選文章</h4>
