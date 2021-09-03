@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Swift on Tony Blogs</title>
+    <link>/tags/swift/</link>
+    <description>Recent content in Swift on Tony Blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
+    <lastBuildDate>Thu, 02 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Swift]Array資料處理</title>
+      <link>/posts/ios/swift/array_basic/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/array_basic/</guid>
+      <description>&lt;p&gt;整理一些基本常用的處理方式&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]iOS14 位置權限新增「準確位置」項目</title>
+      <link>/posts/ios/swift/check_location_permissions_ios14/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/check_location_permissions_ios14/</guid>
+      <description>&lt;p&gt;會發現這個是因為APP有需要使用到Wi-Fi功能，但當使用者把「準確位置」關閉之後，APP將無法取得Wi-Fi相關資訊，這樣就變得很麻煩，所以必須引導使用者，強制開啟位置權限的「準確位置」項目，才能讓我正常取用Wi-Fi資訊。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]檢查「允許取用位置」權限</title>
+      <link>/posts/ios/swift/check_location_permissions/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/check_location_permissions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>[Swift]使用URL撥打電話</title>
+      <link>/posts/ios/swift/url/call_phone/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/url/call_phone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>[Swift]前往「系統設定」頁面</title>
+      <link>/posts/ios/swift/url/goto_system_setting/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/url/goto_system_setting/</guid>
+      <description>&lt;p&gt;在做權限管理的時候，常常會需要請使用者去開啟權限，可以使用此方法，引導使用者去「設定頁面」操作。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]發送Email信件</title>
+      <link>/posts/ios/swift/url/send_email/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/url/send_email/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>[Swift]發送SMS簡訊</title>
+      <link>/posts/ios/swift/url/send_sms/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/url/send_sms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>[Swift]開啟Safari網頁</title>
+      <link>/posts/ios/swift/url/open_safari/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/url/open_safari/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;img-fluid&#34; alt=&#34;image&#34; src=&#34;/images/posts/swift_open_safari_1.png&#34;
+   width=&#34;750&#34; height=&#34;1334&#34; loading=&#34;lazy&#34; /&gt;
+
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]AlertView透過Closure觸發回傳事件</title>
+      <link>/posts/ios/swift/alertview/alert_closure/</link>
+      <pubDate>Mon, 30 Aug 2021 13:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/alertview/alert_closure/</guid>
+      <description>&lt;p&gt;設計一個良好互動良好的AlertView，當按下確認後要讓ViewController能夠處理完成事件。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]客製化AlertView 使用Storyboard</title>
+      <link>/posts/ios/swift/alertview/custom_alert_storyboard/</link>
+      <pubDate>Mon, 30 Aug 2021 11:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/alertview/custom_alert_storyboard/</guid>
+      <description>&lt;p&gt;使用UIViewController搭配Storyboard設計AlertView的樣板&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]客製化AlertView 使用Xib</title>
+      <link>/posts/ios/swift/alertview/custom_alert_xib/</link>
+      <pubDate>Mon, 30 Aug 2021 10:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/alertview/custom_alert_xib/</guid>
+      <description>&lt;p&gt;使用UIViewController搭配Xib設計AlertView的樣板&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]如何使用ActionSheet</title>
+      <link>/posts/ios/swift/alertview/actionsheet_basic/</link>
+      <pubDate>Mon, 30 Aug 2021 09:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/alertview/actionsheet_basic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>[Swift]如何使用AlertController</title>
+      <link>/posts/ios/swift/alertview/alert_basic/</link>
+      <pubDate>Mon, 30 Aug 2021 08:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/alertview/alert_basic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>[Swift]Attribute 客製化文字屬性</title>
+      <link>/posts/ios/swift/attribute_%E5%AE%A2%E8%A3%BD%E5%8C%96%E6%96%87%E5%AD%97%E5%B1%AC%E6%80%A7/</link>
+      <pubDate>Tue, 17 Aug 2021 08:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/attribute_%E5%AE%A2%E8%A3%BD%E5%8C%96%E6%96%87%E5%AD%97%E5%B1%AC%E6%80%A7/</guid>
+      <description>&lt;p&gt;調整奇耙的文字屬性設定&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]Attribute文字屬性的應用</title>
+      <link>/posts/ios/swift/attribute_basic/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/attribute_basic/</guid>
+      <description>&lt;p&gt;調整各種文字屬性&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]Array取得不重複資料</title>
+      <link>/posts/ios/swift/array_data_not_repeat/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/array_data_not_repeat/</guid>
+      <description>&lt;p&gt;當資料有重複，想整理出不重複的資料，以下提供兩種方式給大家參考！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]UIColor RGB顏色的使用</title>
+      <link>/posts/ios/swift/color_rgb/</link>
+      <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/color_rgb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>安裝CocoaPods套件管理 支援M1</title>
+      <link>/posts/xcode/cocoapods_management_for_m1/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/xcode/cocoapods_management_for_m1/</guid>
+      <description>&lt;p&gt;在 Apple Silicon M1 安裝CocoaPods套件&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>iRent自助租車 APP</title>
+      <link>/projects/2020/app_irent/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/2020/app_irent/</guid>
+      <description>&lt;p&gt;iRent共享汽機車首創全台「24小時自助租車服務」，透過app輕鬆完成預約、取車、付款、還車，隨租隨還&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]使用Bundle取得APP版本號</title>
+      <link>/posts/ios/swift/bundle_app_version/</link>
+      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/bundle_app_version/</guid>
+      <description>&lt;p&gt;想要顯示目前的APP版本號&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]使用Bundle取得info資料</title>
+      <link>/posts/ios/swift/bundle_info_dictionary/</link>
+      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/bundle_info_dictionary/</guid>
+      <description>&lt;p&gt;想把一些重要的參數寫在info.plist設定檔裡，透過Bundle取出想要的資料&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]使用ImagePicker開啟Camera相機功能</title>
+      <link>/posts/ios/swift/imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/</link>
+      <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/</guid>
+      <description>&lt;p&gt;開啟相機 =&amp;gt; 拍照 =&amp;gt; 儲存照片 =&amp;gt; 簡單搞定&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>BeanGo Cube 智能烘豆機</title>
+      <link>/projects/2020/app_beangocube/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/2020/app_beangocube/</guid>
+      <description>&lt;p&gt;此App僅供本公司之產品「BeanGo Cube 智能烘豆機」使用&lt;/p&gt;
+&lt;p&gt;使用手機APP智慧控制烘豆機，所有烘焙曲線都儲存在手機內部並且可分享至雲端，輕鬆分享或是複製烘焙曲線，並且可依照烘焙曲線，自動執行烘培作業。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>安裝CocoaPods套件管理</title>
+      <link>/posts/xcode/cocoapods_management/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/xcode/cocoapods_management/</guid>
+      <description>&lt;p&gt;在做開發的時候，不可能所有功能都自己寫，多少會去參考別人使用的程式function，或者引用Library套件。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>長榮警備保全系統</title>
+      <link>/projects/2017/app_evergreen_wireless/</link>
+      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/2017/app_evergreen_wireless/</guid>
+      <description>&lt;p&gt;此App僅供本公司之產品「長保無線安康 智慧保全系統」使用&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

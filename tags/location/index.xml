@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Location on Tony Blogs</title>
+    <link>/tags/location/</link>
+    <description>Recent content in Location on Tony Blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
+    <lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/location/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Swift]iOS14 位置權限新增「準確位置」項目</title>
+      <link>/posts/ios/swift/check_location_permissions_ios14/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/check_location_permissions_ios14/</guid>
+      <description>&lt;p&gt;會發現這個是因為APP有需要使用到Wi-Fi功能，但當使用者把「準確位置」關閉之後，APP將無法取得Wi-Fi相關資訊，這樣就變得很麻煩，所以必須引導使用者，強制開啟位置權限的「準確位置」項目，才能讓我正常取用Wi-Fi資訊。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]檢查「允許取用位置」權限</title>
+      <link>/posts/ios/swift/check_location_permissions/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/check_location_permissions/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

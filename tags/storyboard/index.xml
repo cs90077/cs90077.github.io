@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Storyboard on Tony Blogs</title>
+    <link>/tags/storyboard/</link>
+    <description>Recent content in Storyboard on Tony Blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
+    <lastBuildDate>Mon, 30 Aug 2021 11:00:00 +0000</lastBuildDate><atom:link href="/tags/storyboard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Swift]客製化AlertView 使用Storyboard</title>
+      <link>/posts/ios/swift/alertview/custom_alert_storyboard/</link>
+      <pubDate>Mon, 30 Aug 2021 11:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/alertview/custom_alert_storyboard/</guid>
+      <description>&lt;p&gt;使用UIViewController搭配Storyboard設計AlertView的樣板&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
