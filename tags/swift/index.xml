@@ -209,16 +209,6 @@
     </item>
     
     <item>
-      <title>BeanGo Cube 智能烘豆機</title>
-      <link>/projects/2020/app_beangocube/</link>
-      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/2020/app_beangocube/</guid>
-      <description>&lt;p&gt;此App僅供本公司之產品「BeanGo Cube 智能烘豆機」使用&lt;/p&gt;
-&lt;p&gt;使用手機APP智慧控制烘豆機，所有烘焙曲線都儲存在手機內部並且可分享至雲端，輕鬆分享或是複製烘焙曲線，並且可依照烘焙曲線，自動執行烘培作業。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>安裝CocoaPods套件管理</title>
       <link>/posts/xcode/cocoapods_management/</link>
       <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
