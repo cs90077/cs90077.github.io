@@ -9,15 +9,6 @@
     <lastBuildDate>Fri, 10 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>將pickerview做封裝練習，練習製作UI套件</title>
-      <link>/posts/ios/swift/picker_view_custom/picker_view_custom/</link>
-      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/ios/swift/picker_view_custom/picker_view_custom/</guid>
-      <description>&lt;p&gt;PickerView對於手機APP操作，是一個很方便的項目選擇工具，應用於資料選擇、時間選擇等等。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>將pickerview做封裝練習，練習製作UI套件</title>
       <link>/posts/ios/swift/picker_view_package_practise/picker_view_package_practise/</link>
       <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
       
