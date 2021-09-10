@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Google Map 地圖及坐標的基本使用 | Tony Blogs</title><link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/images/favicons/manifest.json">
+<link rel="icon" href="/images/favicons/favicon.ico">
+<meta name="keywords" content="" />
+<meta name="description" content="" /><meta itemprop="name" content="Google Map 地圖及坐標的基本使用">
+<meta itemprop="description" content="Google console 設定 Google console
+https://accounts.google.com/ServiceLogin/webreauth?service=cloudconsole&passive=1209600&osid=1&continue=https%3A%2F%2Fconsole.developers.google.com%2F&followup=https%3A%2F%2Fconsole.developers.google.com%2F&authuser=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin 建立專案 建立API金鑰 使用 step 1 Privacy 請先參考： [檢查「允許取用位置」權限] step 2 import 1import GoogleMaps step 3 ui 在UIViewController裏面放入一個UIView，並且設定Class為GMSMapView
+step 4 func 1// MARK:IBOutlets GoogleMap 2@IBOutlet weak var mapView: GMSMapView! 3 4private var mapPosition: CLLocationCoordinate2D? 5private var zoomLevel: Float! = 16 1extension MainMapVC { 2 3 private func setupMap() { 4 mapView.delegate = self 5 mapView.isMyLocationEnabled = true 6 7 loadUserLocation() 8 // my location 9 addUserLocationMarker() 10 } 11 12 func loadUserLocation() { 13 if let location = LTTLocationManager."><meta itemprop="datePublished" content="2021-09-08T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-09-08T00:00:00+00:00" />
+<meta itemprop="wordCount" content="215">
+<meta itemprop="keywords" content="" /><meta property="og:title" content="Google Map 地圖及坐標的基本使用" />
+<meta property="og:description" content="Google console 設定 Google console
+https://accounts.google.com/ServiceLogin/webreauth?service=cloudconsole&passive=1209600&osid=1&continue=https%3A%2F%2Fconsole.developers.google.com%2F&followup=https%3A%2F%2Fconsole.developers.google.com%2F&authuser=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin 建立專案 建立API金鑰 使用 step 1 Privacy 請先參考： [檢查「允許取用位置」權限] step 2 import 1import GoogleMaps step 3 ui 在UIViewController裏面放入一個UIView，並且設定Class為GMSMapView
+step 4 func 1// MARK:IBOutlets GoogleMap 2@IBOutlet weak var mapView: GMSMapView! 3 4private var mapPosition: CLLocationCoordinate2D? 5private var zoomLevel: Float! = 16 1extension MainMapVC { 2 3 private func setupMap() { 4 mapView.delegate = self 5 mapView.isMyLocationEnabled = true 6 7 loadUserLocation() 8 // my location 9 addUserLocationMarker() 10 } 11 12 func loadUserLocation() { 13 if let location = LTTLocationManager." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/draft/google_map_basic/" /><meta property="article:section" content="draft" />
+<meta property="article:published_time" content="2021-09-08T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-09-08T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Google Map 地圖及坐標的基本使用"/>
+<meta name="twitter:description" content="Google console 設定 Google console
+https://accounts.google.com/ServiceLogin/webreauth?service=cloudconsole&passive=1209600&osid=1&continue=https%3A%2F%2Fconsole.developers.google.com%2F&followup=https%3A%2F%2Fconsole.developers.google.com%2F&authuser=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin 建立專案 建立API金鑰 使用 step 1 Privacy 請先參考： [檢查「允許取用位置」權限] step 2 import 1import GoogleMaps step 3 ui 在UIViewController裏面放入一個UIView，並且設定Class為GMSMapView
+step 4 func 1// MARK:IBOutlets GoogleMap 2@IBOutlet weak var mapView: GMSMapView! 3 4private var mapPosition: CLLocationCoordinate2D? 5private var zoomLevel: Float! = 16 1extension MainMapVC { 2 3 private func setupMap() { 4 mapView.delegate = self 5 mapView.isMyLocationEnabled = true 6 7 loadUserLocation() 8 // my location 9 addUserLocationMarker() 10 } 11 12 func loadUserLocation() { 13 if let location = LTTLocationManager."/>
+<meta data-name="palette" content="blue"><link rel="preload" href="/css/bundle.min.6432e1eb8529dcd2047cf814f92cb64eca4d65058b306e0630c8777240297fa4.css" integrity="sha256-ZDLh64Up3NIEfPgU&#43;Sy2TspNZQWLMG4GMMh3ckApf6Q=" crossorigin="anonymous" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/bundle.min.6432e1eb8529dcd2047cf814f92cb64eca4d65058b306e0630c8777240297fa4.css" integrity="sha256-ZDLh64Up3NIEfPgU&#43;Sy2TspNZQWLMG4GMMh3ckApf6Q=" crossorigin="anonymous"></noscript><script src="/js/bundle.min.110283d8a411715b5a0573efeddf30ac90adf2b9a9a1c741be19d7c8810c6327.js" integrity="sha256-EQKD2KQRcVtaBXPv7d8wrJCt8rmpocdBvhnXyIEMYyc=" crossorigin="anonymous"></script>
+</head><body><header><nav class="navbar navbar-expand-xl fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img class="logo" alt="Logo" src="/images/logo.webp"
+   width="240" height="240" loading="lazy" />
+Tony Blog</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-1 mb-2 mb-lg-0"><form class="search-bar d-flex ms-1" action="/search">
+  <div class="input-group input-group-sm">
+    <button class="btn btn-search disabled position-absolute left-0" type="submit" aria-label="submit"><i class="fas fa-fw fa-search"></i></button>
+    <input class="form-control rounded-pill" id="searchQuery" name="q" type="search" aria-label="Search">
+  </div>
+</form></ul><ul class="navbar-nav me-1 mb-2 mb-lg-0 me-1 ms-auto"><li class="nav-item">
+          <a class="nav-link" href="/posts/">
+            <i class="fas fa-fw fa-folder"></i>文章
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/series/">
+            <i class="fas fa-fw fa-columns"></i>專欄
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/tags/">
+            <i class="fas fa-fw fa-tags"></i>標籤
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/archives/">
+            <i class="fas fa-fw fa-file-archive"></i>歸檔
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/draft/">
+            <i class="fas fa-fw fa-folder"></i>草稿
+          </a>
+        </li><li class="nav-item">
+  <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasSettings" role="button"
+    aria-controls="offcanvasSettings">
+    <i class="fas fa-fw fa-sliders-h"></i> 設置
+  </a>
+</li>
+
+<div class="offcanvas offcanvas-end surface h-100" tabindex="-1" id="offcanvasSettings"
+  aria-labelledby="offcanvasSettingsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" w id="offcanvasSettingsLabel"><i class="fas fa-fw fa-sliders-h"></i> 設置</h5>
+    <a role="button" data-bs-dismiss="offcanvas" aria-label="Close">
+      <span class="fas fa-2x fa-fw fa-times"></span>
+    </a>
+  </div>
+  <div class="offcanvas-body"><section class="setting">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-adjust"></i> 模式</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="modeSwitcher">
+      </div>
+    </div>
+  </form>
+</section>
+<section class="setting">
+  <form class="font-size-switcher-form row">
+    <div class="col-auto">
+      <label for="fontSize" class="form-label"><i class="fas fa-fw fa-font"></i> 字體大小</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <input type="range" class="form-range" min="-2" max="2" id="fontSize">
+    </div>
+  </form>
+</section>
+
+<section class="setting palettes">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-palette"></i> 配色</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <span id="btnPalette" class="btn btn-sm"><i class="fas fa-eye-dropper"></i></span>
+    </div>
+  </form>
+  <div class="container mt-2 visually-hidden" id="palettePicker">
+    <div class="btn-group"><button type="button" id="palette-blue" title="藍色" 
+          class="btn btn-sm palette bg-blue d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-blue-gray" title="藍灰色" 
+          class="btn btn-sm palette bg-blue-gray d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-brown" title="棕色" 
+          class="btn btn-sm palette bg-brown d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-cyan" title="青色" 
+          class="btn btn-sm palette bg-cyan d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-green" title="綠色" 
+          class="btn btn-sm palette bg-green d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-indigo" title="靛青色" 
+          class="btn btn-sm palette bg-indigo d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-orange" title="橙色" 
+          class="btn btn-sm palette bg-orange d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-pink" title="粉色" 
+          class="btn btn-sm palette bg-pink d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-purple" title="紫色" 
+          class="btn btn-sm palette bg-purple d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-red" title="紅色" 
+          class="btn btn-sm palette bg-red d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-teal" title="藍綠色" 
+          class="btn btn-sm palette bg-teal d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-yellow" title="黃色" 
+          class="btn btn-sm palette bg-yellow d-flex align-items-center justify-content-center">
+        </button></button>
+    </div>
+  </div>
+</section></div>
+</div></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main role="main" class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row" aria-label="breadcrumb">
+  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="/">主頁</a></li><li class="breadcrumb-item"><a href="/draft/">草稿</a></li><li class="breadcrumb-item active">Google Map 地圖及坐標的基本使用</li></ol>
+</nav><article class="post row surface"><div class="post-panel-wrapper">
+  <div class="post-panel d-flex flex-column">
+    <a id="sidebarToggler" class="action d-none d-lg-block" role="button">
+  <i class="fas fa-fw fa-expand-alt fa-rotate-45"></i>
+</a>
+  
+    
+
+    <a class="action btn-reward" role="button" data-bs-toggle="modal" data-bs-target="#rewardModal" title="「爽」請我喝拿鐵「不爽」請我喝美式">
+  <i class="fas fa-fw fa-medal"></i>
+</a>
+    <a class="action" data-bs-container="body" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom"
+  data-bs-trigger="focus" tabindex="0"
+  data-bs-content="&lt;a target=&#34;_blank&#34; rel=&#34;license noopener noreferrer&#34; href=&#34;https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh_TW&#34;&gt;CC BY-NC-ND 4.0 &lt;i class=&#34;fab fa-fw fa-creative-commons&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-fw fa-creative-commons-by&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-fw fa-creative-commons-nc&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-fw fa-creative-commons-nd&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+">
+  <i class="fas fa-fw fa-copyright"></i>
+</a>
+    <a id="btnTOC" class="fas fa-fw fa-list-alt" data-bs-toggle="offcanvas" href="#offcanvasTOC" aria-controls="offcanvasTOC" role="button">
+</a>
+  </div>
+</div>
+<h1 class="post-title my-3">Google Map 地圖及坐標的基本使用
+</h1><div class="post-meta mb-3"><span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>Sep 8, 2021
+  </span><span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>2 分鐘閱讀
+  </span><span class="post-taxonomies"></span>
+</div>
+<div class="offcanvas offcanvas-end surface" tabindex="-1" id="offcanvasTOC" aria-labelledby="offcanvasTOCLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasTOCLabel">目錄</h5>
+    <a role="button" data-bs-dismiss="offcanvas" aria-label="Close">
+      <span class="fas fa-2x fa-fw fa-times"></span>
+    </a>
+  </div>
+  <div class="offcanvas-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#google-console-設定">Google console 設定</a>
+      <ul>
+        <li><a href="#建立專案">建立專案</a></li>
+        <li><a href="#建立api金鑰">建立API金鑰</a></li>
+      </ul>
+    </li>
+    <li><a href="#使用">使用</a>
+      <ul>
+        <li><a href="#step-1-privacy">step 1 Privacy</a></li>
+        <li><a href="#step-2-import">step 2 import</a></li>
+        <li><a href="#step-3-ui">step 3 ui</a></li>
+        <li><a href="#step-4-func">step 4 func</a></li>
+        <li><a href="#step-5-delegate">step 5 delegate</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div><div class="post-content mb-3"><h2 id="google-console-設定">Google console 設定</h2>
+<p>Google console</p>
+<p><a href="https://accounts.google.com/ServiceLogin/webreauth?service=cloudconsole&amp;passive=1209600&amp;osid=1&amp;continue=https%3A%2F%2Fconsole.developers.google.com%2F&amp;followup=https%3A%2F%2Fconsole.developers.google.com%2F&amp;authuser=0&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin" target="_blank" rel="noopener noreferrer">https://accounts.google.com/ServiceLogin/webreauth?service=cloudconsole&passive=1209600&osid=1&continue=https%3A%2F%2Fconsole.developers.google.com%2F&followup=https%3A%2F%2Fconsole.developers.google.com%2F&authuser=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin</a>
+</p>
+<h3 id="建立專案">建立專案</h3>
+<h3 id="建立api金鑰">建立API金鑰</h3>
+<h2 id="使用">使用</h2>
+<h3 id="step-1-privacy">step 1 Privacy</h3>
+<p>請先參考： <a href="/posts/ios/swift/check_location_permissions/">[檢查「允許取用位置」權限]</a>
+</p>
+<h3 id="step-2-import">step 2 import</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln">1</span><span class="kd">import</span> <span class="nc">GoogleMaps</span>
+</code></pre></div><h3 id="step-3-ui">step 3 ui</h3>
+<p>在UIViewController裏面放入一個UIView，並且設定Class為GMSMapView</p>
+<h3 id="step-4-func">step 4 func</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln">1</span><span class="c1">// </span><span class="cs">MARK:</span><span class="c1"> IBOutlets GoogleMap</span>
+<span class="ln">2</span><span class="kr">@IBOutlet</span> <span class="kr">weak</span> <span class="kd">var</span> <span class="nv">mapView</span><span class="p">:</span> <span class="n">GMSMapView</span><span class="p">!</span>
+<span class="ln">3</span>
+<span class="ln">4</span><span class="kd">private</span> <span class="kd">var</span> <span class="nv">mapPosition</span><span class="p">:</span> <span class="n">CLLocationCoordinate2D</span><span class="p">?</span>
+<span class="ln">5</span><span class="kd">private</span> <span class="kd">var</span> <span class="nv">zoomLevel</span><span class="p">:</span> <span class="nb">Float</span><span class="p">!</span> <span class="p">=</span> <span class="mi">16</span>    
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln"> 1</span><span class="kd">extension</span> <span class="nc">MainMapVC</span> <span class="p">{</span>
+<span class="ln"> 2</span>    
+<span class="ln"> 3</span>    <span class="kd">private</span> <span class="kd">func</span> <span class="nf">setupMap</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln"> 4</span>        <span class="n">mapView</span><span class="p">.</span><span class="n">delegate</span> <span class="p">=</span> <span class="kc">self</span>
+<span class="ln"> 5</span>        <span class="n">mapView</span><span class="p">.</span><span class="n">isMyLocationEnabled</span> <span class="p">=</span> <span class="kc">true</span>
+<span class="ln"> 6</span>        
+<span class="ln"> 7</span>        <span class="n">loadUserLocation</span><span class="p">()</span>
+<span class="ln"> 8</span>        <span class="c1">// my location</span>
+<span class="ln"> 9</span>        <span class="n">addUserLocationMarker</span><span class="p">()</span>
+<span class="ln">10</span>    <span class="p">}</span>
+<span class="ln">11</span>    
+<span class="ln">12</span>    <span class="kd">func</span> <span class="nf">loadUserLocation</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln">13</span>        <span class="k">if</span> <span class="kd">let</span> <span class="nv">location</span> <span class="p">=</span> <span class="n">LTTLocationManager</span><span class="p">.</span><span class="n">currentLocation</span> <span class="p">{</span>
+<span class="ln">14</span>            <span class="kd">let</span> <span class="nv">camera</span> <span class="p">=</span> <span class="n">GMSCameraPosition</span><span class="p">.</span><span class="n">camera</span><span class="p">(</span><span class="n">withLatitude</span><span class="p">:</span>  <span class="n">location</span><span class="p">.</span><span class="n">latitude</span><span class="p">,</span>
+<span class="ln">15</span>                                                  <span class="n">longitude</span><span class="p">:</span>  <span class="n">location</span><span class="p">.</span><span class="n">longitude</span><span class="p">,</span>
+<span class="ln">16</span>                                                  <span class="n">zoom</span><span class="p">:</span> <span class="n">zoomLevel</span><span class="p">)</span>
+<span class="ln">17</span>            <span class="n">mapView</span><span class="p">.</span><span class="n">camera</span> <span class="p">=</span> <span class="n">camera</span>
+<span class="ln">18</span>
+<span class="ln">19</span>             <span class="kd">let</span> <span class="nv">position</span> <span class="p">=</span> <span class="n">CLLocationCoordinate2D</span><span class="p">(</span><span class="n">latitude</span><span class="p">:</span> <span class="n">location</span><span class="p">.</span><span class="n">latitude</span><span class="p">,</span> <span class="n">longitude</span><span class="p">:</span> <span class="n">location</span><span class="p">.</span><span class="n">longitude</span><span class="p">)</span>
+<span class="ln">20</span>             <span class="n">mapPosition</span> <span class="p">=</span> <span class="n">position</span>
+<span class="ln">21</span>        <span class="p">}</span>
+<span class="ln">22</span>    <span class="p">}</span>
+<span class="ln">23</span>    
+<span class="ln">24</span>    <span class="kd">func</span> <span class="nf">addUserLocationMarker</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln">25</span>        <span class="k">if</span> <span class="kd">let</span> <span class="nv">position</span> <span class="p">=</span> <span class="n">mapPosition</span> <span class="p">{</span>
+<span class="ln">26</span>            <span class="kd">let</span> <span class="nv">marker</span> <span class="p">=</span> <span class="n">GMSMarker</span><span class="p">()</span>
+<span class="ln">27</span>            <span class="n">marker</span><span class="p">.</span><span class="bp">map</span> <span class="p">=</span> <span class="n">mapView</span>
+<span class="ln">28</span>            <span class="n">marker</span><span class="p">.</span><span class="n">position</span> <span class="p">=</span> <span class="n">position</span>
+<span class="ln">29</span>            <span class="n">marker</span><span class="p">.</span><span class="n">title</span> <span class="p">=</span> <span class="s">&#34;LTT&#34;</span>
+<span class="ln">30</span>            <span class="n">marker</span><span class="p">.</span><span class="n">snippet</span> <span class="p">=</span> <span class="s">&#34;My name is Tony&#34;</span>
+<span class="ln">31</span>        <span class="p">}</span>
+<span class="ln">32</span>    <span class="p">}</span>
+<span class="ln">33</span>    
+<span class="ln">34</span><span class="p">}</span>
+</code></pre></div><h3 id="step-5-delegate">step 5 delegate</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln"> 1</span><span class="c1">// </span><span class="cs">MARK:</span><span class="c1">- GMSMapViewDelegate</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span><span class="kd">extension</span> <span class="nc">MainMapVC</span><span class="p">:</span> <span class="n">GMSMapViewDelegate</span> <span class="p">{</span>
+<span class="ln"> 4</span>    
+<span class="ln"> 5</span>    <span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="kc">_</span> <span class="n">mapView</span><span class="p">:</span> <span class="n">GMSMapView</span><span class="p">,</span> <span class="n">didTapInfoWindowOf</span> <span class="n">marker</span><span class="p">:</span> <span class="n">GMSMarker</span><span class="p">)</span> <span class="p">{</span>
+<span class="ln"> 6</span>        <span class="bp">print</span><span class="p">(</span><span class="s">&#34;didTapInfoWindowOf&#34;</span><span class="p">)</span>
+<span class="ln"> 7</span>    <span class="p">}</span>
+<span class="ln"> 8</span>    
+<span class="ln"> 9</span>    <span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="kc">_</span> <span class="n">mapView</span><span class="p">:</span> <span class="n">GMSMapView</span><span class="p">,</span> <span class="n">idleAt</span> <span class="n">position</span><span class="p">:</span> <span class="n">GMSCameraPosition</span><span class="p">)</span> <span class="p">{</span>
+<span class="ln">10</span>        <span class="bp">print</span><span class="p">(</span><span class="n">position</span><span class="p">)</span>
+<span class="ln">11</span>    <span class="p">}</span>
+<span class="ln">12</span>    
+<span class="ln">13</span>    <span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="kc">_</span> <span class="n">mapView</span><span class="p">:</span> <span class="n">GMSMapView</span><span class="p">,</span> <span class="n">didTapAt</span> <span class="n">coordinate</span><span class="p">:</span> <span class="n">CLLocationCoordinate2D</span><span class="p">)</span> <span class="p">{</span>
+<span class="ln">14</span>        <span class="bp">print</span><span class="p">(</span><span class="s">&#34;didTapAt&#34;</span><span class="p">)</span>
+<span class="ln">15</span>    <span class="p">}</span>
+<span class="ln">16</span>    
+<span class="ln">17</span><span class="p">}</span>
+</code></pre></div></div><div class="modal fade" id="rewardModal" tabindex="-1" aria-labelledby="rewardModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content surface">
+      <div class="modal-header">
+        <h5 class="modal-title" id="rewardModalLabel"><i class="fas fa-fw fa-medal"></i>「爽」請我喝拿鐵「不爽」請我喝美式</h5>
+        <a href="#" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-fw fa-times"></i></a>
+      </div>
+      <div class="modal-body">
+        <ul class="nav nav-tabs mb-3" role="tablist"><li class="nav-item" role="presentation">
+            <a class="nav-link active" id="reward-crypto_usdt_bep20-tab" data-bs-toggle="tab" href="#reward-crypto_usdt_bep20" role="tab" aria-controls="reward-crypto_usdt_bep20" aria-selected="true">
+              <i class="fab fa-fw fa-crypto_usdt_bep20"></i>USDT(BEP20)
+            </a>
+          </li><li class="nav-item" role="presentation">
+            <a class="nav-link" id="reward-crypto_usdt_trc20-tab" data-bs-toggle="tab" href="#reward-crypto_usdt_trc20" role="tab" aria-controls="reward-crypto_usdt_trc20" aria-selected="true">
+              <i class="fab fa-fw fa-crypto_usdt_trc20"></i>USDT(TRC20)
+            </a>
+          </li><li class="nav-item" role="presentation">
+            <a class="nav-link" id="reward-jkopay-tab" data-bs-toggle="tab" href="#reward-jkopay" role="tab" aria-controls="reward-jkopay" aria-selected="true">
+              <i class="fab fa-fw fa-jkopay"></i>街口支付
+            </a>
+          </li></ul>
+        <div class="tab-content" id="rewardTabContent"><div class="tab-pane fade post-reward-content show active" id="reward-crypto_usdt_bep20" role="tabpanel" aria-labelledby="reward-crypto_usdt_bep20-tab">
+            <img class="img-fluid post-reward-img" src="/images/reward/crypto-usdt-bep20.png" loading="lazy" />
+          </div><div class="tab-pane fade post-reward-content show" id="reward-crypto_usdt_trc20" role="tabpanel" aria-labelledby="reward-crypto_usdt_trc20-tab">
+            <img class="img-fluid post-reward-img" src="/images/reward/crypto-usdt-trc20.png" loading="lazy" />
+          </div><div class="tab-pane fade post-reward-content show" id="reward-jkopay" role="tabpanel" aria-labelledby="reward-jkopay-tab">
+            <img class="img-fluid post-reward-img" src="/images/reward/jkopay.png" loading="lazy" />
+          </div></div>
+      </div>
+    </div>
+  </div>
+</div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
+  <div class="post-nav w-50"><div class="prev-post btn btn-sm">
+      <a href="/draft/protocol_basic/">Protocol
+</a>
+    </div></div>
+  <div class="post-nav flex-row-reverse"></div>
+</div><section class="related-posts">
+    <h3>相關文章</h3>
+    <ul class="related-posts"><li><a href="/draft/protocol_basic/">Protocol
+</a></li><li><a href="/draft/template/">Template
+</a></li><li><a href="/draft/swift_json_parser/">使用Codable解析Json物件
+</a></li><li><a href="/posts/ios/swift/custom_picker_view/">練習封裝PickerView實作UI功能
+</a></li><li><a href="/posts/ios/swift/bundle_read_json/">[Swift]使用Bundle讀取Json檔案
+</a></li></ul>
+  </section></article><div class="post-comments surface row"><script src="https://utteranc.es/client.js"
+  repo="razonyang/hugo-theme-bootstrap-comments"
+  issue-term="pathname"
+  label="comment"
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script></div></div>
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container"><section class="profile surface row text-center">
+  <div class="col-12 d-flex align-items-center justify-content-center"><img class="profile-avatar rounded-circle" alt="Tony Lin" src="/images/profile.webp"
+   width="2160" height="2160" loading="lazy" />
+</div>
+  <div class="col-12 profile-meta"><div class="profile-name">Tony Lin</div><div class="profile-bio">Hi！ 我是Tony，一位「沒有資訊背景的 iOS APP 工程師」，從ERP、WebAPI一路寫到APP。常常朋友問：為何你這樣還可以成為軟體工程師，我：你必須要很努力，才能看起來毫不費力。</div><div class="profile-location"><i class="fas fa-fw fa-map-marker-alt"></i>Taiwan</div><div class="profile-about"><i class="fas fa-fw fa-info-circle"></i><a href="/about/">關於我</a></div></div>
+</section>
+  <section class="featured-posts row surface">
+    <h4>精選文章</h4>
+    <ul><li><a href="/posts/macos/recommended_software/">MacOS 推薦實用軟體
+</a></li><li><a href="/posts/macos/system_setting_contents/">MacOS 系統設定彙整
+</a></li></ul>
+  </section><section class="recent-posts row surface">
+  <h4>最近文章</h4>
+  <ul><li><a href="/posts/ios/swift/custom_picker_view/">練習封裝PickerView實作UI功能
+</a></li><li><a href="/posts/ios/swift/bundle_read_json/">[Swift]使用Bundle讀取Json檔案
+</a></li><li><a href="/posts/ios/swift/bundle_read_text/">[Swift]使用Bundle讀取txt檔案
+</a></li><li><a href="/posts/ios/swift/bundle_info_dictionary/">[Swift]使用Bundle取得info資料
+</a></li><li><a href="/posts/ios/swift/bundle_app_version/">[Swift]使用Bundle取得APP版本號
+</a></li></ul>
+</section><section class="taxonomy-series row surface">
+      <h4>
+        <a href="/series">專欄</a>
+      </h4>
+      <div><a href="/series/ios/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="iOS">
+          iOS <span class="badge rounded-pill">25</span>
+        </a><a href="/series/macos/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="macOS">
+          macOS <span class="badge rounded-pill">5</span>
+        </a></div>
+    </section><section class="taxonomy-tags row surface">
+      <h4>
+        <a href="/tags">標籤</a>
+      </h4>
+      <div><a href="/tags/swift/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Swift">
+          Swift <span class="badge rounded-pill">24</span>
+        </a><a href="/tags/alertcontroller/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="AlertController">
+          AlertController <span class="badge rounded-pill">5</span>
+        </a><a href="/tags/url/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="URL">
+          URL <span class="badge rounded-pill">5</span>
+        </a><a href="/tags/bundle/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Bundle">
+          Bundle <span class="badge rounded-pill">4</span>
+        </a><a href="/tags/xcode/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Xcode">
+          Xcode <span class="badge rounded-pill">4</span>
+        </a><a href="/tags/array/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Array">
+          Array <span class="badge rounded-pill">2</span>
+        </a><a href="/tags/attribute/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Attribute">
+          Attribute <span class="badge rounded-pill">2</span>
+        </a><a href="/tags/cocoapods/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="CocoaPods">
+          CocoaPods <span class="badge rounded-pill">2</span>
+        </a><a href="/tags/github/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="GitHub">
+          GitHub <span class="badge rounded-pill">2</span>
+        </a><a href="/tags/location/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Location">
+          Location <span class="badge rounded-pill">2</span>
+        </a></div>
+    </section></div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><nav class="social-links nav my-2 justify-content-center"><a class="nav-link social-link" href="mailto:cs90077@gmail.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a><a class="nav-link social-link" target="_blank" href="https://github.com/cs90077" title="GitHub" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-github"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://www.instagram.com/cs90077" title="Instagram" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-instagram"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://linkedin.com/in/cs90077" title="LinkedIn" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-linkedin-in"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://www.youtube.com/channel/UCznBj7M_LmFjtU2O8PeTHTw" title="Youtube" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-youtube"></i>
+      </a></nav>
+<div class="copyright mb-2">
+  Copyright © 2016-2021 Razon Yang. All Rights Reserved.
+</div>
+</footer>
+<a id="btnScrollToTop" class="btn-scroll-to-top">
+  <i class="fas fa-fw fa-chevron-circle-up fa-2x"></i>
+</a>
+</body>
+</html>

@@ -6,7 +6,43 @@
     <description>Recent content in iOS on Tony Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
-    <lastBuildDate>Thu, 02 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/series/ios/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Sep 2021 10:00:00 +0000</lastBuildDate><atom:link href="/series/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Swift]使用Bundle讀取Json檔案</title>
+      <link>/posts/ios/swift/bundle_read_json/</link>
+      <pubDate>Tue, 07 Sep 2021 10:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/bundle_read_json/</guid>
+      <description>&lt;p&gt;想把一些重要的參數寫在info.plist設定檔裡，透過Bundle取出想要的資料&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]使用Bundle讀取txt檔案</title>
+      <link>/posts/ios/swift/bundle_read_text/</link>
+      <pubDate>Tue, 07 Sep 2021 09:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/bundle_read_text/</guid>
+      <description>&lt;p&gt;想把一些重要的參數寫在info.plist設定檔裡，透過Bundle取出想要的資料&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]使用Bundle取得info資料</title>
+      <link>/posts/ios/swift/bundle_info_dictionary/</link>
+      <pubDate>Tue, 07 Sep 2021 08:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/bundle_info_dictionary/</guid>
+      <description>&lt;p&gt;想把一些重要的參數寫在info.plist設定檔裡，透過Bundle取出想要的資料&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]使用Bundle取得APP版本號</title>
+      <link>/posts/ios/swift/bundle_app_version/</link>
+      <pubDate>Tue, 07 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/bundle_app_version/</guid>
+      <description>&lt;p&gt;想要顯示目前的APP版本號&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>[Swift]Array資料處理</title>
       <link>/posts/ios/swift/array_basic/</link>
@@ -128,20 +164,20 @@
     </item>
     
     <item>
-      <title>[Swift]Attribute 客製化文字屬性</title>
-      <link>/posts/ios/swift/attribute_%E5%AE%A2%E8%A3%BD%E5%8C%96%E6%96%87%E5%AD%97%E5%B1%AC%E6%80%A7/</link>
+      <title>[Swift]Attribute 文字參雜不同屬性</title>
+      <link>/posts/ios/swift/attribute_custom/</link>
       <pubDate>Tue, 17 Aug 2021 08:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/attribute_%E5%AE%A2%E8%A3%BD%E5%8C%96%E6%96%87%E5%AD%97%E5%B1%AC%E6%80%A7/</guid>
-      <description>&lt;p&gt;調整奇耙的文字屬性設定&lt;/p&gt;</description>
+      <guid>/posts/ios/swift/attribute_custom/</guid>
+      <description>&lt;p&gt;想要在整段文字中，中間特定文字切換不同屬性&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>[Swift]Attribute文字屬性的應用</title>
-      <link>/posts/ios/swift/attribute_basic/</link>
+      <title>[Swift]Attribute 文字添加底線</title>
+      <link>/posts/ios/swift/attribute_underline/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/attribute_basic/</guid>
+      <guid>/posts/ios/swift/attribute_underline/</guid>
       <description>&lt;p&gt;調整各種文字屬性&lt;/p&gt;</description>
     </item>
     
@@ -173,87 +209,12 @@
     </item>
     
     <item>
-      <title>iRent自助租車 APP</title>
-      <link>/tony.dev.projects/2020/app_irent/</link>
-      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tony.dev.projects/2020/app_irent/</guid>
-      <description>&lt;p&gt;iRent共享汽機車首創全台「24小時自助租車服務」，透過app輕鬆完成預約、取車、付款、還車，隨租隨還&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>[Swift]使用Bundle取得APP版本號</title>
-      <link>/posts/ios/swift/bundle_app_version/</link>
-      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/ios/swift/bundle_app_version/</guid>
-      <description>&lt;p&gt;想要顯示目前的APP版本號&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>[Swift]使用Bundle取得info資料</title>
-      <link>/posts/ios/swift/bundle_info_dictionary/</link>
-      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/ios/swift/bundle_info_dictionary/</guid>
-      <description>&lt;p&gt;想把一些重要的參數寫在info.plist設定檔裡，透過Bundle取出想要的資料&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>[Swift]使用ImagePicker開啟Camera相機功能</title>
       <link>/posts/ios/swift/imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/</link>
       <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>/posts/ios/swift/imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/</guid>
       <description>&lt;p&gt;開啟相機 =&amp;gt; 拍照 =&amp;gt; 儲存照片 =&amp;gt; 簡單搞定&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>美國特教課程 APP</title>
-      <link>/tony.dev.projects/2020/app_special_edu/</link>
-      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tony.dev.projects/2020/app_special_edu/</guid>
-      <description>本題材為模擬美國特教學校師生教學使用，老師安排課程與時段，學生則可查看課表及上課內容等資訊。
-示意圖 </description>
-    </item>
-    
-    <item>
-      <title>BeanGo Cube 智能烘豆機</title>
-      <link>/tony.dev.projects/2020/app_beangocube/</link>
-      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tony.dev.projects/2020/app_beangocube/</guid>
-      <description>&lt;p&gt;此App僅供本公司之產品「BeanGo Cube 智能烘豆機」使用&lt;/p&gt;
-&lt;p&gt;使用手機APP智慧控制烘豆機，所有烘焙曲線都儲存在手機內部並且可分享至雲端，輕鬆分享或是複製烘焙曲線，並且可依照烘焙曲線，自動執行烘培作業。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>NCKU FinTech商創研究中心 E-Society 特店版</title>
-      <link>/tony.dev.projects/2019/app_ncku_esociety/</link>
-      <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tony.dev.projects/2019/app_ncku_esociety/</guid>
-      <description>&lt;p&gt;使用此APP讓學院學生與特約廠商之間擁有一個互利的方式，透過消費來取得點數，及透過點數來增加消費量，即時查詢點數餘額。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Raise遊戲主題餐廳</title>
-      <link>/tony.dev.projects/2018/app_raise_game/</link>
-      <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tony.dev.projects/2018/app_raise_game/</guid>
-      <description>&lt;p&gt;‎「RAISE」是一間虛擬與現實結合的複合式主題餐廳。&lt;/p&gt;
-&lt;p&gt;「RAISE」餐廳以LOFT工業風為主体風格，150坪開放式空間。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>豆豆OK</title>
-      <link>/tony.dev.projects/2018/app_dou_dou_ok/</link>
-      <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tony.dev.projects/2018/app_dou_dou_ok/</guid>
-      <description>&lt;p&gt;「豆豆OK」、「Dou Dou OK」App 內皆採會員制模式，下載 App 後必須經過開通程序，就可享受即時地在任何時間、地點利用行動設備查詢虛擬帳戶的訊息與資料。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -272,25 +233,6 @@
       
       <guid>/posts/ios/make_app_icon/</guid>
       <description>&lt;p&gt;iOS的APP icon在規格上要求相當高，如果沒有依照它的格式去弄，是無法完美呈現在APP上的。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>iShowDrive 愛秀無線隨身雲</title>
-      <link>/tony.dev.projects/2017/app_ishowdrive/</link>
-      <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/tony.dev.projects/2017/app_ishowdrive/</guid>
-      <description>&lt;p&gt;此App僅供本公司之產品「愛秀無線隨身雲」使用
-iShowDrive擴充你的手機 平板的儲存容量，無線串流手機裡的照片、音樂、影片、檔案至你的隨身碟，同時多人分享­­、存取，是手機、平板、NB通用的無線隨身碟。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>長榮警備保全系統</title>
-      <link>/tony.dev.projects/2017/app_evergreen_wireless/</link>
-      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/tony.dev.projects/2017/app_evergreen_wireless/</guid>
-      <description>&lt;p&gt;此App僅供本公司之產品「長保無線安康 智慧保全系統」使用&lt;/p&gt;</description>
     </item>
     
   </channel>

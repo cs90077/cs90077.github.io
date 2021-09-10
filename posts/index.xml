@@ -6,7 +6,61 @@
     <description>Recent content in 文章 on Tony Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
-    <lastBuildDate>Thu, 02 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>將pickerview做封裝練習，練習製作UI套件</title>
+      <link>/posts/ios/swift/picker_view_custom/picker_view_custom/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/picker_view_custom/picker_view_custom/</guid>
+      <description>&lt;p&gt;PickerView對於手機APP操作，是一個很方便的項目選擇工具，應用於資料選擇、時間選擇等等。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>將pickerview做封裝練習，練習製作UI套件</title>
+      <link>/posts/ios/swift/picker_view_package_practise/picker_view_package_practise/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/picker_view_package_practise/picker_view_package_practise/</guid>
+      <description>&lt;p&gt;PickerView對於手機APP操作，是一個很方便的項目選擇工具，應用於資料選擇、時間選擇等等。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]使用Bundle讀取Json檔案</title>
+      <link>/posts/ios/swift/bundle_read_json/</link>
+      <pubDate>Tue, 07 Sep 2021 10:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/bundle_read_json/</guid>
+      <description>&lt;p&gt;想把一些重要的參數寫在info.plist設定檔裡，透過Bundle取出想要的資料&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]使用Bundle讀取txt檔案</title>
+      <link>/posts/ios/swift/bundle_read_text/</link>
+      <pubDate>Tue, 07 Sep 2021 09:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/bundle_read_text/</guid>
+      <description>&lt;p&gt;想把一些重要的參數寫在info.plist設定檔裡，透過Bundle取出想要的資料&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]使用Bundle取得info資料</title>
+      <link>/posts/ios/swift/bundle_info_dictionary/</link>
+      <pubDate>Tue, 07 Sep 2021 08:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/bundle_info_dictionary/</guid>
+      <description>&lt;p&gt;想把一些重要的參數寫在info.plist設定檔裡，透過Bundle取出想要的資料&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Swift]使用Bundle取得APP版本號</title>
+      <link>/posts/ios/swift/bundle_app_version/</link>
+      <pubDate>Tue, 07 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/bundle_app_version/</guid>
+      <description>&lt;p&gt;想要顯示目前的APP版本號&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>[Swift]Array資料處理</title>
       <link>/posts/ios/swift/array_basic/</link>
@@ -128,20 +182,20 @@
     </item>
     
     <item>
-      <title>[Swift]Attribute 客製化文字屬性</title>
-      <link>/posts/ios/swift/attribute_%E5%AE%A2%E8%A3%BD%E5%8C%96%E6%96%87%E5%AD%97%E5%B1%AC%E6%80%A7/</link>
+      <title>[Swift]Attribute 文字參雜不同屬性</title>
+      <link>/posts/ios/swift/attribute_custom/</link>
       <pubDate>Tue, 17 Aug 2021 08:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/attribute_%E5%AE%A2%E8%A3%BD%E5%8C%96%E6%96%87%E5%AD%97%E5%B1%AC%E6%80%A7/</guid>
-      <description>&lt;p&gt;調整奇耙的文字屬性設定&lt;/p&gt;</description>
+      <guid>/posts/ios/swift/attribute_custom/</guid>
+      <description>&lt;p&gt;想要在整段文字中，中間特定文字切換不同屬性&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>[Swift]Attribute文字屬性的應用</title>
-      <link>/posts/ios/swift/attribute_basic/</link>
+      <title>[Swift]Attribute 文字添加底線</title>
+      <link>/posts/ios/swift/attribute_underline/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/attribute_basic/</guid>
+      <guid>/posts/ios/swift/attribute_underline/</guid>
       <description>&lt;p&gt;調整各種文字屬性&lt;/p&gt;</description>
     </item>
     
@@ -206,24 +260,6 @@
       
       <guid>/posts/macos/system_setting_contents/</guid>
       <description>&lt;p&gt;整理一些常用到的資訊&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>[Swift]使用Bundle取得APP版本號</title>
-      <link>/posts/ios/swift/bundle_app_version/</link>
-      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/ios/swift/bundle_app_version/</guid>
-      <description>&lt;p&gt;想要顯示目前的APP版本號&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>[Swift]使用Bundle取得info資料</title>
-      <link>/posts/ios/swift/bundle_info_dictionary/</link>
-      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/ios/swift/bundle_info_dictionary/</guid>
-      <description>&lt;p&gt;想把一些重要的參數寫在info.plist設定檔裡，透過Bundle取出想要的資料&lt;/p&gt;</description>
     </item>
     
     <item>

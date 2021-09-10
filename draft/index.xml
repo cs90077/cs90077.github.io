@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>草稿 on Tony Blogs</title>
+    <link>/draft/</link>
+    <description>Recent content in 草稿 on Tony Blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
+    <lastBuildDate>Wed, 08 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/draft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Map 地圖及坐標的基本使用</title>
+      <link>/draft/google_map_basic/</link>
+      <pubDate>Wed, 08 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/draft/google_map_basic/</guid>
+      <description>Google console 設定 Google console
+https://accounts.google.com/ServiceLogin/webreauth?service=cloudconsole&amp;passive=1209600&amp;osid=1&amp;continue=https%3A%2F%2Fconsole.developers.google.com%2F&amp;followup=https%3A%2F%2Fconsole.developers.google.com%2F&amp;authuser=0&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin 建立專案 建立API金鑰 使用 step 1 Privacy 請先參考： [檢查「允許取用位置」權限] step 2 import 1import GoogleMaps step 3 ui 在UIViewController裏面放入一個UIView，並且設定Class為GMSMapView
+step 4 func 1// MARK:IBOutlets GoogleMap 2@IBOutlet weak var mapView: GMSMapView! 3 4private var mapPosition: CLLocationCoordinate2D? 5private var zoomLevel: Float! = 16 1extension MainMapVC { 2 3 private func setupMap() { 4 mapView.delegate = self 5 mapView.isMyLocationEnabled = true 6 7 loadUserLocation() 8 // my location 9 addUserLocationMarker() 10 } 11 12 func loadUserLocation() { 13 if let location = LTTLocationManager.</description>
+    </item>
+    
+    <item>
+      <title>Protocol</title>
+      <link>/draft/protocol_basic/</link>
+      <pubDate>Wed, 08 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/draft/protocol_basic/</guid>
+      <description>基本使用 不強制實作func  使用extension的方式調整  1protocol OptionalProtocol { 2 func optionalMethod() // 可选 3 func necessaryMethod() // 必须 4 func anotherOptionalMethod() // 可选 5} 6 7extension OptionalProtocol { 8 func optionalMethod() { 9 print(&amp;#34;Implemented in extension&amp;#34;) 10 } 11 12 func anotherOptionalMethod() { 13 print(&amp;#34;Implemented in extension&amp;#34;) 14 } 15} 16 17class MyClass: OptionalProtocol { 18 func necessaryMethod() { 19 print(&amp;#34;Implemented in Class3&amp;#34;) 20 } 21 22 func optionalMethod() { 23 print(&amp;#34;Implemented in Class3&amp;#34;) 24 } 25} 26 27let obj = MyClass() 28obj.</description>
+    </item>
+    
+    <item>
+      <title>Template</title>
+      <link>/draft/template/</link>
+      <pubDate>Wed, 08 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/draft/template/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>使用Codable解析Json物件</title>
+      <link>/draft/swift_json_parser/</link>
+      <pubDate>Wed, 08 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/draft/swift_json_parser/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
