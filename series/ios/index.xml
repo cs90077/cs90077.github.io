@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>[Swift]封裝PickerView，練習製作UI套件</title>
+      <link>/posts/ios/swift/pickerview/picker_view_package_practise/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/pickerview/picker_view_package_practise/</guid>
+      <description>&lt;p&gt;PickerView是一個很方便的項目選擇工具，對於手機APP操作資料選擇、時間選擇等等，能增加資料輸入的效率。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>[Swift]使用Bundle讀取Json檔案</title>
       <link>/posts/ios/swift/bundle_read_json/</link>
       <pubDate>Tue, 07 Sep 2021 10:00:00 +0000</pubDate>
