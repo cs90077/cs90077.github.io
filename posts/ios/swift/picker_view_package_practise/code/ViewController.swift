@@ -2,34 +2,37 @@
 //  ViewController.swift
 //  ltt-swift-demo
 //
-//  Created by 林東東 on 2021/9/10.
+//  Created by 林東東 on 2021/8/31.
 //
 
 import UIKit
 import CoreLocation
 
 class ViewController: UIViewController {
-    
-    @IBOutlet weak var lblTitle: UILabel!
+        
+    @IBOutlet weak var tfAge: UITextField!
     
     var selectedRow = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setupView()
     }
     
-    @IBAction func donePressed(_ sender: Any) {
-        let dataSource = ["1","2","3","4","5",]
-        
+    func setupView() {
+        tfAge.addTarget(self, action: #selector(showAgePickerView), for: .touchDown)
+    }
+    
+    @objc func showAgePickerView() {
+        let dataSource = ["18","19","20","21","22","23","24","25",]
         let picker = LTTPickerView()
         picker.dataSource = dataSource
         picker.selectedRow = self.selectedRow
-        picker.pickerTitleText = "項目選擇器"
+        picker.pickerTitleText = "請選擇年紀"
         picker.pickerDoneBtnText = "完成"
         picker.pickerCancelBtnText = "取消"
         
-        // 1
         picker.show(self) { row in
             print("done")
             print("view selected row = \(row)")
@@ -38,27 +41,10 @@ class ViewController: UIViewController {
             print("view show item = \(item)")
             
             self.selectedRow = row
-            self.lblTitle.text = item
+            self.tfAge.text = item
         } cancelHandler: {
             print("cancel")
         }
-
-        // 2
-        picker.show(self,
-                    dataSource: dataSource,
-                    title: "項目選擇器") { row in
-            print("done")
-            print("view selected row = \(row)")
-
-            let item = dataSource[row]
-            print("view show item = \(item)")
-
-            self.lblTitle.text = item
-        } cancelHandler: {
-            print("cancel")
-
-        }
-        
     }
     
 }

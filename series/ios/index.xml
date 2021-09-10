@@ -6,7 +6,16 @@
     <description>Recent content in iOS on Tony Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
-    <lastBuildDate>Tue, 07 Sep 2021 10:00:00 +0000</lastBuildDate><atom:link href="/series/ios/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/series/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Swift]封裝PickerView，練習製作UI套件</title>
+      <link>/posts/ios/swift/picker_view_package_practise/picker_view_package_practise/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/picker_view_package_practise/picker_view_package_practise/</guid>
+      <description>&lt;p&gt;PickerView是一個很方便的項目選擇工具，對於手機APP操作資料選擇、時間選擇等等，能增加資料輸入的效率。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>[Swift]使用Bundle讀取Json檔案</title>
       <link>/posts/ios/swift/bundle_read_json/</link>

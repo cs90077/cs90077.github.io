@@ -2,31 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
-    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/posts/ios/swift/picker_view_package_practise/picker_view_package_practise/</loc>
     <lastmod>2021-09-10T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/series/ios/</loc>
+    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/pickerview/</loc>
+    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/swift/</loc>
+    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/series/</loc>
+    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/posts/</loc>
+    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
     <lastmod>2021-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/ios/swift/bundle_read_json/</loc>
     <lastmod>2021-09-07T10:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/bundle/</loc>
-    <lastmod>2021-09-07T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/series/ios/</loc>
-    <lastmod>2021-09-07T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/swift/</loc>
-    <lastmod>2021-09-07T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/series/</loc>
-    <lastmod>2021-09-07T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2021-09-07T10:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/ios/swift/bundle_read_text/</loc>

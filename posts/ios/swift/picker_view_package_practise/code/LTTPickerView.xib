@@ -45,7 +45,7 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="wDg-tZ-MBS" firstAttribute="leading" secondItem="4cs-3d-hdl" secondAttribute="leading" id="Nxp-WC-VhW"/>
                                                 <constraint firstAttribute="width" constant="60" id="XsT-aE-9Qa"/>
@@ -64,7 +64,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="YDq-Dg-gA9" firstAttribute="leading" secondItem="9Ab-GA-SiU" secondAttribute="leading" constant="8" id="nmP-OU-dSJ"/>
                                                 <constraint firstItem="YDq-Dg-gA9" firstAttribute="centerY" secondItem="9Ab-GA-SiU" secondAttribute="centerY" id="pms-au-YXc"/>
@@ -82,7 +82,7 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="pzA-1p-xZI" secondAttribute="bottom" id="ESh-Xj-Wmk"/>
                                                 <constraint firstItem="pzA-1p-xZI" firstAttribute="top" secondItem="Tzj-vm-KmX" secondAttribute="top" id="JqO-h4-9PR"/>
@@ -102,7 +102,7 @@
                             </subviews>
                         </stackView>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="J9R-Ue-ZOi" secondAttribute="trailing" id="37w-nR-cER"/>
                         <constraint firstAttribute="bottom" secondItem="J9R-Ue-ZOi" secondAttribute="bottom" id="7gT-w2-dbv"/>
@@ -122,9 +122,6 @@
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

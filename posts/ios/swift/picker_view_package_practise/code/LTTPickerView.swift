@@ -85,7 +85,6 @@ class LTTPickerView: UIViewController {
 
 extension LTTPickerView {
     
-    // 1
     func show(_ viewController:UIViewController,
               doneHandler:@escaping CompletionHandler,
               cancelHandler:@escaping CancelHandler) {
@@ -94,19 +93,6 @@ extension LTTPickerView {
         self.completionHandler = doneHandler
         self.cancelHandler = cancelHandler
         viewController.present(self, animated: true, completion: nil)
-    }
-    
-    // 2
-    func show(_ viewController:UIViewController,
-              dataSource: [String],
-              title: String,
-              doneHandler:@escaping CompletionHandler,
-              cancelHandler:@escaping CancelHandler) {
-        
-        self.dataSource = dataSource
-        self.pickerTitleText = title
-        
-        self.show(viewController, doneHandler: doneHandler, cancelHandler: cancelHandler)
     }
     
 }
@@ -130,7 +116,7 @@ extension LTTPickerView: UIPickerViewDataSource {
 extension LTTPickerView: UIPickerViewDelegate {
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-
+        
         var txt = ""
         if dataSource.count > row {
             txt = dataSource[row]
