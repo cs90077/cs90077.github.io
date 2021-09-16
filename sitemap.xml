@@ -2,31 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/ios/swift/picker_view_package_practise/picker_view_package_practise/</loc>
-    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/ios/swift/pickerview/picker_view_package_practise/</loc>
-    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/series/ios/</loc>
+    <lastmod>2021-09-15T11:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/swift/</loc>
+    <lastmod>2021-09-15T11:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/ios/swift/tableview/tableview_custom_components/</loc>
+    <lastmod>2021-09-15T11:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2021-09-15T11:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/uinib/</loc>
+    <lastmod>2021-09-15T11:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/uitableview/</loc>
+    <lastmod>2021-09-15T11:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/uitableviewcell/</loc>
+    <lastmod>2021-09-15T11:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/series/</loc>
+    <lastmod>2021-09-15T11:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2021-09-15T11:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2021-09-15T11:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/ios/swift/tableview/tableview_custom_header/</loc>
+    <lastmod>2021-09-15T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/uitableviewheaderfooterview/</loc>
+    <lastmod>2021-09-15T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/ios/swift/tableview/tableview_custom_cell/</loc>
+    <lastmod>2021-09-15T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/ios/swift/tableview/tableview_basic/</loc>
+    <lastmod>2021-09-15T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/ios/swift/pickerview/pickerview_package_practise/</loc>
     <lastmod>2021-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/pickerview/</loc>
-    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/swift/</loc>
-    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/series/</loc>
-    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2021-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/ios/swift/bundle_read_json/</loc>
@@ -122,7 +143,16 @@
     <loc>/tags/attribute/</loc>
     <lastmod>2021-08-17T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/ios/swift/attribute_underline/</loc>
+    <loc>/tags/navigationcontroller/</loc>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/uibutton/</loc>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/ios/swift/button/button_back_view/</loc>
+    <lastmod>2021-08-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/ios/swift/button/button_hyperlink_style/</loc>
     <lastmod>2021-08-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/ios/swift/array_data_not_repeat/</loc>

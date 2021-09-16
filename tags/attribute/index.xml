@@ -17,12 +17,12 @@
     </item>
     
     <item>
-      <title>[Swift]Attribute 文字添加底線</title>
-      <link>/posts/ios/swift/attribute_underline/</link>
+      <title>製作HyperLink超連結按鈕</title>
+      <link>/posts/ios/swift/button/button_hyperlink_style/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/attribute_underline/</guid>
-      <description>&lt;p&gt;調整各種文字屬性&lt;/p&gt;</description>
+      <guid>/posts/ios/swift/button/button_hyperlink_style/</guid>
+      <description>&lt;p&gt;按鈕＋底線=超連結樣式&lt;/p&gt;</description>
     </item>
     
   </channel>
