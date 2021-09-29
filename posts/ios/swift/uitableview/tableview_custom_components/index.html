@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TableView設計模式：Components區塊模組 | Tony Blogs</title><link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/images/favicons/manifest.json">
+<link rel="icon" href="/images/favicons/favicon.ico">
+<meta name="keywords" content="" />
+<meta name="description" content="" /><meta itemprop="name" content="TableView設計模式：Components區塊模組">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2021-09-16T09:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-09-16T09:00:00+00:00" />
+<meta itemprop="wordCount" content="472"><meta itemprop="image" content="/images/posts/swift_tableview_custom_components_1631779179.png">
+<meta itemprop="keywords" content="Swift,UITableView,UITableViewCell,UINib," /><meta property="og:title" content="TableView設計模式：Components區塊模組" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/ios/swift/uitableview/tableview_custom_components/" /><meta property="og:image" content="/images/posts/swift_tableview_custom_components_1631779179.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-09-16T09:00:00+00:00" />
+<meta property="article:modified_time" content="2021-09-16T09:00:00+00:00" />
+<meta property="og:see_also" content="/posts/ios/swift/uiviewcontroller/extenxions_identifier/" /><meta property="og:see_also" content="/posts/ios/swift/uitableview/tableview_dropdown_refresh/" /><meta property="og:see_also" content="/posts/ios/swift/uitableview/tableview_custom_header/" /><meta property="og:see_also" content="/posts/ios/swift/uitableview/tableview_custom_cell/" /><meta property="og:see_also" content="/posts/ios/swift/uitableview/tableview_basic/" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/images/posts/swift_tableview_custom_components_1631779179.png"/>
+
+<meta name="twitter:title" content="TableView設計模式：Components區塊模組"/>
+<meta name="twitter:description" content=""/>
+<meta data-name="palette" content="blue"><link rel="preload" href="/css/bundle.min.6432e1eb8529dcd2047cf814f92cb64eca4d65058b306e0630c8777240297fa4.css" integrity="sha256-ZDLh64Up3NIEfPgU&#43;Sy2TspNZQWLMG4GMMh3ckApf6Q=" crossorigin="anonymous" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/bundle.min.6432e1eb8529dcd2047cf814f92cb64eca4d65058b306e0630c8777240297fa4.css" integrity="sha256-ZDLh64Up3NIEfPgU&#43;Sy2TspNZQWLMG4GMMh3ckApf6Q=" crossorigin="anonymous"></noscript><script src="/js/bundle.min.110283d8a411715b5a0573efeddf30ac90adf2b9a9a1c741be19d7c8810c6327.js" integrity="sha256-EQKD2KQRcVtaBXPv7d8wrJCt8rmpocdBvhnXyIEMYyc=" crossorigin="anonymous"></script>
+</head><body><header><nav class="navbar navbar-expand-xl fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img class="logo" alt="Logo" src="/images/logo.webp"
+   width="240" height="240" loading="lazy" />
+Tony Blog</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-1 mb-2 mb-lg-0"><form class="search-bar d-flex ms-1" action="/search">
+  <div class="input-group input-group-sm">
+    <button class="btn btn-search disabled position-absolute left-0" type="submit" aria-label="submit"><i class="fas fa-fw fa-search"></i></button>
+    <input class="form-control rounded-pill" id="searchQuery" name="q" type="search" aria-label="Search">
+  </div>
+</form></ul><ul class="navbar-nav me-1 mb-2 mb-lg-0 me-1 ms-auto"><li class="nav-item">
+          <a class="nav-link" href="/posts/">
+            <i class="fas fa-fw fa-folder"></i>文章
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/series/">
+            <i class="fas fa-fw fa-columns"></i>專欄
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/tags/">
+            <i class="fas fa-fw fa-tags"></i>標籤
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/archives/">
+            <i class="fas fa-fw fa-file-archive"></i>歸檔
+          </a>
+        </li><li class="nav-item">
+  <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasSettings" role="button"
+    aria-controls="offcanvasSettings">
+    <i class="fas fa-fw fa-sliders-h"></i> 設置
+  </a>
+</li>
+
+<div class="offcanvas offcanvas-end surface h-100" tabindex="-1" id="offcanvasSettings"
+  aria-labelledby="offcanvasSettingsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" w id="offcanvasSettingsLabel"><i class="fas fa-fw fa-sliders-h"></i> 設置</h5>
+    <a role="button" data-bs-dismiss="offcanvas" aria-label="Close">
+      <span class="fas fa-2x fa-fw fa-times"></span>
+    </a>
+  </div>
+  <div class="offcanvas-body"><section class="setting">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-adjust"></i> 模式</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="modeSwitcher">
+      </div>
+    </div>
+  </form>
+</section>
+<section class="setting">
+  <form class="font-size-switcher-form row">
+    <div class="col-auto">
+      <label for="fontSize" class="form-label"><i class="fas fa-fw fa-font"></i> 字體大小</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <input type="range" class="form-range" min="-2" max="2" id="fontSize">
+    </div>
+  </form>
+</section>
+
+<section class="setting palettes">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-palette"></i> 配色</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <span id="btnPalette" class="btn btn-sm"><i class="fas fa-eye-dropper"></i></span>
+    </div>
+  </form>
+  <div class="container mt-2 visually-hidden" id="palettePicker">
+    <div class="btn-group"><button type="button" id="palette-blue" title="藍色" 
+          class="btn btn-sm palette bg-blue d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-blue-gray" title="藍灰色" 
+          class="btn btn-sm palette bg-blue-gray d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-brown" title="棕色" 
+          class="btn btn-sm palette bg-brown d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-cyan" title="青色" 
+          class="btn btn-sm palette bg-cyan d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-green" title="綠色" 
+          class="btn btn-sm palette bg-green d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-indigo" title="靛青色" 
+          class="btn btn-sm palette bg-indigo d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-orange" title="橙色" 
+          class="btn btn-sm palette bg-orange d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-pink" title="粉色" 
+          class="btn btn-sm palette bg-pink d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-purple" title="紫色" 
+          class="btn btn-sm palette bg-purple d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-red" title="紅色" 
+          class="btn btn-sm palette bg-red d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-teal" title="藍綠色" 
+          class="btn btn-sm palette bg-teal d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-yellow" title="黃色" 
+          class="btn btn-sm palette bg-yellow d-flex align-items-center justify-content-center">
+        </button></button>
+    </div>
+  </div>
+</section></div>
+</div></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main role="main" class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row" aria-label="breadcrumb">
+  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="/">主頁</a></li><li class="breadcrumb-item"><a href="/posts/">文章</a></li><li class="breadcrumb-item active">TableView設計模式：Components區塊模組</li></ol>
+</nav><article class="post row surface"><div class="post-panel-wrapper">
+  <div class="post-panel d-flex flex-column">
+    <a id="sidebarToggler" class="action d-none d-lg-block" role="button">
+  <i class="fas fa-fw fa-expand-alt fa-rotate-45"></i>
+</a>
+  
+    
+
+    <a class="action btn-reward" role="button" data-bs-toggle="modal" data-bs-target="#rewardModal" title="「爽」請我喝拿鐵「不爽」請我喝美式">
+  <i class="fas fa-fw fa-medal"></i>
+</a>
+    <a class="action" data-bs-container="body" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom"
+  data-bs-trigger="focus" tabindex="0"
+  data-bs-content="&lt;a target=&#34;_blank&#34; rel=&#34;license noopener noreferrer&#34; href=&#34;https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh_TW&#34;&gt;CC BY-NC-ND 4.0 &lt;i class=&#34;fab fa-fw fa-creative-commons&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-fw fa-creative-commons-by&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-fw fa-creative-commons-nc&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fab fa-fw fa-creative-commons-nd&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+">
+  <i class="fas fa-fw fa-copyright"></i>
+</a>
+    <a id="btnTOC" class="fas fa-fw fa-list-alt" data-bs-toggle="offcanvas" href="#offcanvasTOC" aria-controls="offcanvasTOC" role="button">
+</a>
+  </div>
+</div>
+<h1 class="post-title my-3">TableView設計模式：Components區塊模組
+</h1><div class="post-meta mb-3"><span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>Sep 16, 2021
+  </span><span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>3 分鐘閱讀
+  </span><span class="post-taxonomies"><a href="/series/ios/" class="post-taxonomy">iOS</a><a href="/tags/swift/" class="post-taxonomy">Swift</a><a href="/tags/uitableview/" class="post-taxonomy">UITableView</a><a href="/tags/uitableviewcell/" class="post-taxonomy">UITableViewCell</a><a href="/tags/uinib/" class="post-taxonomy">UINib</a></span>
+</div>
+<div class="offcanvas offcanvas-end surface" tabindex="-1" id="offcanvasTOC" aria-labelledby="offcanvasTOCLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasTOCLabel">目錄</h5>
+    <a role="button" data-bs-dismiss="offcanvas" aria-label="Close">
+      <span class="fas fa-2x fa-fw fa-times"></span>
+    </a>
+  </div>
+  <div class="offcanvas-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a>
+      <ul>
+        <li><a href="#請先閱讀tableview基本使用postsiosswifttableviewtableview_basic">請先閱讀：<a href="/posts/ios/swift/tableview/tableview_basic">TableView基本使用</a></a></li>
+        <li><a href="#示意圖靜態tableview">示意圖：靜態TableView</a></li>
+      </ul>
+    </li>
+    <li><a href="#作法">作法</a>
+      <ul>
+        <li><a href="#step-1-data-model">step 1 Data Model</a></li>
+        <li><a href="#step-2-setup-view">step 2 Setup View</a></li>
+        <li><a href="#step-3-datasource">step 3 DataSource</a></li>
+      </ul>
+    </li>
+    <li><a href="#完成效果">完成效果</a></li>
+  </ul>
+</nav>
+  </div>
+</div><div class="post-content mb-3"><h2 id="前言">前言</h2>
+<h3 id="請先閱讀tableview基本使用postsiosswifttableviewtableview_basic">請先閱讀：<a href="/posts/ios/swift/tableview/tableview_basic">TableView基本使用</a>
+</h3>
+<p>Components區塊模組設計的想法，來自於「TableView Static Cells」的使用(<a href="/posts/ios/swift/tableview/tableview_static_cell">參考</a>
+)，優點是可以將Cell簡單直接設計在TableView上面，除了讓UI設計可以一目瞭然，還可以快速調整想要的位置順序。而缺點就是Cell無法製作成Xib模板。</p>
+<h3 id="示意圖靜態tableview">示意圖：靜態TableView</h3>
+<p><img class="img-fluid" alt="image" src="/images/posts/swift_tableview_custom_components_1631779123.png"
+   width="1696" height="1370" loading="lazy" />
+
+</p>
+<p>如果想要設計「設定頁面」，會設計不同的Cell樣式，使用Components的方式設計去組合畫面，達成模組開發的需求，可以提供UI大家共同使用，也為團隊往後快速開發與維護盡一份心力。</p>
+<h2 id="作法">作法</h2>
+<h3 id="step-1-data-model">step 1 Data Model</h3>
+<pre><code>- 將你所設計好的各種TableViewCell，透過Enum列舉包裝物件，並且用陣列的方式儲存資料項目。
+- 優點：隨時可新增Cell，並且調整項目順序。
+</code></pre>
+<p><img class="img-fluid" alt="image" src="/images/posts/swift_tableview_custom_components_1631779298.png"
+   width="1815" height="948" loading="lazy" />
+
+</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln"> 1</span><span class="c1">//  PreferenceViewModel.swift</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span><span class="kd">import</span> <span class="nc">Foundation</span>
+<span class="ln"> 4</span><span class="kd">import</span> <span class="nc">UIKit</span>
+<span class="ln"> 5</span>
+<span class="ln"> 6</span><span class="kd">class</span> <span class="nc">PreferenceViewModel</span> <span class="p">{</span>
+<span class="ln"> 7</span>    <span class="kd">static</span> <span class="kd">let</span> <span class="nv">cellComponents</span><span class="p">:</span> <span class="p">[</span><span class="n">PreferenceCellType</span><span class="p">]</span> <span class="p">=</span> <span class="p">[.</span><span class="n">image</span><span class="p">,</span> <span class="p">.</span><span class="n">title</span><span class="p">,</span> <span class="p">.</span><span class="n">detail</span><span class="p">,</span> <span class="p">.</span><span class="n">editText</span><span class="p">,</span> <span class="p">.</span><span class="n">switchItem</span><span class="p">,</span> <span class="p">.</span><span class="n">color</span><span class="p">]</span>
+<span class="ln"> 8</span><span class="p">}</span>
+<span class="ln"> 9</span>
+<span class="ln">10</span><span class="kd">enum</span> <span class="nc">PreferenceCellType</span> <span class="p">{</span>
+<span class="ln">11</span>    <span class="k">case</span> <span class="n">image</span>
+<span class="ln">12</span>    <span class="k">case</span> <span class="n">title</span>
+<span class="ln">13</span>    <span class="k">case</span> <span class="n">detail</span>
+<span class="ln">14</span>    <span class="k">case</span> <span class="n">editText</span>
+<span class="ln">15</span>    <span class="k">case</span> <span class="n">switchItem</span>
+<span class="ln">16</span>    <span class="k">case</span> <span class="n">color</span>
+<span class="ln">17</span><span class="p">}</span>
+<span class="ln">18</span>
+<span class="ln">19</span><span class="kd">extension</span> <span class="nc">PreferenceCellType</span> <span class="p">{</span>
+<span class="ln">20</span>    
+<span class="ln">21</span>    <span class="kd">var</span> <span class="nv">cellId</span><span class="p">:</span> <span class="nb">String</span> <span class="p">{</span>
+<span class="ln">22</span>        <span class="k">switch</span> <span class="kc">self</span> <span class="p">{</span>
+<span class="ln">23</span>        <span class="k">case</span> <span class="p">.</span><span class="n">image</span><span class="p">:</span>
+<span class="ln">24</span>            <span class="k">return</span> <span class="n">CustomTableViewImageCell</span><span class="p">.</span><span class="n">identifier</span>
+<span class="ln">25</span>        <span class="k">case</span> <span class="p">.</span><span class="n">title</span><span class="p">:</span>
+<span class="ln">26</span>            <span class="k">return</span> <span class="n">CustomTableViewTitleCell</span><span class="p">.</span><span class="n">identifier</span>
+<span class="ln">27</span>        <span class="k">case</span> <span class="p">.</span><span class="n">detail</span><span class="p">:</span>
+<span class="ln">28</span>            <span class="k">return</span> <span class="n">CustomTableViewDetailCell</span><span class="p">.</span><span class="n">identifier</span>
+<span class="ln">29</span>        <span class="k">case</span> <span class="p">.</span><span class="n">editText</span><span class="p">:</span>
+<span class="ln">30</span>            <span class="k">return</span> <span class="n">CustomTableViewEditTextCell</span><span class="p">.</span><span class="n">identifier</span>
+<span class="ln">31</span>        <span class="k">case</span> <span class="p">.</span><span class="n">switchItem</span><span class="p">:</span>
+<span class="ln">32</span>            <span class="k">return</span> <span class="n">CustomTableViewSwitchCell</span><span class="p">.</span><span class="n">identifier</span>
+<span class="ln">33</span>        <span class="k">case</span> <span class="p">.</span><span class="n">color</span><span class="p">:</span>
+<span class="ln">34</span>            <span class="k">return</span> <span class="n">CustomTableViewColorCell</span><span class="p">.</span><span class="n">identifier</span>
+<span class="ln">35</span>        <span class="p">}</span>
+<span class="ln">36</span>    <span class="p">}</span>
+<span class="ln">37</span>
+<span class="ln">38</span>    <span class="kd">var</span> <span class="nv">cellHeight</span><span class="p">:</span> <span class="n">CGFloat</span> <span class="p">{</span>
+<span class="ln">39</span>        <span class="k">switch</span> <span class="kc">self</span> <span class="p">{</span>
+<span class="ln">40</span>        <span class="k">case</span> <span class="p">.</span><span class="n">image</span><span class="p">:</span>
+<span class="ln">41</span>            <span class="k">return</span> <span class="n">CustomTableViewImageCell</span><span class="p">.</span><span class="n">height</span>
+<span class="ln">42</span>        <span class="k">case</span> <span class="p">.</span><span class="n">title</span><span class="p">:</span>
+<span class="ln">43</span>            <span class="k">return</span> <span class="n">CustomTableViewTitleCell</span><span class="p">.</span><span class="n">height</span>
+<span class="ln">44</span>        <span class="k">case</span> <span class="p">.</span><span class="n">detail</span><span class="p">:</span>
+<span class="ln">45</span>            <span class="k">return</span> <span class="n">CustomTableViewDetailCell</span><span class="p">.</span><span class="n">height</span>
+<span class="ln">46</span>        <span class="k">case</span> <span class="p">.</span><span class="n">editText</span><span class="p">:</span>
+<span class="ln">47</span>            <span class="k">return</span> <span class="n">CustomTableViewEditTextCell</span><span class="p">.</span><span class="n">height</span>
+<span class="ln">48</span>        <span class="k">case</span> <span class="p">.</span><span class="n">switchItem</span><span class="p">:</span>
+<span class="ln">49</span>            <span class="k">return</span> <span class="n">CustomTableViewSwitchCell</span><span class="p">.</span><span class="n">height</span>
+<span class="ln">50</span>        <span class="k">case</span> <span class="p">.</span><span class="n">color</span><span class="p">:</span>
+<span class="ln">51</span>            <span class="k">return</span> <span class="n">CustomTableViewColorCell</span><span class="p">.</span><span class="n">height</span>
+<span class="ln">52</span>        <span class="p">}</span>
+<span class="ln">53</span>    <span class="p">}</span>
+<span class="ln">54</span>    
+<span class="ln">55</span><span class="p">}</span>
+</code></pre></div><pre><code>如果下次你想要調整順序，只需要改變cellComponents資料即可。
+</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln">1</span><span class="c1">//  PreferenceViewModel.swift</span>
+<span class="ln">2</span>
+<span class="ln">3</span><span class="c1">// static let cellComponents: [PreferenceCellType] = [.image, .title, .detail, .editText, .switchItem, .color]</span>
+<span class="ln">4</span>
+<span class="ln">5</span><span class="kd">static</span> <span class="kd">let</span> <span class="nv">cellComponents</span><span class="p">:</span> <span class="p">[</span><span class="n">PreferenceCellType</span><span class="p">]</span> <span class="p">=</span> <span class="p">[.</span><span class="n">image</span><span class="p">,</span> <span class="p">.</span><span class="n">title</span><span class="p">,</span> <span class="p">.</span><span class="n">detail</span><span class="p">,</span> <span class="p">.</span><span class="n">color</span><span class="p">,</span> <span class="p">.</span><span class="n">switchItem</span><span class="p">,</span> <span class="p">.</span><span class="n">editText</span> <span class="p">]</span>
+</code></pre></div><h3 id="step-2-setup-view">step 2 Setup View</h3>
+<pre><code>dataSource來源改成cellComponents所設定的資料
+</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln">1</span><span class="c1">//  PreferenceViewController.swift</span>
+<span class="ln">2</span>
+<span class="ln">3</span><span class="kd">var</span> <span class="nv">dataSource</span><span class="p">:</span> <span class="p">[</span><span class="n">PreferenceCellType</span><span class="p">]</span> <span class="p">=</span> <span class="n">PreferenceViewModel</span><span class="p">.</span><span class="n">cellComponents</span>
+</code></pre></div><pre><code>cellComponents的另一個好處就是，可以簡單快速的註冊所有TableView要使用到的Nib。
+</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln"> 1</span><span class="c1">//  PreferenceViewController.swift</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span><span class="kd">func</span> <span class="nf">setupTableView</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln"> 4</span>    
+<span class="ln"> 5</span>    <span class="kd">let</span> <span class="nv">tableView</span> <span class="p">=</span> <span class="n">UITableView</span><span class="p">(</span><span class="n">frame</span><span class="p">:</span> <span class="n">CGRect</span><span class="p">(</span>
+<span class="ln"> 6</span>                                    <span class="n">x</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+<span class="ln"> 7</span>                                    <span class="n">width</span><span class="p">:</span> <span class="kc">self</span><span class="p">.</span><span class="n">view</span><span class="p">.</span><span class="n">bounds</span><span class="p">.</span><span class="n">width</span><span class="p">,</span>
+<span class="ln"> 8</span>                                    <span class="n">height</span><span class="p">:</span> <span class="kc">self</span><span class="p">.</span><span class="n">view</span><span class="p">.</span><span class="n">bounds</span><span class="p">.</span><span class="n">height</span> <span class="o">-</span> <span class="mi">20</span><span class="p">),</span>
+<span class="ln"> 9</span>                                <span class="n">style</span><span class="p">:</span> <span class="p">.</span><span class="n">grouped</span><span class="p">)</span>
+<span class="ln">10</span>    <span class="kc">self</span><span class="p">.</span><span class="n">view</span><span class="p">.</span><span class="n">addSubview</span><span class="p">(</span><span class="n">tableView</span><span class="p">)</span>
+<span class="ln">11</span>    
+<span class="ln">12</span>    <span class="n">tableView</span><span class="p">.</span><span class="n">delegate</span> <span class="p">=</span> <span class="kc">self</span>
+<span class="ln">13</span>    <span class="n">tableView</span><span class="p">.</span><span class="n">dataSource</span> <span class="p">=</span> <span class="kc">self</span>
+<span class="ln">14</span>    
+<span class="ln">15</span>    <span class="c1">// 註冊 cell</span>
+<span class="ln">16</span>    <span class="k">for</span> <span class="n">component</span> <span class="k">in</span> <span class="n">PreferenceViewModel</span><span class="p">.</span><span class="n">cellComponents</span> <span class="p">{</span>
+<span class="ln">17</span>        <span class="kd">let</span> <span class="nv">nib</span> <span class="p">=</span> <span class="n">UINib</span><span class="p">(</span><span class="n">nibName</span><span class="p">:</span> <span class="n">component</span><span class="p">.</span><span class="n">cellId</span><span class="p">,</span> <span class="n">bundle</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+<span class="ln">18</span>        <span class="n">tableView</span><span class="p">.</span><span class="n">register</span><span class="p">(</span><span class="n">nib</span><span class="p">,</span> <span class="n">forCellReuseIdentifier</span><span class="p">:</span> <span class="n">component</span><span class="p">.</span><span class="n">cellId</span><span class="p">)</span>
+<span class="ln">19</span>    <span class="p">}</span>
+<span class="ln">20</span>    
+<span class="ln">21</span><span class="p">}</span>
+</code></pre></div><h4 id="other">other</h4>
+<pre><code>如果你TableViewCell的項目不多，也可以設定成「項目Cell總高度未超過TableView高度」，則不可有滑動效果。
+</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln">1</span><span class="c1">//  PreferenceViewController.swift</span>
+<span class="ln">2</span>
+<span class="ln">3</span><span class="kd">func</span> <span class="nf">setupTableViewScrollEnabled</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln">4</span>    <span class="kd">var</span> <span class="nv">cellsHeight</span><span class="p">:</span> <span class="n">CGFloat</span> <span class="p">=</span> <span class="mf">0.0</span>
+<span class="ln">5</span>    <span class="k">for</span> <span class="n">component</span> <span class="k">in</span> <span class="n">PreferenceViewModel</span><span class="p">.</span><span class="n">cellComponents</span> <span class="p">{</span>
+<span class="ln">6</span>        <span class="n">cellsHeight</span> <span class="o">+=</span> <span class="n">component</span><span class="p">.</span><span class="n">cellHeight</span>
+<span class="ln">7</span>    <span class="p">}</span>
+<span class="ln">8</span>    <span class="n">tableView</span><span class="p">.</span><span class="n">isScrollEnabled</span> <span class="p">=</span> <span class="p">(</span><span class="n">cellsHeight</span> <span class="o">&gt;</span> <span class="n">tableView</span><span class="p">.</span><span class="n">frame</span><span class="p">.</span><span class="n">height</span><span class="p">)</span>
+<span class="ln">9</span><span class="p">}</span>
+</code></pre></div><h3 id="step-3-datasource">step 3 DataSource</h3>
+<pre><code>透過Switch的方式去設定Cell，目的是為了讓往後調整Cell項目時，不必大動干戈的做修改，只需要簡單的調整cellComponents即可～舒服！
+</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="ln"> 1</span><span class="c1">//  PreferenceViewController.swift</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span><span class="c1">// 設定cell資料</span>
+<span class="ln"> 4</span><span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="kc">_</span> <span class="n">tableView</span><span class="p">:</span> <span class="n">UITableView</span><span class="p">,</span> <span class="n">cellForRowAt</span> <span class="n">indexPath</span><span class="p">:</span> <span class="n">IndexPath</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="n">UITableViewCell</span> <span class="p">{</span>
+<span class="ln"> 5</span>    
+<span class="ln"> 6</span>    <span class="kd">let</span> <span class="nv">component</span> <span class="p">=</span> <span class="n">dataSource</span><span class="p">[</span><span class="n">indexPath</span><span class="p">.</span><span class="n">row</span><span class="p">]</span>
+<span class="ln"> 7</span>    <span class="k">switch</span> <span class="n">component</span> <span class="p">{</span>
+<span class="ln"> 8</span>    <span class="k">case</span> <span class="p">.</span><span class="n">image</span><span class="p">:</span>
+<span class="ln"> 9</span>        <span class="k">guard</span> <span class="kd">let</span> <span class="nv">cell</span> <span class="p">=</span> <span class="n">tableView</span><span class="p">.</span><span class="n">dequeueReusableCell</span><span class="p">(</span><span class="n">withIdentifier</span><span class="p">:</span> <span class="n">component</span><span class="p">.</span><span class="n">cellId</span><span class="p">)</span> <span class="k">as</span><span class="p">?</span> <span class="n">CustomTableViewImageCell</span> <span class="k">else</span> <span class="p">{</span> <span class="k">return</span> <span class="n">UITableViewCell</span><span class="p">()</span> <span class="p">}</span>        
+<span class="ln">10</span>        <span class="k">return</span> <span class="n">cell</span>
+<span class="ln">11</span>        
+<span class="ln">12</span>    <span class="k">case</span> <span class="p">.</span><span class="n">title</span><span class="p">:</span>
+<span class="ln">13</span>        <span class="k">guard</span> <span class="kd">let</span> <span class="nv">cell</span> <span class="p">=</span> <span class="n">tableView</span><span class="p">.</span><span class="n">dequeueReusableCell</span><span class="p">(</span><span class="n">withIdentifier</span><span class="p">:</span> <span class="n">component</span><span class="p">.</span><span class="n">cellId</span><span class="p">)</span> <span class="k">as</span><span class="p">?</span> <span class="n">CustomTableViewTitleCell</span> <span class="k">else</span> <span class="p">{</span> <span class="k">return</span> <span class="n">UITableViewCell</span><span class="p">()</span> <span class="p">}</span>        
+<span class="ln">14</span>        <span class="k">return</span> <span class="n">cell</span>
+<span class="ln">15</span>        
+<span class="ln">16</span>    <span class="k">case</span> <span class="p">.</span><span class="n">detail</span><span class="p">:</span>
+<span class="ln">17</span>        <span class="k">guard</span> <span class="kd">let</span> <span class="nv">cell</span> <span class="p">=</span> <span class="n">tableView</span><span class="p">.</span><span class="n">dequeueReusableCell</span><span class="p">(</span><span class="n">withIdentifier</span><span class="p">:</span> <span class="n">component</span><span class="p">.</span><span class="n">cellId</span><span class="p">)</span> <span class="k">as</span><span class="p">?</span> <span class="n">CustomTableViewDetailCell</span> <span class="k">else</span> <span class="p">{</span> <span class="k">return</span> <span class="n">UITableViewCell</span><span class="p">()</span> <span class="p">}</span>        
+<span class="ln">18</span>        <span class="k">return</span> <span class="n">cell</span>
+<span class="ln">19</span>        
+<span class="ln">20</span>    <span class="k">case</span> <span class="p">.</span><span class="n">editText</span><span class="p">:</span>
+<span class="ln">21</span>        <span class="k">guard</span> <span class="kd">let</span> <span class="nv">cell</span> <span class="p">=</span> <span class="n">tableView</span><span class="p">.</span><span class="n">dequeueReusableCell</span><span class="p">(</span><span class="n">withIdentifier</span><span class="p">:</span> <span class="n">component</span><span class="p">.</span><span class="n">cellId</span><span class="p">)</span> <span class="k">as</span><span class="p">?</span> <span class="n">CustomTableViewEditTextCell</span> <span class="k">else</span> <span class="p">{</span> <span class="k">return</span> <span class="n">UITableViewCell</span><span class="p">()</span> <span class="p">}</span>        
+<span class="ln">22</span>        <span class="k">return</span> <span class="n">cell</span>
+<span class="ln">23</span>        
+<span class="ln">24</span>    <span class="k">case</span> <span class="p">.</span><span class="n">switchItem</span><span class="p">:</span>
+<span class="ln">25</span>        <span class="k">guard</span> <span class="kd">let</span> <span class="nv">cell</span> <span class="p">=</span> <span class="n">tableView</span><span class="p">.</span><span class="n">dequeueReusableCell</span><span class="p">(</span><span class="n">withIdentifier</span><span class="p">:</span> <span class="n">component</span><span class="p">.</span><span class="n">cellId</span><span class="p">)</span> <span class="k">as</span><span class="p">?</span> <span class="n">CustomTableViewSwitchCell</span> <span class="k">else</span> <span class="p">{</span> <span class="k">return</span> <span class="n">UITableViewCell</span><span class="p">()</span> <span class="p">}</span>        
+<span class="ln">26</span>        <span class="k">return</span> <span class="n">cell</span>
+<span class="ln">27</span>        
+<span class="ln">28</span>    <span class="k">case</span> <span class="p">.</span><span class="n">color</span><span class="p">:</span>
+<span class="ln">29</span>        <span class="k">guard</span> <span class="kd">let</span> <span class="nv">cell</span> <span class="p">=</span> <span class="n">tableView</span><span class="p">.</span><span class="n">dequeueReusableCell</span><span class="p">(</span><span class="n">withIdentifier</span><span class="p">:</span> <span class="n">component</span><span class="p">.</span><span class="n">cellId</span><span class="p">)</span> <span class="k">as</span><span class="p">?</span> <span class="n">CustomTableViewColorCell</span> <span class="k">else</span> <span class="p">{</span> <span class="k">return</span> <span class="n">UITableViewCell</span><span class="p">()</span> <span class="p">}</span>        
+<span class="ln">30</span>        <span class="k">return</span> <span class="n">cell</span>
+<span class="ln">31</span>    <span class="p">}</span>
+<span class="ln">32</span>    
+<span class="ln">33</span><span class="p">}</span>
+</code></pre></div><h2 id="完成效果">完成效果</h2>
+<p><img class="img-fluid" alt="image" src="/images/posts/swift_tableview_custom_components_1631779179.png"
+   width="926" height="1742" loading="lazy" />
+
+</p></div><div class="modal fade" id="rewardModal" tabindex="-1" aria-labelledby="rewardModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content surface">
+      <div class="modal-header">
+        <h5 class="modal-title" id="rewardModalLabel"><i class="fas fa-fw fa-medal"></i>「爽」請我喝拿鐵「不爽」請我喝美式</h5>
+        <a href="#" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-fw fa-times"></i></a>
+      </div>
+      <div class="modal-body">
+        <ul class="nav nav-tabs mb-3" role="tablist"><li class="nav-item" role="presentation">
+            <a class="nav-link active" id="reward-crypto_usdt_bep20-tab" data-bs-toggle="tab" href="#reward-crypto_usdt_bep20" role="tab" aria-controls="reward-crypto_usdt_bep20" aria-selected="true">
+              <i class="fab fa-fw fa-crypto_usdt_bep20"></i>USDT(BEP20)
+            </a>
+          </li><li class="nav-item" role="presentation">
+            <a class="nav-link" id="reward-crypto_usdt_trc20-tab" data-bs-toggle="tab" href="#reward-crypto_usdt_trc20" role="tab" aria-controls="reward-crypto_usdt_trc20" aria-selected="true">
+              <i class="fab fa-fw fa-crypto_usdt_trc20"></i>USDT(TRC20)
+            </a>
+          </li><li class="nav-item" role="presentation">
+            <a class="nav-link" id="reward-jkopay-tab" data-bs-toggle="tab" href="#reward-jkopay" role="tab" aria-controls="reward-jkopay" aria-selected="true">
+              <i class="fab fa-fw fa-jkopay"></i>街口支付
+            </a>
+          </li></ul>
+        <div class="tab-content" id="rewardTabContent"><div class="tab-pane fade post-reward-content show active" id="reward-crypto_usdt_bep20" role="tabpanel" aria-labelledby="reward-crypto_usdt_bep20-tab">
+            <img class="img-fluid post-reward-img" src="/images/reward/crypto-usdt-bep20.png" loading="lazy" />
+          </div><div class="tab-pane fade post-reward-content show" id="reward-crypto_usdt_trc20" role="tabpanel" aria-labelledby="reward-crypto_usdt_trc20-tab">
+            <img class="img-fluid post-reward-img" src="/images/reward/crypto-usdt-trc20.png" loading="lazy" />
+          </div><div class="tab-pane fade post-reward-content show" id="reward-jkopay" role="tabpanel" aria-labelledby="reward-jkopay-tab">
+            <img class="img-fluid post-reward-img" src="/images/reward/jkopay.png" loading="lazy" />
+          </div></div>
+      </div>
+    </div>
+  </div>
+</div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
+  <div class="post-nav w-50"><div class="prev-post btn btn-sm">
+      <a href="/posts/ios/swift/uitableview/tableview_custom_header/">TableView進階使用：客製化Header
+</a>
+    </div></div>
+  <div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
+      <a href="/posts/ios/swift/uitableview/tableview_dropdown_refresh/">TableView下拉更新資料
+</a>
+    </div></div>
+</div><section class="related-posts">
+    <h3>相關文章</h3>
+    <ul class="related-posts"><li><a href="/posts/ios/swift/uitableview/tableview_custom_cell/">TableView進階使用：客製化Cell
+</a></li><li><a href="/posts/ios/swift/uitableview/tableview_custom_header/">TableView進階使用：客製化Header
+</a></li><li><a href="/posts/ios/swift/uitableview/tableview_basic/">TableView基本使用：資料列表
+</a></li><li><a href="/posts/ios/swift/uipickerview/pickerview_package_practise/">[Swift]封裝PickerView，練習製作UI套件
+</a></li><li><a href="/posts/ios/swift/bundle_read_json/">[Swift]使用Bundle讀取Json檔案
+</a></li></ul>
+  </section></article><div class="post-comments surface row"><script src="https://utteranc.es/client.js"
+  repo="razonyang/hugo-theme-bootstrap-comments"
+  issue-term="pathname"
+  label="comment"
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script></div></div>
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container"><section class="profile surface row text-center">
+  <div class="col-12 d-flex align-items-center justify-content-center"><img class="profile-avatar rounded-circle" alt="Tony Lin" src="/images/profile.webp"
+   width="2160" height="2160" loading="lazy" />
+</div>
+  <div class="col-12 profile-meta"><div class="profile-name">Tony Lin</div><div class="profile-bio">Hi！ 我是Tony，「沒有資訊背景的 iOS APP工程師」，從ERP、WebAPI一路學習到寫APP。朋友常問：為何你可以成為軟體工程師？  我：你必須要很努力，才能看起來毫不費力。</div><div class="profile-location"><i class="fas fa-fw fa-map-marker-alt"></i>Taiwan</div><div class="profile-about"><i class="fas fa-fw fa-info-circle"></i><a href="/about/">關於我</a></div></div>
+</section>
+  <section class="featured-posts row surface">
+    <h4>精選文章</h4>
+    <ul><li><a href="/posts/macos/recommended_software/">MacOS 推薦實用軟體
+</a></li><li><a href="/posts/macos/system_setting_contents/">MacOS 系統設定彙整
+</a></li></ul>
+  </section><section class="recent-posts row surface">
+  <h4>最近文章</h4>
+  <ul><li><a href="/posts/ios/swift/uiviewcontroller/extenxions_identifier/">自訂Class的Identifier方便設定使用
+</a></li><li><a href="/posts/xcode/simulator_touch_white/">打開Simulator模擬器的觸碰小白點
+</a></li><li><a href="/posts/ios/swift/uitableview/tableview_dropdown_refresh/">TableView下拉更新資料
+</a></li><li><a href="/posts/ios/swift/uitableview/tableview_custom_components/">TableView設計模式：Components區塊模組
+</a></li><li><a href="/posts/ios/swift/uitableview/tableview_custom_header/">TableView進階使用：客製化Header
+</a></li></ul>
+</section><section class="taxonomy-series row surface">
+      <h4>
+        <a href="/series">專欄</a>
+      </h4>
+      <div><a href="/series/ios/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="iOS">
+          iOS <span class="badge rounded-pill">33</span>
+        </a><a href="/series/macos/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="macOS">
+          macOS <span class="badge rounded-pill">6</span>
+        </a></div>
+    </section><section class="taxonomy-tags row surface">
+      <h4>
+        <a href="/tags">標籤</a>
+      </h4>
+      <div><a href="/tags/swift/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Swift">
+          Swift <span class="badge rounded-pill">32</span>
+        </a><a href="/tags/alertcontroller/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="AlertController">
+          AlertController <span class="badge rounded-pill">5</span>
+        </a><a href="/tags/uitableview/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="UITableView">
+          UITableView <span class="badge rounded-pill">5</span>
+        </a><a href="/tags/url/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="URL">
+          URL <span class="badge rounded-pill">5</span>
+        </a><a href="/tags/xcode/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Xcode">
+          Xcode <span class="badge rounded-pill">5</span>
+        </a><a href="/tags/bundle/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Bundle">
+          Bundle <span class="badge rounded-pill">4</span>
+        </a><a href="/tags/uinib/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="UINib">
+          UINib <span class="badge rounded-pill">3</span>
+        </a><a href="/tags/uitableviewcell/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="UITableViewCell">
+          UITableViewCell <span class="badge rounded-pill">3</span>
+        </a><a href="/tags/array/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Array">
+          Array <span class="badge rounded-pill">2</span>
+        </a><a href="/tags/attribute/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Attribute">
+          Attribute <span class="badge rounded-pill">2</span>
+        </a></div>
+    </section></div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><nav class="social-links nav my-2 justify-content-center"><a class="nav-link social-link" href="mailto:cs90077@gmail.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a><a class="nav-link social-link" target="_blank" href="https://github.com/cs90077" title="GitHub" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-github"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://www.instagram.com/cs90077" title="Instagram" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-instagram"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://linkedin.com/in/cs90077" title="LinkedIn" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-linkedin-in"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://www.youtube.com/channel/UCznBj7M_LmFjtU2O8PeTHTw" title="Youtube" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-youtube"></i>
+      </a></nav>
+<div class="copyright mb-2">
+  Copyright © 2016-2021 Razon Yang. All Rights Reserved.
+</div>
+</footer>
+<a id="btnScrollToTop" class="btn-scroll-to-top">
+  <i class="fas fa-fw fa-chevron-circle-up fa-2x"></i>
+</a>
+</body>
+</html>

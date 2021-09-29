@@ -9,19 +9,19 @@
     <lastBuildDate>Tue, 17 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/uibutton/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>製作Back返回按鈕</title>
-      <link>/posts/ios/swift/button/button_back_view/</link>
+      <link>/posts/ios/swift/uibutton/button_back_view/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/button/button_back_view/</guid>
+      <guid>/posts/ios/swift/uibutton/button_back_view/</guid>
       <description></description>
     </item>
     
     <item>
       <title>製作HyperLink超連結按鈕</title>
-      <link>/posts/ios/swift/button/button_hyperlink_style/</link>
+      <link>/posts/ios/swift/uibutton/button_hyperlink_style/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/button/button_hyperlink_style/</guid>
+      <guid>/posts/ios/swift/uibutton/button_hyperlink_style/</guid>
       <description>&lt;p&gt;按鈕＋底線=超連結樣式&lt;/p&gt;</description>
     </item>
     

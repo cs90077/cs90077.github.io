@@ -6,50 +6,95 @@
     <description>Recent content on Tony Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
-    <lastBuildDate>Wed, 15 Sep 2021 11:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自訂Class的Identifier方便設定使用</title>
+      <link>/posts/ios/swift/uiviewcontroller/extenxions_identifier/</link>
+      <pubDate>Wed, 29 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/uiviewcontroller/extenxions_identifier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>打開Simulator模擬器的觸碰小白點</title>
+      <link>/posts/xcode/simulator_touch_white/</link>
+      <pubDate>Fri, 24 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/xcode/simulator_touch_white/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TableView下拉更新資料</title>
+      <link>/posts/ios/swift/uitableview/tableview_dropdown_refresh/</link>
+      <pubDate>Fri, 17 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/uitableview/tableview_dropdown_refresh/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>TableView設計模式：Components區塊模組</title>
-      <link>/posts/ios/swift/tableview/tableview_custom_components/</link>
-      <pubDate>Wed, 15 Sep 2021 11:00:00 +0000</pubDate>
+      <link>/posts/ios/swift/uitableview/tableview_custom_components/</link>
+      <pubDate>Thu, 16 Sep 2021 09:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/tableview/tableview_custom_components/</guid>
+      <guid>/posts/ios/swift/uitableview/tableview_custom_components/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TableView進階使用：客製化Header</title>
-      <link>/posts/ios/swift/tableview/tableview_custom_header/</link>
+      <link>/posts/ios/swift/uitableview/tableview_custom_header/</link>
       <pubDate>Wed, 15 Sep 2021 10:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/tableview/tableview_custom_header/</guid>
+      <guid>/posts/ios/swift/uitableview/tableview_custom_header/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TableView進階使用：客製化Cell</title>
-      <link>/posts/ios/swift/tableview/tableview_custom_cell/</link>
+      <link>/posts/ios/swift/uitableview/tableview_custom_cell/</link>
       <pubDate>Wed, 15 Sep 2021 09:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/tableview/tableview_custom_cell/</guid>
+      <guid>/posts/ios/swift/uitableview/tableview_custom_cell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TableView基本使用：資料列表</title>
-      <link>/posts/ios/swift/tableview/tableview_basic/</link>
+      <link>/posts/ios/swift/uitableview/tableview_basic/</link>
       <pubDate>Wed, 15 Sep 2021 08:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/tableview/tableview_basic/</guid>
+      <guid>/posts/ios/swift/uitableview/tableview_basic/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>ViewController Life Cycle APP畫面生命週期</title>
+      <link>/posts/ios/swift/uiviewcontroller/lifecycle/</link>
+      <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/uiviewcontroller/lifecycle/</guid>
+      <description>&lt;p&gt;APP畫面基本的生命週期，描述該做什麼事情比較合適。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>[Swift]封裝PickerView，練習製作UI套件</title>
-      <link>/posts/ios/swift/pickerview/pickerview_package_practise/</link>
+      <link>/posts/ios/swift/uipickerview/pickerview_package_practise/</link>
       <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/pickerview/pickerview_package_practise/</guid>
+      <guid>/posts/ios/swift/uipickerview/pickerview_package_practise/</guid>
       <description>&lt;p&gt;PickerView是一個很方便的項目選擇工具，對於手機APP操作資料選擇、時間選擇等等，能增加資料輸入的效率。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Google Map 地圖及坐標的基本使用</title>
+      <link>/posts/ios/swift/third_party/googlemap/google_map_basic/</link>
+      <pubDate>Wed, 08 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/third_party/googlemap/google_map_basic/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -210,28 +255,28 @@
     
     <item>
       <title>[Swift]Attribute 文字參雜不同屬性</title>
-      <link>/posts/ios/swift/attribute_custom/</link>
+      <link>/posts/ios/swift/uilabel/attribute_custom/</link>
       <pubDate>Tue, 17 Aug 2021 08:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/attribute_custom/</guid>
+      <guid>/posts/ios/swift/uilabel/attribute_custom/</guid>
       <description>&lt;p&gt;想要在整段文字中，中間特定文字切換不同屬性&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>製作Back返回按鈕</title>
-      <link>/posts/ios/swift/button/button_back_view/</link>
+      <link>/posts/ios/swift/uibutton/button_back_view/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/button/button_back_view/</guid>
+      <guid>/posts/ios/swift/uibutton/button_back_view/</guid>
       <description></description>
     </item>
     
     <item>
       <title>製作HyperLink超連結按鈕</title>
-      <link>/posts/ios/swift/button/button_hyperlink_style/</link>
+      <link>/posts/ios/swift/uibutton/button_hyperlink_style/</link>
       <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/button/button_hyperlink_style/</guid>
+      <guid>/posts/ios/swift/uibutton/button_hyperlink_style/</guid>
       <description>&lt;p&gt;按鈕＋底線=超連結樣式&lt;/p&gt;</description>
     </item>
     
@@ -266,10 +311,10 @@
     
     <item>
       <title>[Swift]UIColor RGB顏色的使用</title>
-      <link>/posts/ios/swift/color_rgb/</link>
+      <link>/posts/ios/swift/uicolor/color_rgb/</link>
       <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/color_rgb/</guid>
+      <guid>/posts/ios/swift/uicolor/color_rgb/</guid>
       <description></description>
     </item>
     
@@ -320,10 +365,10 @@
     
     <item>
       <title>[Swift]使用ImagePicker開啟Camera相機功能</title>
-      <link>/posts/ios/swift/imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/</link>
+      <link>/posts/ios/swift/uipickerview/imagepicker_open_camera/</link>
       <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/</guid>
+      <guid>/posts/ios/swift/uipickerview/imagepicker_open_camera/</guid>
       <description>&lt;p&gt;開啟相機 =&amp;gt; 拍照 =&amp;gt; 儲存照片 =&amp;gt; 簡單搞定&lt;/p&gt;</description>
     </item>
     

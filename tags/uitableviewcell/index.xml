@@ -6,31 +6,31 @@
     <description>Recent content in UITableViewCell on Tony Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
-    <lastBuildDate>Wed, 15 Sep 2021 11:00:00 +0000</lastBuildDate><atom:link href="/tags/uitableviewcell/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Sep 2021 09:00:00 +0000</lastBuildDate><atom:link href="/tags/uitableviewcell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TableView設計模式：Components區塊模組</title>
-      <link>/posts/ios/swift/tableview/tableview_custom_components/</link>
-      <pubDate>Wed, 15 Sep 2021 11:00:00 +0000</pubDate>
+      <link>/posts/ios/swift/uitableview/tableview_custom_components/</link>
+      <pubDate>Thu, 16 Sep 2021 09:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/tableview/tableview_custom_components/</guid>
+      <guid>/posts/ios/swift/uitableview/tableview_custom_components/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TableView進階使用：客製化Cell</title>
-      <link>/posts/ios/swift/tableview/tableview_custom_cell/</link>
+      <link>/posts/ios/swift/uitableview/tableview_custom_cell/</link>
       <pubDate>Wed, 15 Sep 2021 09:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/tableview/tableview_custom_cell/</guid>
+      <guid>/posts/ios/swift/uitableview/tableview_custom_cell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TableView基本使用：資料列表</title>
-      <link>/posts/ios/swift/tableview/tableview_basic/</link>
+      <link>/posts/ios/swift/uitableview/tableview_basic/</link>
       <pubDate>Wed, 15 Sep 2021 08:00:00 +0000</pubDate>
       
-      <guid>/posts/ios/swift/tableview/tableview_basic/</guid>
+      <guid>/posts/ios/swift/uitableview/tableview_basic/</guid>
       <description></description>
     </item>
     

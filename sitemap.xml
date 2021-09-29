@@ -3,52 +3,82 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/series/ios/</loc>
-    <lastmod>2021-09-15T11:00:00+00:00</lastmod>
+    <lastmod>2021-09-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/swift/</loc>
-    <lastmod>2021-09-15T11:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/ios/swift/tableview/tableview_custom_components/</loc>
-    <lastmod>2021-09-15T11:00:00+00:00</lastmod>
+    <lastmod>2021-09-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2021-09-15T11:00:00+00:00</lastmod>
+    <lastmod>2021-09-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/uinib/</loc>
-    <lastmod>2021-09-15T11:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/uitableview/</loc>
-    <lastmod>2021-09-15T11:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/uitableviewcell/</loc>
-    <lastmod>2021-09-15T11:00:00+00:00</lastmod>
+    <loc>/tags/uiviewcontroller/</loc>
+    <lastmod>2021-09-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/series/</loc>
-    <lastmod>2021-09-15T11:00:00+00:00</lastmod>
+    <lastmod>2021-09-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
-    <lastmod>2021-09-15T11:00:00+00:00</lastmod>
+    <lastmod>2021-09-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2021-09-15T11:00:00+00:00</lastmod>
+    <lastmod>2021-09-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/ios/swift/tableview/tableview_custom_header/</loc>
+    <loc>/posts/ios/swift/uiviewcontroller/extenxions_identifier/</loc>
+    <lastmod>2021-09-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/series/macos/</loc>
+    <lastmod>2021-09-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/simulator/</loc>
+    <lastmod>2021-09-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/xcode/</loc>
+    <lastmod>2021-09-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/xcode/simulator_touch_white/</loc>
+    <lastmod>2021-09-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/ios/swift/uitableview/tableview_dropdown_refresh/</loc>
+    <lastmod>2021-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/uirefreshcontrol/</loc>
+    <lastmod>2021-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/uitableview/</loc>
+    <lastmod>2021-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/ios/swift/uitableview/tableview_custom_components/</loc>
+    <lastmod>2021-09-16T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/uinib/</loc>
+    <lastmod>2021-09-16T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/uitableviewcell/</loc>
+    <lastmod>2021-09-16T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/ios/swift/uitableview/tableview_custom_header/</loc>
     <lastmod>2021-09-15T10:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/uitableviewheaderfooterview/</loc>
     <lastmod>2021-09-15T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/ios/swift/tableview/tableview_custom_cell/</loc>
+    <loc>/posts/ios/swift/uitableview/tableview_custom_cell/</loc>
     <lastmod>2021-09-15T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/ios/swift/tableview/tableview_basic/</loc>
+    <loc>/posts/ios/swift/uitableview/tableview_basic/</loc>
     <lastmod>2021-09-15T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/ios/swift/pickerview/pickerview_package_practise/</loc>
+    <loc>/posts/ios/swift/uiviewcontroller/lifecycle/</loc>
+    <lastmod>2021-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/ios/swift/uipickerview/pickerview_package_practise/</loc>
     <lastmod>2021-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/pickerview/</loc>
     <lastmod>2021-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/ios/swift/third_party/googlemap/google_map_basic/</loc>
+    <lastmod>2021-09-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/ios/swift/bundle_read_json/</loc>
     <lastmod>2021-09-07T10:00:00+00:00</lastmod>
@@ -137,7 +167,7 @@
     <loc>/posts/ios/swift/alertview/alert_basic/</loc>
     <lastmod>2021-08-30T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/ios/swift/attribute_custom/</loc>
+    <loc>/posts/ios/swift/uilabel/attribute_custom/</loc>
     <lastmod>2021-08-17T08:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/attribute/</loc>
@@ -149,10 +179,10 @@
     <loc>/tags/uibutton/</loc>
     <lastmod>2021-08-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/ios/swift/button/button_back_view/</loc>
+    <loc>/posts/ios/swift/uibutton/button_back_view/</loc>
     <lastmod>2021-08-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/ios/swift/button/button_hyperlink_style/</loc>
+    <loc>/posts/ios/swift/uibutton/button_hyperlink_style/</loc>
     <lastmod>2021-08-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/ios/swift/array_data_not_repeat/</loc>
@@ -161,17 +191,11 @@
     <loc>/about/</loc>
     <lastmod>2021-07-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/ios/swift/color_rgb/</loc>
+    <loc>/posts/ios/swift/uicolor/color_rgb/</loc>
     <lastmod>2021-06-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/uicolor/</loc>
     <lastmod>2021-06-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/series/macos/</loc>
-    <lastmod>2021-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/xcode/</loc>
-    <lastmod>2021-02-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/xcode/xcode_download/</loc>
     <lastmod>2021-02-14T00:00:00+00:00</lastmod>
@@ -194,7 +218,7 @@
     <loc>/posts/macos/system_setting_contents/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/ios/swift/imagepicker_%E9%96%8B%E5%95%9Fcamera%E7%9B%B8%E6%A9%9F%E5%8A%9F%E8%83%BD/</loc>
+    <loc>/posts/ios/swift/uipickerview/imagepicker_open_camera/</loc>
     <lastmod>2020-09-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/camera/</loc>

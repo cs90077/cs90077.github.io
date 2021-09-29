@@ -6,38 +6,74 @@
     <description>Recent content in 標籤 on Tony Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
-    <lastBuildDate>Wed, 15 Sep 2021 11:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Swift</title>
       <link>/tags/swift/</link>
-      <pubDate>Wed, 15 Sep 2021 11:00:00 +0000</pubDate>
+      <pubDate>Wed, 29 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>/tags/swift/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>UINib</title>
-      <link>/tags/uinib/</link>
-      <pubDate>Wed, 15 Sep 2021 11:00:00 +0000</pubDate>
+      <title>UIViewController</title>
+      <link>/tags/uiviewcontroller/</link>
+      <pubDate>Wed, 29 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/uinib/</guid>
+      <guid>/tags/uiviewcontroller/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Simulator</title>
+      <link>/tags/simulator/</link>
+      <pubDate>Fri, 24 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/simulator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xcode</title>
+      <link>/tags/xcode/</link>
+      <pubDate>Fri, 24 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/xcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UIRefreshControl</title>
+      <link>/tags/uirefreshcontrol/</link>
+      <pubDate>Fri, 17 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/uirefreshcontrol/</guid>
       <description></description>
     </item>
     
     <item>
       <title>UITableView</title>
       <link>/tags/uitableview/</link>
-      <pubDate>Wed, 15 Sep 2021 11:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>/tags/uitableview/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>UINib</title>
+      <link>/tags/uinib/</link>
+      <pubDate>Thu, 16 Sep 2021 09:00:00 +0000</pubDate>
+      
+      <guid>/tags/uinib/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>UITableViewCell</title>
       <link>/tags/uitableviewcell/</link>
-      <pubDate>Wed, 15 Sep 2021 11:00:00 +0000</pubDate>
+      <pubDate>Thu, 16 Sep 2021 09:00:00 +0000</pubDate>
       
       <guid>/tags/uitableviewcell/</guid>
       <description></description>
@@ -202,15 +238,6 @@
       <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>/tags/uicolor/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Xcode</title>
-      <link>/tags/xcode/</link>
-      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/xcode/</guid>
       <description></description>
     </item>
     
