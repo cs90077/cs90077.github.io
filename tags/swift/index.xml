@@ -71,6 +71,15 @@
     </item>
     
     <item>
+      <title>CollectionView基本使用</title>
+      <link>/posts/ios/swift/uicollectionview/collectionview_basic/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/uicollectionview/collectionview_basic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>[Swift]封裝PickerView，練習製作UI套件</title>
       <link>/posts/ios/swift/uipickerview/pickerview_package_practise/</link>
       <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>

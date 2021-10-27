@@ -80,6 +80,15 @@
     </item>
     
     <item>
+      <title>CollectionView基本使用</title>
+      <link>/posts/ios/swift/uicollectionview/collectionview_basic/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/uicollectionview/collectionview_basic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ViewController Life Cycle APP畫面生命週期</title>
       <link>/posts/ios/swift/uiviewcontroller/lifecycle/</link>
       <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
