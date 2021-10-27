@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>[Swift]前往App Store評分頁面</title>
+      <link>/posts/ios/swift/url/goto_appstore/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/url/goto_appstore/</guid>
+      <description>1func rateApp(id: String) { 2 // 直接進入appstore 評分頁面 3 guard let url = URL(string : &amp;#34;itms-apps://itunes.apple.com/app/id\(id)?mt=8&amp;amp;action=write-review&amp;#34;) else { return } 4 if #available(iOS 10.0, *) { 5 UIApplication.shared.open(url, options: [:], completionHandler: nil) 6 } else { 7 UIApplication.shared.openURL(url) 8 } 9} </description>
+    </item>
+    
+    <item>
       <title>[Swift]前往「系統設定」頁面</title>
       <link>/posts/ios/swift/url/goto_system_setting/</link>
       <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>

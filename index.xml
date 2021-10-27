@@ -35,6 +35,15 @@
     </item>
     
     <item>
+      <title>如何取得多行文字的實際高度</title>
+      <link>/posts/ios/swift/uilabel/label_text_height/</link>
+      <pubDate>Fri, 17 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/uilabel/label_text_height/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>TableView設計模式：Components區塊模組</title>
       <link>/posts/ios/swift/uitableview/tableview_custom_components/</link>
       <pubDate>Thu, 16 Sep 2021 09:00:00 +0000</pubDate>
@@ -167,6 +176,15 @@
       
       <guid>/posts/ios/swift/url/call_phone/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>[Swift]前往App Store評分頁面</title>
+      <link>/posts/ios/swift/url/goto_appstore/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/url/goto_appstore/</guid>
+      <description>1func rateApp(id: String) { 2 // 直接進入appstore 評分頁面 3 guard let url = URL(string : &amp;#34;itms-apps://itunes.apple.com/app/id\(id)?mt=8&amp;amp;action=write-review&amp;#34;) else { return } 4 if #available(iOS 10.0, *) { 5 UIApplication.shared.open(url, options: [:], completionHandler: nil) 6 } else { 7 UIApplication.shared.openURL(url) 8 } 9} </description>
     </item>
     
     <item>

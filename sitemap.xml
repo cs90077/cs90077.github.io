@@ -41,10 +41,16 @@
     <loc>/posts/ios/swift/uitableview/tableview_dropdown_refresh/</loc>
     <lastmod>2021-09-17T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/tags/uilabel/</loc>
+    <lastmod>2021-09-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/tags/uirefreshcontrol/</loc>
     <lastmod>2021-09-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/uitableview/</loc>
+    <lastmod>2021-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/ios/swift/uilabel/label_text_height/</loc>
     <lastmod>2021-09-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/ios/swift/uitableview/tableview_custom_components/</loc>
@@ -114,6 +120,9 @@
     <lastmod>2021-09-01T08:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/ios/swift/url/call_phone/</loc>
+    <lastmod>2021-08-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/ios/swift/url/goto_appstore/</loc>
     <lastmod>2021-08-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/ios/swift/url/goto_system_setting/</loc>

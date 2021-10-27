@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UICollectionView on Tony Blogs</title>
+    <link>/tags/uicollectionview/</link>
+    <description>Recent content in UICollectionView on Tony Blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright>
+    <lastBuildDate>Wed, 15 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/uicollectionview/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CollectionView 基本使用方式</title>
+      <link>/posts/ios/swift/uicollectionview/collectionview_basic/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ios/swift/uicollectionview/collectionview_basic/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

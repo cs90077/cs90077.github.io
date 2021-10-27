@@ -138,6 +138,18 @@ Tony Blog</a>
   <div class="container"><nav class="row" aria-label="breadcrumb">
   <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="/">主頁</a></li><li class="breadcrumb-item active">文章</li></ol>
 </nav><div class="posts mb-4"><article class="post row surface">
+      <h2 class="post-title mb-4"><a href="/posts/ios/swift/third_party/googlemap/google_map_basic/">Google Map 地圖及坐標的基本使用
+</a></h2><div class="post-meta mb-3"><span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>Sep 8, 2021
+  </span><span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>2 分鐘閱讀
+  </span><span class="post-taxonomies"></span>
+</div>
+<div class="post-summary mb-3">
+        
+        
+      </div>
+    </article><article class="post row surface">
       <h2 class="post-title mb-4"><a href="/posts/ios/swift/bundle_read_json/">[Swift]使用Bundle讀取Json檔案
 </a></h2><div class="post-meta mb-3"><span class="post-date me-2">
     <i class="fas fa-fw fa-calendar-alt"></i>Sep 7, 2021
@@ -258,7 +270,7 @@ Tony Blog</a>
         
       </div>
     </article><article class="post row surface">
-      <h2 class="post-title mb-4"><a href="/posts/ios/swift/url/goto_system_setting/">[Swift]前往「系統設定」頁面
+      <h2 class="post-title mb-4"><a href="/posts/ios/swift/url/goto_appstore/">[Swift]前往App Store評分頁面
 </a></h2><div class="post-meta mb-3"><span class="post-date me-2">
     <i class="fas fa-fw fa-calendar-alt"></i>Aug 31, 2021
   </span><span class="post-reading-time me-2">
@@ -267,27 +279,7 @@ Tony Blog</a>
 </div>
 <div class="post-summary mb-3">
         
-        <img class="img-fluid" alt="[Swift]前往「系統設定」頁面" src="/images/posts/swift_setting_1630474892.png"
-   width="1170" height="2532" loading="lazy" />
-
-        
-        <p>在做權限管理的時候，常常會需要請使用者去開啟權限，可以使用此方法，引導使用者去「設定頁面」操作。</p>
-      </div>
-    </article><article class="post row surface">
-      <h2 class="post-title mb-4"><a href="/posts/ios/swift/url/send_email/">[Swift]發送Email信件
-</a></h2><div class="post-meta mb-3"><span class="post-date me-2">
-    <i class="fas fa-fw fa-calendar-alt"></i>Aug 31, 2021
-  </span><span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>2 分鐘閱讀
-  </span><span class="post-taxonomies"><a href="/series/ios/" class="post-taxonomy">iOS</a><a href="/tags/swift/" class="post-taxonomy">Swift</a><a href="/tags/url/" class="post-taxonomy">URL</a><a href="/tags/messageui/" class="post-taxonomy">MessageUI</a></span>
-</div>
-<div class="post-summary mb-3">
-        
-        <img class="img-fluid" alt="[Swift]發送Email信件" src="/images/posts/swift_send_email_2.png"
-   width="1170" height="2532" loading="lazy" />
-
-        
-        
+        1func rateApp(id: String) { 2 // 直接進入appstore 評分頁面 3 guard let url = URL(string : &#34;itms-apps://itunes.apple.com/app/id\(id)?mt=8&amp;action=write-review&#34;) else { return } 4 if #available(iOS 10.0, *) { 5 UIApplication.shared.open(url, options: [:], completionHandler: nil) 6 } else { 7 …
       </div>
     </article></div><div class="row table-responsive mb-3">
     <ul class="pagination pagination-default">
@@ -339,15 +331,15 @@ Tony Blog</a>
   <ul><li><a href="/posts/ios/swift/uiviewcontroller/extenxions_identifier/">自訂Class的Identifier方便設定使用
 </a></li><li><a href="/posts/xcode/simulator_touch_white/">打開Simulator模擬器的觸碰小白點
 </a></li><li><a href="/posts/ios/swift/uitableview/tableview_dropdown_refresh/">TableView下拉更新資料
+</a></li><li><a href="/posts/ios/swift/uilabel/label_text_height/">如何取得多行文字的實際高度
 </a></li><li><a href="/posts/ios/swift/uitableview/tableview_custom_components/">TableView設計模式：Components區塊模組
-</a></li><li><a href="/posts/ios/swift/uitableview/tableview_custom_header/">TableView進階使用：客製化Header
 </a></li></ul>
 </section><section class="taxonomy-series row surface">
       <h4>
         <a href="/series">專欄</a>
       </h4>
       <div><a href="/series/ios/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="iOS">
-          iOS <span class="badge rounded-pill">33</span>
+          iOS <span class="badge rounded-pill">35</span>
         </a><a href="/series/macos/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="macOS">
           macOS <span class="badge rounded-pill">6</span>
         </a></div>
@@ -356,13 +348,13 @@ Tony Blog</a>
         <a href="/tags">標籤</a>
       </h4>
       <div><a href="/tags/swift/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Swift">
-          Swift <span class="badge rounded-pill">32</span>
+          Swift <span class="badge rounded-pill">34</span>
+        </a><a href="/tags/url/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="URL">
+          URL <span class="badge rounded-pill">6</span>
         </a><a href="/tags/alertcontroller/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="AlertController">
           AlertController <span class="badge rounded-pill">5</span>
         </a><a href="/tags/uitableview/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="UITableView">
           UITableView <span class="badge rounded-pill">5</span>
-        </a><a href="/tags/url/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="URL">
-          URL <span class="badge rounded-pill">5</span>
         </a><a href="/tags/xcode/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Xcode">
           Xcode <span class="badge rounded-pill">5</span>
         </a><a href="/tags/bundle/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Bundle">
