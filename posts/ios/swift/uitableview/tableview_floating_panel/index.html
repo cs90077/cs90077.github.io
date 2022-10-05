@@ -11,14 +11,14 @@
 <meta name=description content><meta itemprop=name content="TableView利用FloatingPanel製作底部選項">
 <meta itemprop=description content><meta itemprop=datePublished content="2021-12-01T08:00:00+00:00">
 <meta itemprop=dateModified content="2021-12-01T08:00:00+00:00">
-<meta itemprop=wordCount content="354"><meta itemprop=image content="/images/posts/swift_tableview_floating_panel_1638498153.png">
-<meta itemprop=keywords content="Swift,TableView,FloatingPanel,"><meta property="og:title" content="TableView利用FloatingPanel製作底部選項">
+<meta itemprop=wordCount content="355"><meta itemprop=image content="/images/posts/swift_tableview_floating_panel_1638498153.png">
+<meta itemprop=keywords content="Swift,UITableView,FloatingPanel,"><meta property="og:title" content="TableView利用FloatingPanel製作底部選項">
 <meta property="og:description" content>
 <meta property="og:type" content="article">
 <meta property="og:url" content="/posts/ios/swift/uitableview/tableview_floating_panel/"><meta property="og:image" content="/images/posts/swift_tableview_floating_panel_1638498153.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-12-01T08:00:00+00:00">
 <meta property="article:modified_time" content="2021-12-01T08:00:00+00:00">
-<meta property="og:see_also" content="/posts/ios/swift/date_formater/"><meta property="og:see_also" content="/posts/ios/swift/string_basic/"><meta property="og:see_also" content="/posts/ios/swift/uicollectionview/collectionview_basic/"><meta property="og:see_also" content="/posts/ios/swift/uiviewcontroller/extenxions_identifier/"><meta property="og:see_also" content="/posts/ios/swift/uitableview/tableview_dropdown_refresh/">
+<meta property="og:see_also" content="/posts/ios/swift/string_basic/"><meta property="og:see_also" content="/posts/ios/swift/uicollectionview/collectionview_basic/"><meta property="og:see_also" content="/posts/ios/swift/uiviewcontroller/extenxions_identifier/"><meta property="og:see_also" content="/posts/ios/swift/uitableview/tableview_dropdown_refresh/"><meta property="og:see_also" content="/posts/ios/swift/uilabel/label_text_height/">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="/images/posts/swift_tableview_floating_panel_1638498153.png">
 <meta name=twitter:title content="TableView利用FloatingPanel製作底部選項">
@@ -46,6 +46,10 @@ Tony Blog</a>
 </li><li class=nav-item>
 <a class=nav-link href=/series/>
 <i class="fas fa-fw fa-columns"></i>專欄
+</a>
+</li><li class=nav-item>
+<a class=nav-link href=/tags/>
+<i class="fas fa-fw fa-tags"></i>標籤
 </a>
 </li><li class=nav-item>
 <a class=nav-link href=/archives/>
@@ -142,7 +146,7 @@ Tony Blog</a>
 <i class="fas fa-fw fa-calendar-alt"></i>Dec 1, 2021
 </span><span class="post-reading-time me-2">
 <i class="fas fa-fw fa-coffee"></i>2 分鐘閱讀
-</span><span class=post-taxonomies><a href=/series/ios/ class=post-taxonomy>iOS</a></span>
+</span><span class=post-taxonomies><a href=/series/ios/ class=post-taxonomy>iOS</a><a href=/tags/swift/ class=post-taxonomy>Swift</a><a href=/tags/uitableview/ class=post-taxonomy>UITableView</a><a href=/tags/floatingpanel/ class=post-taxonomy>FloatingPanel</a></span>
 </div>
 <div class="offcanvas offcanvas-end surface" tabindex=-1 id=offcanvasTOC aria-labelledby=offcanvasTOCLabel>
 <div class=offcanvas-header>
@@ -154,22 +158,23 @@ Tony Blog</a>
 <div class=offcanvas-body>
 <nav id=TableOfContents>
 <ul>
-<li><a href=#setp-1-table-view>setp 1 Table View</a></li>
-<li><a href=#setp-2-floating-panel-layout>setp 2 Floating Panel Layout</a></li>
-<li><a href=#setp-3-floating-panel-controller>setp 3 Floating Panel Controller</a></li>
-<li><a href=#setp-4-preview>setp 4 Preview</a></li>
-<li><a href=#setp-5-effect>setp 5 Effect</a></li>
+<li><a href=#step-1-table-view>step 1 Table View</a></li>
+<li><a href=#step-2-floating-panel-layout>step 2 Floating Panel Layout</a></li>
+<li><a href=#step-3-floating-panel-controller>step 3 Floating Panel Controller</a></li>
+<li><a href=#step-4-preview>step 4 Preview</a></li>
+<li><a href=#step-5-effect>step 5 Effect</a></li>
 <li><a href=#alarm>Alarm</a></li>
 </ul>
 </nav>
 </div>
-</div><div class="post-content mb-3"><p>原先設計一個畫面，透過TableView顯示選單列表，做一個單選項目。簡化UI設計，透過FloatingPanel套件，做出僅顯示選單資訊的效果。</p>
-<h2 id=setp-1-table-view>setp 1 Table View</h2>
+</div><div class="post-content mb-3"><p>原先設計一個畫面，透過TableView顯示選單列表，做一個單選項目。
+簡化UI設計，透過FloatingPanel套件，做出僅顯示選單資訊的效果。</p>
+<h2 id=step-1-table-view>step 1 Table View</h2>
 <pre><code>先設計好TableView的選項列表
 </code></pre>
 <p><img class=img-fluid alt=image src=/images/posts/swift_tableview_floating_panel_1638498151.png width=1170 height=2532 loading=lazy>
 </p>
-<h2 id=setp-2-floating-panel-layout>setp 2 Floating Panel Layout</h2>
+<h2 id=step-2-floating-panel-layout>step 2 Floating Panel Layout</h2>
 <pre><code>1.自定義FloatingPanelLayout，position分為full、half、tip
 2.在這邊我只需要用到一個half項目，並且預設好顯示的高度。navigation height 44 + table view cell 56 * 2 = 156
 3.透過FloatingPanelControllerDelegate來設定。
@@ -208,7 +213,7 @@ Tony Blog</a>
 <span class=ln>32</span>    <span class=p>}</span>
 <span class=ln>33</span>    
 <span class=ln>34</span><span class=p>}</span>
-</code></pre></div><h2 id=setp-3-floating-panel-controller>setp 3 Floating Panel Controller</h2>
+</code></pre></div><h2 id=step-3-floating-panel-controller>step 3 Floating Panel Controller</h2>
 <pre><code>將Table View畫面放置於Floating Panel中，並設定相關參數
 </code></pre>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-swift data-lang=swift><span class=ln> 1</span><span class=c1>/// PaymentWalletSmallView.swift</span>
@@ -255,10 +260,10 @@ Tony Blog</a>
 <span class=ln>42</span>    <span class=c1>// 使用floating panel</span>
 <span class=ln>43</span>    <span class=n>view</span><span class=p>.</span><span class=n>present</span><span class=p>(</span><span class=n>fpc</span><span class=p>,</span> <span class=n>animated</span><span class=p>:</span> <span class=kc>true</span><span class=p>,</span> <span class=n>completion</span><span class=p>:</span> <span class=kc>nil</span><span class=p>)</span>
 <span class=ln>44</span><span class=p>}</span>
-</code></pre></div><h2 id=setp-4-preview>setp 4 Preview</h2>
+</code></pre></div><h2 id=step-4-preview>step 4 Preview</h2>
 <p><img class=img-fluid alt=image src=/images/posts/swift_tableview_floating_panel_1638498153.png width=1170 height=1170 loading=lazy>
 </p>
-<h2 id=setp-5-effect>setp 5 Effect</h2>
+<h2 id=step-5-effect>step 5 Effect</h2>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-swift data-lang=swift><span class=ln> 1</span><span class=c1>// 設定top圓弧</span>
 <span class=ln> 2</span><span class=n>fpc</span><span class=p>.</span><span class=n>surfaceView</span><span class=p>.</span><span class=n>cornerRadius</span> <span class=p>=</span> <span class=mi>16</span>
 <span class=ln> 3</span><span class=n>fpc</span><span class=p>.</span><span class=n>surfaceView</span><span class=p>.</span><span class=n>shadowHidden</span> <span class=p>=</span> <span class=kc>false</span>
@@ -324,17 +329,14 @@ Tony Blog</a>
 <a href=/posts/ios/swift/string_basic/>String字串處理
 </a>
 </div></div>
-<div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
-<a href=/posts/ios/swift/date_formater/>Date格式處理
-</a>
-</div></div>
+<div class="post-nav flex-row-reverse"></div>
 </div><section class=related-posts>
 <h3>相關文章</h3>
-<ul class=related-posts><li><a href=/posts/ios/swift/string_basic/>String字串處理
-</a></li><li><a href=/posts/ios/swift/uicollectionview/collectionview_basic/>CollectionView 設計客製化介面
-</a></li><li><a href=/posts/ios/swift/uiviewcontroller/extenxions_identifier/>自訂Class的Identifier方便設定使用
-</a></li><li><a href=/posts/ios/swift/uitableview/tableview_dropdown_refresh/>TableView下拉更新資料
-</a></li><li><a href=/posts/ios/swift/uilabel/label_text_height/>如何取得多行文字的實際高度
+<ul class=related-posts><li><a href=/posts/ios/swift/uitableview/tableview_dropdown_refresh/>TableView下拉更新資料
+</a></li><li><a href=/posts/ios/swift/uitableview/tableview_custom_components/>TableView Components 區塊模組
+</a></li><li><a href=/posts/ios/swift/uitableview/tableview_custom_cell_header/>TableView客製化Cell、Header
+</a></li><li><a href=/posts/ios/swift/uitableview/tableview_basic/>TableView基本使用：資料列表
+</a></li><li><a href=/posts/ios/swift/string_basic/>String字串處理
 </a></li></ul>
 </section></article><div class="post-comments surface row"><script src=https://utteranc.es/client.js repo=razonyang/hugo-theme-bootstrap-comments issue-term=pathname label=comment theme=github-light crossorigin=anonymous async></script></div></div>
 </div><aside class="col-lg-4 sidebar d-flex">
@@ -350,20 +352,45 @@ Tony Blog</a>
 </a></li></ul>
 </section><section class="recent-posts row surface">
 <h4>最近文章</h4>
-<ul><li><a href=/posts/ios/swift/date_formater/>Date格式處理
-</a></li><li><a href=/posts/ios/swift/uitableview/tableview_floating_panel/>TableView利用FloatingPanel製作底部選項
+<ul><li><a href=/posts/ios/swift/uitableview/tableview_floating_panel/>TableView利用FloatingPanel製作底部選項
 </a></li><li><a href=/posts/ios/swift/string_basic/>String字串處理
 </a></li><li><a href=/posts/ios/swift/uicollectionview/collectionview_basic/>CollectionView 設計客製化介面
 </a></li><li><a href=/posts/ios/swift/uiviewcontroller/extenxions_identifier/>自訂Class的Identifier方便設定使用
+</a></li><li><a href=/posts/xcode/simulator_touch_white/>打開Simulator模擬器的觸碰小白點
 </a></li></ul>
 </section><section class="taxonomy-series row surface">
 <h4>
 <a href=/series>專欄</a>
 </h4>
 <div><a href=/series/ios/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=iOS>
-iOS <span class="badge rounded-pill">38</span>
+iOS <span class="badge rounded-pill">37</span>
 </a><a href=/series/macos/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=macOS>
 macOS <span class="badge rounded-pill">6</span>
+</a></div>
+</section><section class="taxonomy-tags row surface">
+<h4>
+<a href=/tags>標籤</a>
+</h4>
+<div><a href=/tags/swift/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=Swift>
+Swift <span class="badge rounded-pill">36</span>
+</a><a href=/tags/url/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=URL>
+URL <span class="badge rounded-pill">6</span>
+</a><a href=/tags/alertcontroller/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=AlertController>
+AlertController <span class="badge rounded-pill">5</span>
+</a><a href=/tags/uitableview/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=UITableView>
+UITableView <span class="badge rounded-pill">5</span>
+</a><a href=/tags/xcode/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=Xcode>
+Xcode <span class="badge rounded-pill">5</span>
+</a><a href=/tags/bundle/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=Bundle>
+Bundle <span class="badge rounded-pill">4</span>
+</a><a href=/tags/array/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=Array>
+Array <span class="badge rounded-pill">2</span>
+</a><a href=/tags/attribute/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=Attribute>
+Attribute <span class="badge rounded-pill">2</span>
+</a><a href=/tags/cocoapods/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=CocoaPods>
+CocoaPods <span class="badge rounded-pill">2</span>
+</a><a href=/tags/github/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=GitHub>
+GitHub <span class="badge rounded-pill">2</span>
 </a></div>
 </section></div>
 </aside>

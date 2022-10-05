@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>UICollectionView on Tony Blogs</title><link>/tags/uicollectionview/</link><description>Recent content in UICollectionView on Tony Blogs</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright © 2016-{year} Razon Yang. All Rights Reserved.</copyright><lastBuildDate>Wed, 27 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/uicollectionview/index.xml" rel="self" type="application/rss+xml"/><item><title>CollectionView 設計客製化介面</title><link>/posts/ios/swift/uicollectionview/collectionview_basic/</link><pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate><guid>/posts/ios/swift/uicollectionview/collectionview_basic/</guid><description>&lt;p>你知道iPhone內建的「照片APP」是用什麼UI製作的嗎？&lt;/p>
+&lt;p>是利用 &lt;strong>UICollectionView&lt;/strong> 這個UI元件設計出來的。&lt;/p>
+&lt;p>UICollectionView 可以用來呈現網格多行的樣式，依照水平、垂直不同的顯示方式，可以做出很多不同的變化。&lt;/p>
+&lt;p>&lt;img class="img-fluid" alt="image" src="/images/posts/swift_collectionview_base_1635324082.png"
+width="1170" height="2532" loading="lazy" />
+&lt;/p></description></item></channel></rss>

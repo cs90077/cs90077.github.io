@@ -11,14 +11,14 @@
 <meta name=description content><meta itemprop=name content="String字串處理">
 <meta itemprop=description content><meta itemprop=datePublished content="2021-11-21T08:00:00+00:00">
 <meta itemprop=dateModified content="2021-11-21T08:00:00+00:00">
-<meta itemprop=wordCount content="307">
+<meta itemprop=wordCount content="309">
 <meta itemprop=keywords content="Swift,String,"><meta property="og:title" content="String字串處理">
 <meta property="og:description" content>
 <meta property="og:type" content="article">
 <meta property="og:url" content="/posts/ios/swift/string_basic/"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-11-21T08:00:00+00:00">
 <meta property="article:modified_time" content="2021-11-21T08:00:00+00:00">
-<meta property="og:see_also" content="/posts/ios/swift/date_formater/"><meta property="og:see_also" content="/posts/ios/swift/uitableview/tableview_floating_panel/"><meta property="og:see_also" content="/posts/ios/swift/uicollectionview/collectionview_basic/"><meta property="og:see_also" content="/posts/ios/swift/uiviewcontroller/extenxions_identifier/"><meta property="og:see_also" content="/posts/ios/swift/uitableview/tableview_dropdown_refresh/">
+<meta property="og:see_also" content="/posts/ios/swift/uitableview/tableview_floating_panel/"><meta property="og:see_also" content="/posts/ios/swift/uicollectionview/collectionview_basic/"><meta property="og:see_also" content="/posts/ios/swift/uiviewcontroller/extenxions_identifier/"><meta property="og:see_also" content="/posts/ios/swift/uitableview/tableview_dropdown_refresh/"><meta property="og:see_also" content="/posts/ios/swift/uilabel/label_text_height/">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="String字串處理">
 <meta name=twitter:description content>
@@ -45,6 +45,10 @@ Tony Blog</a>
 </li><li class=nav-item>
 <a class=nav-link href=/series/>
 <i class="fas fa-fw fa-columns"></i>專欄
+</a>
+</li><li class=nav-item>
+<a class=nav-link href=/tags/>
+<i class="fas fa-fw fa-tags"></i>標籤
 </a>
 </li><li class=nav-item>
 <a class=nav-link href=/archives/>
@@ -141,7 +145,7 @@ Tony Blog</a>
 <i class="fas fa-fw fa-calendar-alt"></i>Nov 21, 2021
 </span><span class="post-reading-time me-2">
 <i class="fas fa-fw fa-coffee"></i>2 分鐘閱讀
-</span><span class=post-taxonomies><a href=/series/ios/ class=post-taxonomy>iOS</a></span>
+</span><span class=post-taxonomies><a href=/series/ios/ class=post-taxonomy>iOS</a><a href=/tags/swift/ class=post-taxonomy>Swift</a><a href=/tags/string/ class=post-taxonomy>String</a></span>
 </div>
 <div class="offcanvas offcanvas-end surface" tabindex=-1 id=offcanvasTOC aria-labelledby=offcanvasTOCLabel>
 <div class=offcanvas-header>
@@ -171,8 +175,8 @@ Tony Blog</a>
 </code></pre></div><ul>
 <li>去除空白</li>
 </ul>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-swift data-lang=swift><span class=ln>1</span><span class=n>letpwd</span> <span class=p>=</span><span class=s>&#34;123 456 78&#34;</span>
-<span class=ln>2</span><span class=n>letcheck</span> <span class=p>=</span> <span class=n>pwd</span><span class=p>.</span><span class=n>trimmingCharacters</span><span class=p>(</span><span class=k>in</span><span class=p>:</span> <span class=p>.</span><span class=n>whitespaces</span><span class=p>)</span>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-swift data-lang=swift><span class=ln>1</span><span class=kd>let</span> <span class=nv>pwd</span> <span class=p>=</span><span class=s>&#34;123 456 78&#34;</span>
+<span class=ln>2</span><span class=kd>let</span> <span class=nv>check</span> <span class=p>=</span> <span class=n>pwd</span><span class=p>.</span><span class=n>trimmingCharacters</span><span class=p>(</span><span class=k>in</span><span class=p>:</span> <span class=p>.</span><span class=n>whitespaces</span><span class=p>)</span>
 <span class=ln>3</span><span class=c1>//12345678</span>
 </code></pre></div><ul>
 <li>
@@ -327,7 +331,7 @@ Tony Blog</a>
 </a></li><li><a href=/posts/ios/swift/uiviewcontroller/extenxions_identifier/>自訂Class的Identifier方便設定使用
 </a></li><li><a href=/posts/ios/swift/uitableview/tableview_dropdown_refresh/>TableView下拉更新資料
 </a></li><li><a href=/posts/ios/swift/uilabel/label_text_height/>如何取得多行文字的實際高度
-</a></li><li><a href=/posts/ios/swift/uitableview/tableview_custom_components/>TableView設計模式：Components區塊模組
+</a></li><li><a href=/posts/ios/swift/uitableview/tableview_custom_components/>TableView Components 區塊模組
 </a></li></ul>
 </section></article><div class="post-comments surface row"><script src=https://utteranc.es/client.js repo=razonyang/hugo-theme-bootstrap-comments issue-term=pathname label=comment theme=github-light crossorigin=anonymous async></script></div></div>
 </div><aside class="col-lg-4 sidebar d-flex">
@@ -343,20 +347,45 @@ Tony Blog</a>
 </a></li></ul>
 </section><section class="recent-posts row surface">
 <h4>最近文章</h4>
-<ul><li><a href=/posts/ios/swift/date_formater/>Date格式處理
-</a></li><li><a href=/posts/ios/swift/uitableview/tableview_floating_panel/>TableView利用FloatingPanel製作底部選項
+<ul><li><a href=/posts/ios/swift/uitableview/tableview_floating_panel/>TableView利用FloatingPanel製作底部選項
 </a></li><li><a href=/posts/ios/swift/string_basic/>String字串處理
 </a></li><li><a href=/posts/ios/swift/uicollectionview/collectionview_basic/>CollectionView 設計客製化介面
 </a></li><li><a href=/posts/ios/swift/uiviewcontroller/extenxions_identifier/>自訂Class的Identifier方便設定使用
+</a></li><li><a href=/posts/xcode/simulator_touch_white/>打開Simulator模擬器的觸碰小白點
 </a></li></ul>
 </section><section class="taxonomy-series row surface">
 <h4>
 <a href=/series>專欄</a>
 </h4>
 <div><a href=/series/ios/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=iOS>
-iOS <span class="badge rounded-pill">38</span>
+iOS <span class="badge rounded-pill">37</span>
 </a><a href=/series/macos/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=macOS>
 macOS <span class="badge rounded-pill">6</span>
+</a></div>
+</section><section class="taxonomy-tags row surface">
+<h4>
+<a href=/tags>標籤</a>
+</h4>
+<div><a href=/tags/swift/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=Swift>
+Swift <span class="badge rounded-pill">36</span>
+</a><a href=/tags/url/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=URL>
+URL <span class="badge rounded-pill">6</span>
+</a><a href=/tags/alertcontroller/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=AlertController>
+AlertController <span class="badge rounded-pill">5</span>
+</a><a href=/tags/uitableview/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=UITableView>
+UITableView <span class="badge rounded-pill">5</span>
+</a><a href=/tags/xcode/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=Xcode>
+Xcode <span class="badge rounded-pill">5</span>
+</a><a href=/tags/bundle/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=Bundle>
+Bundle <span class="badge rounded-pill">4</span>
+</a><a href=/tags/array/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=Array>
+Array <span class="badge rounded-pill">2</span>
+</a><a href=/tags/attribute/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=Attribute>
+Attribute <span class="badge rounded-pill">2</span>
+</a><a href=/tags/cocoapods/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=CocoaPods>
+CocoaPods <span class="badge rounded-pill">2</span>
+</a><a href=/tags/github/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=GitHub>
+GitHub <span class="badge rounded-pill">2</span>
 </a></div>
 </section></div>
 </aside>
