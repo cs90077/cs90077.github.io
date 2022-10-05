@@ -11,7 +11,7 @@
 <meta name=description content><meta itemprop=name content="String字串處理">
 <meta itemprop=description content><meta itemprop=datePublished content="2021-11-21T08:00:00+00:00">
 <meta itemprop=dateModified content="2021-11-21T08:00:00+00:00">
-<meta itemprop=wordCount content="309">
+<meta itemprop=wordCount content="335">
 <meta itemprop=keywords content="Swift,String,"><meta property="og:title" content="String字串處理">
 <meta property="og:description" content>
 <meta property="og:type" content="article">
@@ -171,7 +171,8 @@ Tony Blog</a>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-swift data-lang=swift><span class=ln>1</span><span class=kd>let</span> <span class=nv>name</span> <span class=p>=</span> <span class=s>&#34;My name is Tony&#34;</span>
 <span class=ln>2</span><span class=k>if</span> <span class=n>name</span><span class=p>.</span><span class=bp>contains</span><span class=p>(</span><span class=s>&#34;Tony&#34;</span><span class=p>)</span> <span class=p>{</span>
 <span class=ln>3</span>    <span class=bp>print</span><span class=p>(</span><span class=n>name</span><span class=p>)</span>
-<span class=ln>4</span><span class=p>}</span>
+<span class=ln>4</span>    <span class=c1>// My name is Tony</span>
+<span class=ln>5</span><span class=p>}</span>
 </code></pre></div><ul>
 <li>去除空白</li>
 </ul>
@@ -179,12 +180,16 @@ Tony Blog</a>
 <span class=ln>2</span><span class=kd>let</span> <span class=nv>check</span> <span class=p>=</span> <span class=n>pwd</span><span class=p>.</span><span class=n>trimmingCharacters</span><span class=p>(</span><span class=k>in</span><span class=p>:</span> <span class=p>.</span><span class=n>whitespaces</span><span class=p>)</span>
 <span class=ln>3</span><span class=c1>//12345678</span>
 </code></pre></div><ul>
-<li>
-<p>英文大小寫</p>
-</li>
-<li>
-<p>取得字串長度</p>
-</li>
+<li>英文大小寫</li>
+</ul>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-swift data-lang=swift><span class=ln>1</span><span class=kd>let</span> <span class=nv>name</span> <span class=p>=</span> <span class=s>&#34;My name is Tony&#34;</span>
+<span class=ln>2</span><span class=bp>print</span><span class=p>(</span><span class=n>name</span><span class=p>.</span><span class=n>lowercased</span><span class=p>())</span>
+<span class=ln>3</span><span class=c1>// my name is tony</span>
+<span class=ln>4</span>
+<span class=ln>5</span><span class=bp>print</span><span class=p>(</span><span class=n>name</span><span class=p>.</span><span class=n>uppercased</span><span class=p>())</span>
+<span class=ln>6</span><span class=c1>// MY NAME IS TONY</span>
+</code></pre></div><ul>
+<li>取得字串長度</li>
 </ul>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-swift data-lang=swift><span class=ln>1</span><span class=kd>let</span> <span class=nv>name</span> <span class=p>=</span> <span class=s>&#34;TonyLin&#34;</span>
 <span class=ln>2</span><span class=c1>// 7</span>
